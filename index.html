@@ -11,14 +11,14 @@
 </head>
 <body>
     <header class="header" id="header">
-        <div class="container">
+        <div class="containerHeader">
             <div class="nav">
                 <img src="assets/images/projects/00_general/logo_white.png" class="header_logo_pic" alt="Anna Kyrii">
                 <a href="#header" class="header_text">Anna Kyrii Architectural Projecting Group</a>
                 <ul class="menu">
                     <li> <a href="#projects"> Projects </a> </li>
-                    <li> <a href="#"> About us </a> </li>
-                    <li> <a href="#"> Contacts </a> </li>
+                    <li> <a href="#aboutUs"> About us </a> </li>
+                    <li> <a href="#contacts"> Contacts </a> </li>
                     <li> <a href="#"> Ua </a> </li>
                 </ul>
             </div>
@@ -29,7 +29,7 @@
     </header>
 
     <section class="projects" id="projects" >
-        <div class="container">
+        <div class="containerProjets">
             <div class="photoLine" style="margin-bottom: 40px;">
                 <div class="nszu">
                     <img src="assets/images/projects/01_nszu/front.jpg" class="projectPhoto">
@@ -61,8 +61,63 @@
             <div class="buttonMoreProjects">
                 <p> See More Projects </p>
             </div>
+        </div>
+    </section>
 
+    <section class="aboutUs" id="aboutUs" >
+        <div class="containerAboutUs">
+            <div class="aboutUsPhoto"></div>
+        </div>
+    </section>
 
+    <section class="contacts" id="contacts" >
+        <div class="containerContacts">
+            <div class="whatWeDo">
+                <div class="whatWeDoText">
+                    <p class="mainText"> Consulting on issues </p>
+                    <p class="additionalText"> related to the design process of the <br> development of architectural objects </p>
+                </div>
+                <div class="whatWeDoText">
+                    <p class="mainText"> Town-planning calculations  </p>
+                    <p class="additionalText"> with the definition of boundary building <br> parameters and possible risks </p>
+                </div>
+                <div class="whatWeDoText">
+                    <p class="mainText"> Project documentation </p>
+                    <p class="additionalText"> Pre-project, Schematic Design, Project, <br> Work Project and Working Documentation </p>
+                </div>
+                <div class="whatWeDoText">
+                    <p class="mainText"> Construction design supervision </p>
+                    <p class="additionalText"> public buildings and constructions, residential multi-apartment buildings, office buildings and business centers, multifunctional complexes, medical institutions, schools, kindergartens, leisure centers, cottage towns, interiors of public spaces. </p>
+                </div>
+            </div>
+            
+            <div class="placeAMeeting">
+                <div class="placeAMeetingContainer">
+                    <div class="cotactUs"> <p class="cotactUsText"> Contact us </p> </div>
+                    <div class="input">
+                        <div class="inputBlock">
+                            <p class="inputText"> Name </p>
+                            <input type="text" class="inputField" required>
+                        </div> 
+                        <div class="inputBlock">
+                            <p class="inputText"> Phone Number </p>
+                            <input type="tel" class="inputField" required>
+                        </div> 
+                        <div class="inputBlock">
+                            <p class="inputText"> Email Address </p>
+                            <input type="email" class="inputField" required>
+                        </div> 
+                        <div class="inputBlock">
+                            <p class="inputText"> Message </p>
+                            <textarea class="inputField" rows="9" style="height: 152px;"></textarea>                       
+                        </div> 
+                    </div>  
+                    <div class="button">
+                        <button type="submit" class="submitBtn"> Submit </button>
+                    </div>   
+                </div>             
+            </div>
+        
         </div>
     </section>
 
