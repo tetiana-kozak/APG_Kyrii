@@ -133,13 +133,16 @@ footer{
 
 .projectPhoto{
     width: 368px;
+    cursor: pointer;
 }
 .projectText{
     font-size: 12px;
     font-weight: 300;
+    width: fit-content;
     text-transform: uppercase;
     margin-block-start: 0;
     margin-top: 8px;
+    cursor: pointer;
 }
 
 .photoLine div{
@@ -148,6 +151,13 @@ footer{
 }
 
 .buttonMoreProjects{
+    display: flex;
+    margin-top: 32px;
+}
+
+.moreProjectsBtn{
+    background-color: #121212;
+    color: #dcdcdc;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.5em;
@@ -156,8 +166,8 @@ footer{
     width: 368px;
     padding: 4px 0px;
     border: 1px solid #dcdcdc;
-    margin: auto;
-    margin-top: 32px;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
         /* ABOUT US */
@@ -264,7 +274,7 @@ textarea{
 }
 
 
-.button{
+.submit{
     height: 15%;
     display: flex;
     /* padding-bottom: 16px; */
