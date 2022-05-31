@@ -1,6 +1,8 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 html {
@@ -11,8 +13,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  color: #dcdcdc;
-  /* font-size: 15px; */
+  color: #000;
   background-color: #F2F2F2;
 }
 
@@ -20,4 +21,116 @@ ul, li {
   display: block;
   padding: 0;
   margin: 0;
+  color: #000;
+  text-decoration: none;
+}
+
+.page__main .page__header {
+  height: 112px;
+  width: 100%;
+  background-color: #F2F2F2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.page__main .page__header .page__container {
+  width: 1640px;
+  margin: 0 auto;
+}
+.page__main .page__header .page__container .page__nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 32px 0;
+}
+.page__main .page__header .page__container .page__nav-bar .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page__main .page__header .page__container .page__nav-bar .header__logo .header_logo-pic {
+  height: 48px;
+}
+.page__main .page__header .page__container .page__nav-bar .header__logo .header_logo-pic img {
+  height: 100%;
+}
+.page__main .page__header .page__container .page__nav-bar .header__logo .header_name {
+  padding: 0 0 0 8px;
+  text-decoration: none;
+}
+.page__main .page__header .page__container .page__nav-bar .header__logo .header_name .header_name-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  color: #000;
+}
+.page__main .page__header .page__container .page__nav-bar .header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.page__main .page__header .page__container .page__nav-bar .header__navigation li {
+  padding: 0 0 0 40px;
+}
+.page__main .page__header .page__container .page__nav-bar .header__navigation li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 0.2em;
+}
+.page__main .page__content {
+  margin-top: 112px;
+}
+.page__main .page__content .page__container {
+  width: 1640px;
+  margin: 0 auto;
+}
+.page__main .page__content .page__container .page__slider {
+  height: calc(100vh - 112px);
+}
+.page__main .page__content .page__container .page__projects {
+  padding: 100px 0;
+}
+.page__main .page__content .page__container .page__projects .project__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page__main .page__content .page__container .page__projects .project__wrapper .project__content img {
+  width: 528px;
+  cursor: pointer;
+}
+.page__main .page__content .page__container .page__projects .project__wrapper .project__content p {
+  font-size: 12px;
+  font-weight: 300;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  margin: 8px 0 28px 0;
+  cursor: pointer;
+}
+
+.page__footer .page__container {
+  width: 1640px;
+  margin: 0 auto;
+}
+.page__footer .page__container .footer__contact-info .privacy-policy .privacy-policy__logo {
+  height: 30px;
 }

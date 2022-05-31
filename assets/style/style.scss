@@ -1,6 +1,8 @@
             // General reset settings
 * {
     box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400; 
 }
 
 html{
@@ -11,8 +13,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    color: #dcdcdc;
-    /* font-size: 15px; */
+    color: #000;
     background-color: #F2F2F2;
 }
 
@@ -20,25 +21,73 @@ ul, li{
     display: block;
     padding: 0;
     margin: 0;
+    color: #000;
+    text-decoration: none;
 }
 
             // New style
+            // New style__mixins
 
+@mixin container {
+    width: 1640px;
+    margin: 0 auto;
+}
+
+
+
+
+
+            // New style code
 
 
 .page__main{
     .page__header{
+        height: 112px;
+        width: 100%;
+        background-color: #F2F2F2;
+        position: fixed;
+        top: 0; 
+        left: 0;
+        z-index: 2;
         .page__container{
-            .header_logo-pic{
+            @include container;
+            .page__nav-bar{
+                display: flex;
+                justify-content: space-between;
+                padding: 32px 0;
+                .header__logo{
+                    display: flex;
+                    .header_logo-pic{
+                        height: 48px;                        
+                        img{                            
+                            height: 100%;
+                        }
+                    }
+                    .header_name{
+                        padding: 0 0 0 8px;
+                        text-decoration: none;
+                        .header_name-text{
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 16px;
+                            letter-spacing: 0.2em;
+                            color: #000;
+                        }
+                    }
+                }
+                .header__navigation{
+                    display: flex;
+                    align-items: flex-end;
+                    li{
+                        padding: 0 0 0 40px;
+                        a{
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: #000;
+                            letter-spacing: 0.2em;
 
-            }
-            .header_name{
-
-            }
-            .header__navigation{
-                li{
-                    a{
-
+                        }
                     }
                 }
             }
@@ -46,6 +95,41 @@ ul, li{
     }
 
     // main content styles
+
+    .page__content{
+        margin-top: 112px;
+        .page__container{
+            @include container;
+            .page__slider{
+                height: calc(100vh - 112px);
+            }
+            .page__projects{
+                padding: 100px 0;
+                .project__wrapper{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .project__content{
+                        
+                        img{
+                            width: 528px;
+                            cursor: pointer;
+                        }
+                        p{
+                            font-size: 12px;
+                            font-weight: 300;
+                            width: fit-content;
+                            text-transform: uppercase;
+                            margin-block-start: 0;
+                            margin: 8px 0 28px 0;
+                            cursor: pointer;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
 }
 
 .page__footer{
@@ -53,6 +137,7 @@ ul, li{
 
     }
     .page__container{
+        @include container;
         .footer__contact-info{
             .contacts{
                 .contacts__details{
@@ -70,10 +155,10 @@ ul, li{
             }
             .privacy-policy{
                 .privacy-policy__logo{
-
+                    height: 30px;
                 }
                 .privacy-policy__text{
-                    
+
                 }
             }
         }
