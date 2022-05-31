@@ -1,0 +1,81 @@
+            // General reset settings
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #dcdcdc;
+    /* font-size: 15px; */
+    background-color: #F2F2F2;
+}
+
+ul, li{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+            // New style
+
+
+
+.page__main{
+    .page__header{
+        .page__container{
+            .header_logo-pic{
+
+            }
+            .header_name{
+
+            }
+            .header__navigation{
+                li{
+                    a{
+
+                    }
+                }
+            }
+        }
+    }
+
+    // main content styles
+}
+
+.page__footer{
+    .footer__map{
+
+    }
+    .page__container{
+        .footer__contact-info{
+            .contacts{
+                .contacts__details{
+
+                }
+                .contacts__adress{
+
+                }
+                .contacts__e-mail{
+
+                }
+                .contacts__tel{
+
+                }
+            }
+            .privacy-policy{
+                .privacy-policy__logo{
+
+                }
+                .privacy-policy__text{
+                    
+                }
+            }
+        }
+    }
+}

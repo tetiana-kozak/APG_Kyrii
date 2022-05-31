@@ -4,136 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="assets/style/normalize.css">  <!-- add reset style --> 
+    <link rel="stylesheet" href="assets/style/style.css">   <!-- new css -->
+    <!-- <link rel="stylesheet" href="index_style.css">   old css -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Anna Kyrii</title>
     <link rel="icon" type="image/png" href="assets/images/projects/00_general/logo_new.png">
 </head>
 <body>
-    <header class="header" id="header">
-        <div class="containerHeader">
-            <div class="nav">
-                <a href="#header"><img src="assets/images/projects/00_general/logo_white.png" class="header_logo_pic" alt="Anna Kyrii"></a>
-                <a href="#header" class="header_text">Anna Kyrii <br> Architectural <br> Projecting Group</a>
-                <ul class="menu">
-                    <li> <a href="#projects"> Projects </a> </li>
-                    <li> <a href="#aboutUs"> About us </a> </li>
-                    <li> <a href="#contacts"> Contacts </a> </li>
+    <main class="page__main">
+        <header class="page__header">
+            <div class="page__container">
+                <a href="#header"><img src="assets/images/projects/00_general/logo_white.png" class="header_logo-pic" alt="Anna Kyrii"></a>
+                <a href="#header" class="header_name"><h1 class="header_name-text"> Anna Kyrii <br> Architectural <br> Projecting Group</h1></a>
+                <ul class="header__navigation">
+                    <li> <a href="#" > Projects </a> </li>
+                    <li> <a href="#"> About us </a> </li>
+                    <li> <a href="#"> Contacts </a> </li>
                     <li> <a href="#"> Ua </a> </li>
                 </ul>
             </div>
-            <div class="catchword">
-                <h1>New Take <br> On Urban Life</h1>
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="projects" id="projects" >
-        <div class="containerProjets">
-            <div class="photoLine" style="margin-bottom: 40px;">
-                <div class="nszu">
-                    <img src="assets/images/projects/01_nszu/front.jpg" class="projectPhoto">
-                    <p class="projectText"> National Health Service </p>
-                </div>
-                <div class="leleka">
-                    <img src="assets/images/projects/02_leleka/front.jpg" class="projectPhoto">
-                    <p class="projectText"> Leleka </p>
-                </div>
-                <div class="aquapark">
-                    <img src="assets/images/projects/03_aquapark/front.jpg" class="projectPhoto">
-                    <p class="projectText"> Aquapark </p>
-                </div>
-            </div>
-            <div class="photoLine">
-                <div class="school">
-                    <img src="assets/images/projects/04_school/front.jpg" class="projectPhoto">
-                    <p class="projectText"> School </p>
-                </div>
-                <div class="novaKakhovka">
-                    <img src="assets/images/projects/05_nova_kakhovka/front.jpg" class="projectPhoto">
-                    <p class="projectText"> nova Kakhovka </p>
-                </div>
-                <div class="kindergartenZirochka">
-                    <img src="assets/images/projects/06_kindergarten_zirochka/front.jpg" class="projectPhoto">
-                    <p class="projectText"> Kindergarten Zirochka </p>
-                </div>
-            </div>
-            <div class="buttonMoreProjects">
-                <button type="submit" class="moreProjectsBtn"> See More Projects </button>
-            </div>
-        </div>
-    </section>
 
-    <section class="aboutUs" id="aboutUs" >
-        <div class="containerAboutUs">
-            <div class="aboutUsPhoto"></div>
-        </div>
-    </section>
-
-    <section class="contacts" id="contacts" >
-        <div class="containerContacts">
-            <div class="whatWeDo">
-                <div class="whatWeDoText">
-                    <p class="mainText"> Consulting on issues </p>
-                    <p class="additionalText"> related to the design process of the <br> development of architectural objects </p>
+        <!-- <section class="projects" id="projects" >
+            <div class="containerProjets">
+                <div class="photoLine" style="margin-bottom: 40px;">
+                    <div class="nszu">
+                        <img src="assets/images/projects/01_nszu/front.jpg" class="projectPhoto">
+                        <p class="projectText"> National Health Service </p>
+                    </div>
+                    <div class="leleka">
+                        <img src="assets/images/projects/02_leleka/front.jpg" class="projectPhoto">
+                        <p class="projectText"> Leleka </p>
+                    </div>
+                    <div class="aquapark">
+                        <img src="assets/images/projects/03_aquapark/front.jpg" class="projectPhoto">
+                        <p class="projectText"> Aquapark </p>
+                    </div>
                 </div>
-                <div class="whatWeDoText">
-                    <p class="mainText"> Town-planning calculations  </p>
-                    <p class="additionalText"> with the definition of boundary building <br> parameters and possible risks </p>
+                <div class="photoLine">
+                    <div class="school">
+                        <img src="assets/images/projects/04_school/front.jpg" class="projectPhoto">
+                        <p class="projectText"> School </p>
+                    </div>
+                    <div class="novaKakhovka">
+                        <img src="assets/images/projects/05_nova_kakhovka/front.jpg" class="projectPhoto">
+                        <p class="projectText"> nova Kakhovka </p>
+                    </div>
+                    <div class="kindergartenZirochka">
+                        <img src="assets/images/projects/06_kindergarten_zirochka/front.jpg" class="projectPhoto">
+                        <p class="projectText"> Kindergarten Zirochka </p>
+                    </div>
                 </div>
-                <div class="whatWeDoText">
-                    <p class="mainText"> Project documentation </p>
-                    <p class="additionalText"> Pre-project, Schematic Design, Project, <br> Work Project and Working Documentation </p>
-                </div>
-                <div class="whatWeDoText">
-                    <p class="mainText"> Construction design supervision </p>
-                    <p class="additionalText"> public buildings and constructions, residential multi-apartment buildings, office buildings and business centers, multifunctional complexes, medical institutions, schools, kindergartens, leisure centers, cottage towns, interiors of public spaces. </p>
+                <div class="buttonMoreProjects">
+                    <button type="submit" class="moreProjectsBtn"> See More Projects </button>
                 </div>
             </div>
+        </section>
+    
+        <section class="aboutUs" id="aboutUs" >
+            <div class="containerAboutUs">
+                <div class="aboutUsPhoto"></div>
+            </div>
+        </section>
+    
+        <section class="contacts" id="contacts" >
+            <div class="containerContacts">
+                <div class="whatWeDo">
+                    <div class="whatWeDoText">
+                        <p class="mainText"> Consulting on issues </p>
+                        <p class="additionalText"> related to the design process of the <br> development of architectural objects </p>
+                    </div>
+                    <div class="whatWeDoText">
+                        <p class="mainText"> Town-planning calculations  </p>
+                        <p class="additionalText"> with the definition of boundary building <br> parameters and possible risks </p>
+                    </div>
+                    <div class="whatWeDoText">
+                        <p class="mainText"> Project documentation </p>
+                        <p class="additionalText"> Pre-project, Schematic Design, Project, <br> Work Project and Working Documentation </p>
+                    </div>
+                    <div class="whatWeDoText">
+                        <p class="mainText"> Construction design supervision </p>
+                        <p class="additionalText"> public buildings and constructions, residential multi-apartment buildings, office buildings and business centers, multifunctional complexes, medical institutions, schools, kindergartens, leisure centers, cottage towns, interiors of public spaces. </p>
+                    </div>
+                </div>
+                
+                <div class="placeAMeeting">
+                    <div class="placeAMeetingContainer">
+                        <div class="cotactUs"> <p class="cotactUsText"> Contact us </p> </div>
+                        <div class="input">
+                            <div class="inputBlock">
+                                <p class="inputText"> Name </p>
+                                <input type="text" class="inputField" required>
+                            </div> 
+                            <div class="inputBlock">
+                                <p class="inputText"> Phone Number </p>
+                                <input type="tel" class="inputField" required>
+                            </div> 
+                            <div class="inputBlock">
+                                <p class="inputText"> Email Address </p>
+                                <input type="email" class="inputField" required>
+                            </div> 
+                            <div class="inputBlock">
+                                <p class="inputText"> Message </p>
+                                <textarea class="inputField" rows="9" style="height: 152px;"></textarea>                       
+                            </div> 
+                        </div>  
+                        <div class="submit">
+                            <button type="submit" class="submitBtn"> Submit </button>
+                        </div>   
+                    </div>             
+                </div>
             
-            <div class="placeAMeeting">
-                <div class="placeAMeetingContainer">
-                    <div class="cotactUs"> <p class="cotactUsText"> Contact us </p> </div>
-                    <div class="input">
-                        <div class="inputBlock">
-                            <p class="inputText"> Name </p>
-                            <input type="text" class="inputField" required>
-                        </div> 
-                        <div class="inputBlock">
-                            <p class="inputText"> Phone Number </p>
-                            <input type="tel" class="inputField" required>
-                        </div> 
-                        <div class="inputBlock">
-                            <p class="inputText"> Email Address </p>
-                            <input type="email" class="inputField" required>
-                        </div> 
-                        <div class="inputBlock">
-                            <p class="inputText"> Message </p>
-                            <textarea class="inputField" rows="9" style="height: 152px;"></textarea>                       
-                        </div> 
-                    </div>  
-                    <div class="submit">
-                        <button type="submit" class="submitBtn"> Submit </button>
-                    </div>   
-                </div>             
             </div>
-        
-        </div>
-    </section>
+        </section> -->
 
-    <footer class="footer">
-        <div class="map">
+    </main>
+
+    <footer class="page__footer">
+        <div class="footer__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1770.7396747517892!2d30.494899384453397!3d50.44801978473883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef54bbbd095%3A0x6af66acf0bb8b5a4!2z0LLRg9C70LjRhtGPINCe0LvQtdGB0Y8g0JPQvtC90YfQsNGA0LAsIDgyLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1650473069279!5m2!1suk!2sua" width="100%" height="200" style="border:0; filter: grayscale(100%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
         </div>
-        <div class="containerFooter">
-            <div class="contactInfo">
+        <div class="page__container">
+            <div class="footer__contact-info">
                 <div class="contacts">
-                    <p class="footerText">Of. 2-A, 82, O.Gonchara Str., <br> 01054, Kyiv, <br> Ukraine <br> in@kyrii-group.com.ua </p>
-                    <a href= “tel:+380444863536” class="footerText">Tel: +38 (044) 486 35 36</a>
+                    <a href="https://www.google.com/maps/place/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D0%B0%D1%8F+%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0+%D0%90%D0%BD%D0%BD%D1%8B+%D0%9A%D0%B8%D1%80%D0%B8%D0%B9/@50.4484759,30.497488,17z/data=!4m13!1m7!3m6!1s0x40d4cef54bbbd095:0x6af66acf0bb8b5a4!2z0LLRg9C70LjRhtGPINCe0LvQtdGB0Y8g0JPQvtC90YfQsNGA0LAsIDgyLCDQmtC40ZfQsiwgMDIwMDA!3b1!8m2!3d50.4484355!4d30.4971632!3m4!1s0x40d4cef54be8e5cf:0x181e795e2e17cacc!8m2!3d50.4484289!4d30.4973407" class="contacts__details contacts__adress">Of. 2-A, 82, O.Gonchara Str., <br> 01054, Kyiv, <br> Ukraine</a>
+                    <p class="contacts__details contacts__e-mail">in@kyrii-group.com.ua</p>
+                    <!-- <p class="footerText">Of. 2-A, 82, O.Gonchara Str., <br> 01054, Kyiv, <br> Ukraine <br> in@kyrii-group.com.ua </p> -->
+                    <a href= “tel:+380987789013” class="contacts__details contacts__tel">Tel: +38 (044) 486 35 36</a>
                 </div>
-                <div class="privacyPolicy">
-                    <img src="assets/images/projects/00_general/logo_white.png" class="footerLogo">
-                    <p class="footerText" style="text-align: center;"> Privacy Policy </p>
+                <div class="privacy-policy">
+                    <img src="assets/images/projects/00_general/logo_white.png" class="privacy-policy__logo">
+                    <p class="privacy-policy__text" style="text-align: center;"> Privacy Policy </p>
                 </div>
             </div>  
         </div>      
