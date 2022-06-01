@@ -99,9 +99,6 @@ ul, li {
 .page__main .page__content .page__container .page__slider {
   height: calc(100vh - 112px);
 }
-.page__main .page__content .page__container .page__projects .section-wrapper {
-  padding: 112px 0 0 0;
-}
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper {
   display: -ms-grid;
   display: grid;
@@ -160,6 +157,43 @@ ul, li {
   margin: 0 auto;
   max-width: 104.375rem;
 }
+.page__footer .page__container .footer__contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 72px 0 72px 0;
+}
+.page__footer .page__container .footer__contact-info .contacts .contacts__details {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.02em;
+}
+.page__footer .page__container .footer__contact-info .privacy-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .page__footer .page__container .footer__contact-info .privacy-policy .privacy-policy__logo {
-  height: 30px;
+  height: 3rem;
+}
+.page__footer .page__container .footer__contact-info .privacy-policy .privacy-policy__text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+.section-wrapper {
+  padding: 112px 0 0 0;
 }

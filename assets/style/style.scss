@@ -147,7 +147,7 @@ ul, li{
             }
             .page__projects{
                 .section-wrapper{
-                    @include section;
+                    // @include section;
                     .project__wrapper{
                         // display: flex;
                         // flex-wrap: wrap;
@@ -201,10 +201,18 @@ ul, li{
     }
     .page__container{
         @include container;
-        .footer__contact-info{
+            .footer__contact-info{
+            display: flex;
+            justify-content: space-between;
+            padding: 72px 0 72px 0;
             .contacts{
+                
                 .contacts__details{
-
+                    text-decoration: none;
+                    color: #000;
+                    font-size: rem(14);
+                    line-height: rem(20);
+                    letter-spacing: 0.02em;
                 }
                 .contacts__adress{
 
@@ -217,13 +225,22 @@ ul, li{
                 }
             }
             .privacy-policy{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 .privacy-policy__logo{
-                    height: 30px;
+                    height: rem(48);
                 }
                 .privacy-policy__text{
-
+                    font-size: rem(14);
+                    line-height: rem(20);
+                    letter-spacing: 0.02em;
                 }
             }
         }
     }
+}
+
+.section-wrapper{
+    @include section;
 }
