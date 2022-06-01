@@ -99,16 +99,16 @@ ul, li {
 .page__main .page__content .page__container .page__slider {
   height: calc(100vh - 112px);
 }
-.page__main .page__content .page__container .page__projects {
-  padding: 100px 0;
+.page__main .page__content .page__container .page__projects .section-wrapper {
+  padding: 112px 0 0 0;
 }
-.page__main .page__content .page__container .page__projects .project__wrapper {
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24.375rem, 1fr));
   gap: 28px;
 }
-.page__main .page__content .page__container .page__projects .project__wrapper .project__content {
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,10 +118,10 @@ ul, li {
           flex-direction: column;
   position: relative;
 }
-.page__main .page__content .page__container .page__projects .project__wrapper .project__content img {
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content img {
   cursor: pointer;
 }
-.page__main .page__content .page__container .page__projects .project__wrapper .project__content p {
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content p {
   font-size: 0.75rem;
   font-weight: 300;
   width: -webkit-fit-content;
@@ -132,6 +132,27 @@ ul, li {
           margin-block-start: 0;
   margin: 8px 0 0 0;
   cursor: pointer;
+}
+.page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 28px;
+}
+.page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects .more-projects-btn {
+  border: 1px solid #292929;
+  margin: 0 auto;
+  padding: 0;
+  cursor: pointer;
+}
+.page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects .more-projects-btn .more-projects-btn-text {
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.5em;
+  width: 366px;
+  padding: 0.25rem 2.625rem;
+  text-transform: uppercase;
 }
 
 .page__footer .page__container {
