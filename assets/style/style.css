@@ -1,7 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 16px;
   font-weight: 400;
 }
 
@@ -35,8 +34,9 @@ ul, li {
   z-index: 2;
 }
 .page__main .page__header .page__container {
-  width: 1640px;
+  padding: 0 15px;
   margin: 0 auto;
+  max-width: 104.375rem;
 }
 .page__main .page__header .page__container .page__nav-bar {
   display: -webkit-box;
@@ -65,7 +65,7 @@ ul, li {
 .page__main .page__header .page__container .page__nav-bar .header__logo .header_name .header_name-text {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 16px;
   letter-spacing: 0.2em;
   color: #000;
@@ -86,13 +86,15 @@ ul, li {
   text-transform: uppercase;
   color: #000;
   letter-spacing: 0.2em;
+  font-size: 1rem;
 }
 .page__main .page__content {
   margin-top: 112px;
 }
 .page__main .page__content .page__container {
-  width: 1640px;
+  padding: 0 15px;
   margin: 0 auto;
+  max-width: 104.375rem;
 }
 .page__main .page__content .page__container .page__slider {
   height: calc(100vh - 112px);
@@ -101,21 +103,26 @@ ul, li {
   padding: 100px 0;
 }
 .page__main .page__content .page__container .page__projects .project__wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24.375rem, 1fr));
+  gap: 28px;
+}
+.page__main .page__content .page__container .page__projects .project__wrapper .project__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
 }
 .page__main .page__content .page__container .page__projects .project__wrapper .project__content img {
-  width: 528px;
   cursor: pointer;
 }
 .page__main .page__content .page__container .page__projects .project__wrapper .project__content p {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 300;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -123,13 +130,14 @@ ul, li {
   text-transform: uppercase;
   -webkit-margin-before: 0;
           margin-block-start: 0;
-  margin: 8px 0 28px 0;
+  margin: 8px 0 0 0;
   cursor: pointer;
 }
 
 .page__footer .page__container {
-  width: 1640px;
+  padding: 0 15px;
   margin: 0 auto;
+  max-width: 104.375rem;
 }
 .page__footer .page__container .footer__contact-info .privacy-policy .privacy-policy__logo {
   height: 30px;

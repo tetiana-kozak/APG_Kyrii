@@ -1,7 +1,8 @@
+@use 'sass:math';
             // General reset settings
-* {
+            * {
     box-sizing: border-box;
-    font-size: 16px;
+    // font-size: 16px;
     font-weight: 400; 
 }
 
@@ -29,12 +30,31 @@ ul, li{
             // New style__mixins
 
 @mixin container {
-    width: 1640px;
+    // width: 1640px;
+    padding: 0 15px;
     margin: 0 auto;
+    max-width: rem(1670);
 }
 
 
+            // New style__functions
 
+
+// to %
+@function prc($pxOne, $pxTwo){
+    $result: math.div($pxOne, $pxTwo) * 100%;
+    @return $result;
+}
+// to REM
+@function rem($px){
+    $result: math.div($px, 16) + rem;
+    @return $result;
+}
+// to EM
+@function em($px){
+    $result: math.div($px, 16) + em;
+    @return $result;
+}
 
 
             // New style code
@@ -69,7 +89,8 @@ ul, li{
                         .header_name-text{
                             text-transform: uppercase;
                             font-weight: 700;
-                            font-size: 12px;
+                            // font-size: 12px;
+                            font-size: rem(12);
                             line-height: 16px;
                             letter-spacing: 0.2em;
                             color: #000;
@@ -86,6 +107,7 @@ ul, li{
                             text-transform: uppercase;
                             color: #000;
                             letter-spacing: 0.2em;
+                            font-size: rem(16);
 
                         }
                     }
@@ -106,22 +128,31 @@ ul, li{
             .page__projects{
                 padding: 100px 0;
                 .project__wrapper{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
+                    // display: flex;
+                    // flex-wrap: wrap;
+                    // row-gap: 28px;
+                    // margin: 0 -14px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(rem(390), 1fr));
+                    gap: 28px;
                     .project__content{
-                        
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        // padding: 0 14px;
                         img{
-                            width: 528px;
+                            // padding: 0 0 prc(352, 528) 0;
+                            // width: 528px;
                             cursor: pointer;
                         }
                         p{
-                            font-size: 12px;
+                            font-size: rem(12);
                             font-weight: 300;
                             width: fit-content;
                             text-transform: uppercase;
                             margin-block-start: 0;
-                            margin: 8px 0 28px 0;
+                            margin: 8px 0 0 0;
+                            // margin: 0.666em 0 0 0;
                             cursor: pointer;
                         }
                     }
