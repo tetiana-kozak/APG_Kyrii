@@ -206,13 +206,13 @@ ul, li{
                         justify-content: space-between;
                         height: 520px;
                         .contacts__what-we-do{
-                            width: 784px;
+                            width: 768px;
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
                             border-left: 1px #000 solid;
                             .contacts__what-we-do-text{
-                                margin-left: 72px;
+                                margin-left: rem(56);
                                 .main-text{
                                     font-size: rem(20);
                                     font-weight: 700;
@@ -263,7 +263,7 @@ ul, li{
                                         .input-field{
                                             display: block;
                                             height: 32px;
-                                            font-size: 14px;
+                                            font-size: rem(14);
                                             font-weight: 300;
                                             padding: 5px 5px;
                                             color: #000;

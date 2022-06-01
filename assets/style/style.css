@@ -161,7 +161,7 @@ ul, li {
   height: 520px;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do {
-  width: 784px;
+  width: 768px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,7 +175,7 @@ ul, li {
   border-left: 1px #000 solid;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text {
-  margin-left: 72px;
+  margin-left: 3.5rem;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .main-text {
   font-size: 1.25rem;
@@ -245,7 +245,7 @@ ul, li {
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-field {
   display: block;
   height: 32px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   padding: 5px 5px;
   color: #000;
