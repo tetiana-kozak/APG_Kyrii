@@ -31,7 +31,7 @@ ul, li{
 
 @mixin container {
     // width: 1640px;
-    padding: 0 15px;
+    padding: 0 rem(15);
     margin: 0 auto;
     max-width: rem(1670);
 }
@@ -154,12 +154,15 @@ ul, li{
                         // row-gap: 28px;
                         // margin: 0 -14px;                        
                         display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(rem(390), 1fr));
+                        grid-template-columns: repeat(auto-fit, minmax(rem(528), 1fr));
+                        // grid-template-columns: repeat(auto-fit, minmax(rem(345), 1fr));
+                        // grid-template-columns: 1fr 1fr 1fr;
                         gap: 28px;
                         .project__content{
                             display: flex;
                             flex-direction: column;
                             position: relative;
+                            // width: fit-content;
                             // padding: 0 14px;
                             img{
                                 // padding: 0 0 prc(352, 528) 0;
@@ -191,6 +194,115 @@ ul, li{
                     }
                 }
             }
+
+            .page__about-us{
+
+            }
+
+            .page__contacts{
+                .contacts{
+                    .contacts__container{
+                        display: flex;
+                        justify-content: space-between;
+                        height: 520px;
+                        .contacts__what-we-do{
+                            width: 784px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            border-left: 1px #000 solid;
+                            .contacts__what-we-do-text{
+                                margin-left: 72px;
+                                .main-text{
+                                    font-size: rem(20);
+                                    font-weight: 700;
+                                    letter-spacing: 0.2em;
+                                    margin-bottom: rem(8);
+                                }
+                                .additional-text{
+                                    font-size: rem(12);
+                                    font-weight: 300;
+                                    letter-spacing: 0.2em;
+                                    line-height: rem(17);
+                                }
+                            }
+                        }
+                        .contacts__place-a-meeting{
+                            width: 410px;
+                            border: #000 solid 1px;  
+                            .contacts__place-a-meeting-container{
+                                width: 80%;
+                                height: 520px;
+                                margin: auto;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                .contacts__cotact-us-title{
+                                    height: 8%;
+                                    display: flex;
+                                    .cotact-us-text{
+                                        font-size: rem(20);
+                                        font-weight: 700;
+                                        letter-spacing: 0.2em;
+                                        width: fit-content;
+                                        margin: auto auto 0 auto;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                                .contacts__form{
+                                    .contacts__input-block{
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        .input-label{
+                                            display: block;
+                                            padding: 8px 0 2px 0;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                        }
+                                        .input-field{
+                                            display: block;
+                                            height: 32px;
+                                            font-size: 14px;
+                                            font-weight: 300;
+                                            padding: 5px 5px;
+                                            color: #000;
+                                            background-color: transparent;
+                                            border: #000 1px solid;
+                                        }
+                                        textarea{
+                                            resize: none;
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                                .contacts__submit{
+                                    height: 10%;
+                                    display: flex;
+                                    .submit-btn{                                        
+                                        color: #000;
+                                        font-size: rem(18);
+                                        text-align: center;
+                                        border: #000 1px solid;
+                                        font-weight: 700;
+                                        letter-spacing: 0.5em;
+                                        width: 175px;
+                                        padding: rem(2) 0;
+                                        margin: 0 auto auto auto;
+                                        text-transform: uppercase;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+
         }
     }
 }

@@ -34,7 +34,7 @@ ul, li {
   z-index: 2;
 }
 .page__main .page__header .page__container {
-  padding: 0 15px;
+  padding: 0 0.9375rem;
   margin: 0 auto;
   max-width: 104.375rem;
 }
@@ -92,7 +92,7 @@ ul, li {
   margin-top: 112px;
 }
 .page__main .page__content .page__container {
-  padding: 0 15px;
+  padding: 0 0.9375rem;
   margin: 0 auto;
   max-width: 104.375rem;
 }
@@ -102,7 +102,7 @@ ul, li {
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24.375rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   gap: 28px;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content {
@@ -151,9 +151,133 @@ ul, li {
   padding: 0.25rem 2.625rem;
   text-transform: uppercase;
 }
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 520px;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do {
+  width: 784px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-left: 1px #000 solid;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text {
+  margin-left: 72px;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .main-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .additional-text {
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  line-height: 1.0625rem;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting {
+  width: 410px;
+  border: #000 solid 1px;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container {
+  width: 80%;
+  height: 520px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__cotact-us-title {
+  height: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__cotact-us-title .cotact-us-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto auto 0 auto;
+  text-transform: uppercase;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-label {
+  display: block;
+  padding: 8px 0 2px 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-field {
+  display: block;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 5px 5px;
+  color: #000;
+  background-color: transparent;
+  border: #000 1px solid;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block textarea {
+  resize: none;
+  margin: 0;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn {
+  color: #000;
+  font-size: 1.125rem;
+  text-align: center;
+  border: #000 1px solid;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  width: 175px;
+  padding: 0.125rem 0;
+  margin: 0 auto auto auto;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
 .page__footer .page__container {
-  padding: 0 15px;
+  padding: 0 0.9375rem;
   margin: 0 auto;
   max-width: 104.375rem;
 }
