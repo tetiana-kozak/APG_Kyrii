@@ -1,32 +1,41 @@
 @use 'sass:math';
-            // General reset settings
-            * {
-    box-sizing: border-box;
-    // font-size: 16px;
-    font-weight: 400; 
+
+            // New style__functions
+
+
+// to %
+// @function prc($pxOne, $pxTwo){
+    //     $result: math.div($pxOne, $pxTwo) * 100%;
+    //     @return $result;
+    // }
+    // to REM
+@function rem($num){
+    $result: #{($num/ 16) + rem};
+    // $result: #{math.div($num, 16) + rem};
+    @return $result;
 }
 
-html{
-    scroll-behavior: smooth;
-}
+// to EM
+// @function em($px){
+    //     $result: math.div($px, 16) + em;
+    //     @return $result;
+    // }
+    
+    
 
-body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #000;
-    background-color: #F2F2F2;
-}
 
-ul, li{
-    display: block;
-    padding: 0;
-    margin: 0;
-    color: #000;
-    text-decoration: none;
-}
+            // New style__variables
+    
+$fz12: rem(12);
+$fz14: rem(14);
+$fz18: rem(18);
+$fz20: rem(20);
 
-            // New style
+$bg-color: #F2F2F2;
+$text-color: #000;
+    
+
+           // New style
             // New style__mixins
 
 @mixin container {
@@ -47,8 +56,8 @@ ul, li{
     cursor: pointer;
 }
 @mixin btn_content {
-    color: #000;
-    font-size: rem(14);
+    color: $text-color;
+    font-size: $fz14;
     font-weight: 500;
     letter-spacing: 0.5em;
     width: 366px;
@@ -58,26 +67,38 @@ ul, li{
 
 
 
-            // New style__functions
 
-
-// to %
-// @function prc($pxOne, $pxTwo){
-//     $result: math.div($pxOne, $pxTwo) * 100%;
-//     @return $result;
-// }
-// to REM
-@function rem($num){
-    $result: #{($num/ 16) + rem};
-    // $result: #{math.div($num, 16) + rem};
-    @return $result;
+            // General reset settings
+            * {
+    box-sizing: border-box;
+    // font-size: 16px;
+    font-weight: 400; 
 }
 
-// to EM
-// @function em($px){
-//     $result: math.div($px, 16) + em;
-//     @return $result;
-// }
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: $text-color;
+    background-color: $bg-color;
+}
+
+ul, li{
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: $text-color;
+    text-decoration: none;
+}
+
+ 
+
+
+
 
 
             // New style code
@@ -87,7 +108,7 @@ ul, li{
     .page__header{
         height: 112px;
         width: 100%;
-        background-color: #F2F2F2;
+        background-color: $bg-color;
         position: fixed;
         top: 0; 
         left: 0;
@@ -113,10 +134,10 @@ ul, li{
                             text-transform: uppercase;
                             font-weight: 700;
                             // font-size: 12px;
-                            font-size: rem(12);
+                            font-size: $fz12;
                             line-height: 16px;
                             letter-spacing: 0.2em;
-                            color: #000;
+                            color: $text-color;
                         }
                     }
                 }
@@ -128,9 +149,9 @@ ul, li{
                         a{
                             text-decoration: none;
                             text-transform: uppercase;
-                            color: #000;
+                            color: $text-color;
                             letter-spacing: 0.2em;
-                            font-size: rem(16);
+                            // font-size: rem(16);
 
                         }
                     }
@@ -176,7 +197,7 @@ ul, li{
                                 cursor: pointer;
                             }
                             p{
-                                font-size: rem(12);
+                                font-size: $fz12;
                                 font-weight: 300;
                                 width: fit-content;
                                 text-transform: uppercase;
@@ -220,13 +241,13 @@ ul, li{
                             .contacts__what-we-do-text{
                                 margin-left: rem(56);
                                 .main-text{
-                                    font-size: rem(20);
+                                    font-size: $fz20;
                                     font-weight: 700;
                                     letter-spacing: 0.2em;
                                     margin-bottom: rem(8);
                                 }
                                 .additional-text{
-                                    font-size: rem(12);
+                                    font-size: $fz12;
                                     font-weight: 300;
                                     letter-spacing: 0.2em;
                                     line-height: rem(17);
@@ -247,7 +268,7 @@ ul, li{
                                     height: 8%;
                                     display: flex;
                                     .cotact-us-text{
-                                        font-size: rem(20);
+                                        font-size: $fz20;
                                         font-weight: 700;
                                         letter-spacing: 0.2em;
                                         width: fit-content;
@@ -263,18 +284,18 @@ ul, li{
                                         .input-label{
                                             display: block;
                                             padding: 8px 0 2px 0;
-                                            font-size: 16px;
+                                            // font-size: 16px;
                                             font-weight: 300;
                                         }
                                         .input-field{
                                             display: block;
                                             height: 32px;
-                                            font-size: rem(14);
+                                            font-size: $fz14;
                                             font-weight: 300;
                                             padding: 5px 5px;
-                                            color: #000;
+                                            color: $text-color;
                                             background-color: transparent;
-                                            border: #000 1px solid;
+                                            border: $text-color 1px solid;
                                         }
                                         textarea{
                                             resize: none;
@@ -286,8 +307,8 @@ ul, li{
                                     height: 10%;
                                     display: flex;
                                     .submit-btn{                                        
-                                        color: #000;
-                                        font-size: rem(18);
+                                        color: $text-color;
+                                        font-size: $fz18;
                                         text-align: center;
                                         border: #000 1px solid;
                                         font-weight: 700;
@@ -327,8 +348,8 @@ ul, li{
                 
                 .contacts__details{
                     text-decoration: none;
-                    color: #000;
-                    font-size: rem(14);
+                    color: $text-color;
+                    font-size: $fz14;
                     line-height: rem(20);
                     letter-spacing: 0.02em;
                 }
@@ -350,7 +371,7 @@ ul, li{
                     height: rem(48);
                 }
                 .privacy-policy__text{
-                    font-size: rem(14);
+                    font-size: $fz14;
                     line-height: rem(20);
                     letter-spacing: 0.02em;
                 }
