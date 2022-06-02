@@ -50,18 +50,23 @@ $text-color: #000;
 
 @mixin btn_container {
     // width: 368px;
-    border: 1px solid #292929;
     margin: 0 auto;
     padding: 0;
     cursor: pointer;
+
+    &:hover{
+        background-color: #c2c2c2;
+        transition: all .5s ease;
+    }
 }
 @mixin btn_content {
     color: $text-color;
     font-size: $fz14;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.5em;
-    width: 366px;
+    width: 368px;
     padding: rem(4) rem(42);
+    border: 1px solid #292929;
     text-transform: uppercase;
 }
 
@@ -175,21 +180,17 @@ ul, li{
                     .project__wrapper{
                         display: flex;
                         flex-wrap: wrap;
-                        // row-gap: 28px;
                         margin: 0 -14px;                        
-                        // display: grid;
-                        // grid-template-columns: repeat(auto-fit, minmax(rem(528), 1fr));
-                        // grid-template-columns: repeat(auto-fit, minmax(rem(345), 1fr));
-                        // grid-template-columns: 1fr 1fr 1fr;
-                        // gap: 28px;
+                        
                         .project__content{
                             display: flex;
                             flex-direction: column;
                             position: relative;
                             min-width: 200px;
                             flex-grow: 1;
+                            width: calc((100% - 56px) / 3);
                             // width: fit-content;
-                            padding: 0 14px;
+                            padding: 0 14px 28px 14px;
                             img{
                                 // padding: 0 0 prc(352, 528) 0;
                                 // width: 528px;
@@ -211,12 +212,11 @@ ul, li{
                     }
                     .project__more-projects{
                         display: flex;
-                        margin-top: 28px;
                         .more-projects-btn{                            
                             @include btn_container;
-                            .more-projects-btn-text{
-                                @include btn_content;
-                            }
+                        }
+                        .more-projects-btn-text{
+                            @include btn_content;
                         }
                     }
                 }
@@ -306,18 +306,13 @@ ul, li{
                                 .contacts__submit{
                                     height: 10%;
                                     display: flex;
-                                    .submit-btn{                                        
-                                        color: $text-color;
+                                    .submit-btn{
+                                        @include btn_container;                        
+                                        @include btn_content;                                        
                                         font-size: $fz18;
-                                        text-align: center;
-                                        border: #000 1px solid;
-                                        font-weight: 700;
-                                        letter-spacing: 0.5em;
                                         width: 175px;
                                         padding: rem(2) 0;
                                         margin: 0 auto auto auto;
-                                        text-transform: uppercase;
-                                        cursor: pointer;
                                     }
                                 }
                             }
