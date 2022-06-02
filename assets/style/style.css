@@ -175,31 +175,32 @@ ul, li {
   display: flex;
   text-decoration: none;
 }
-.page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects .more-projects-btn {
-  margin: 0 auto;
-  padding: 0;
-  cursor: pointer;
+.page__main .page__content .page__container .page__about-us .about-us .about-us__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -14px;
 }
-.page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects .more-projects-btn:visited {
-  background-color: transparent;
+.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 555px;
+  width: calc((100% - 56px) / 3);
+  padding: 0 14px 28px 14px;
 }
-.page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects .more-projects-btn:hover {
-  background-color: #c2c2c2;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects .more-projects-btn:active {
-  background-color: transparent;
-}
-.page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects .more-projects-btn-text {
-  color: #000;
-  font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 0.5em;
-  width: 368px;
-  padding: 0.25rem 2.625rem;
-  border: 1px solid #292929;
-  text-transform: uppercase;
+.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block .emp-block__photo {
+  max-width: 100%;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container {
   display: -webkit-box;
@@ -404,6 +405,34 @@ ul, li {
 
 .section-wrapper {
   padding: 112px 0 0 0;
+}
+
+.more-btn {
+  margin: 0 auto;
+  padding: 0;
+  cursor: pointer;
+}
+.more-btn:visited {
+  background-color: transparent;
+}
+.more-btn:hover {
+  background-color: #c2c2c2;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.more-btn:active {
+  background-color: transparent;
+}
+
+.more-btn-text {
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  width: 368px;
+  padding: 0.25rem 2.625rem;
+  border: 1px solid #292929;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1670px) {
