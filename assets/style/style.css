@@ -86,6 +86,12 @@ ul, li {
   text-transform: uppercase;
   color: #000;
   letter-spacing: 0.2em;
+  border-bottom: transparent solid 1px;
+}
+.page__main .page__header .page__container .page__nav-bar .header__navigation li a:hover {
+  border-bottom: #727272 solid 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .page__main .page__content {
   margin-top: 112px;
@@ -137,6 +143,12 @@ ul, li {
           margin-block-start: 0;
   margin: 8px 0 0 0;
   cursor: pointer;
+  border-bottom: transparent solid 1px;
+}
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__text:hover {
+  border-bottom: #727272 solid 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects {
   display: -webkit-box;

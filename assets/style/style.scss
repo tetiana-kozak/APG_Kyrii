@@ -69,6 +69,13 @@ $text-color: #000;
     border: 1px solid #292929;
     text-transform: uppercase;
 }
+@mixin text_hover {
+    border-bottom: transparent solid 1px;
+    &:hover{
+    border-bottom: #727272 solid 1px;
+    transition: all .5s ease;
+    }
+}
 
 
 
@@ -157,7 +164,7 @@ ul, li{
                             color: $text-color;
                             letter-spacing: 0.2em;
                             // font-size: rem(16);
-
+                            @include text_hover;
                         }
                     }
                 }
@@ -209,12 +216,8 @@ ul, li{
                                 text-transform: uppercase;
                                 margin-block-start: 0;
                                 margin: 8px 0 0 0;
-                                // border-bottom: transparent solid 1px;
                                 cursor: pointer;
-                                // &:hover{
-                                //     border-bottom: #727272 solid 1px;
-                                //     transition: all .5s ease;
-                                // }
+                                @include text_hover;                                
                             }
                         }
                         
