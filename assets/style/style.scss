@@ -42,7 +42,7 @@ $text-color: #000;
     // width: 1640px;
     padding: 0 rem(15);
     margin: 0 auto;
-    max-width: rem(1670);
+    max-width: 1670px;
 }
 @mixin section {
     padding: 112px 0 0 0;
@@ -197,18 +197,15 @@ ul, li{
                             flex-grow: 1;
                             width: calc((100% - 56px) / 3);
                             // width: fit-content;
-                            padding: 0 14px 28px 14px;
+                            padding: 0 14px 28px 14px;                                                       
                             .project__photo{
                                 // padding: 0 0 prc(352, 528) 0;
                                 // width: 528px;
                                 max-width: 100%;
                                 cursor: pointer;
-                                
-                            }
-                            // .project__photo-hover{
-                            //     max-width: 100%;
-                            //     cursor: pointer;
-                            // }
+                                    
+                            }                                
+                            
                             .project__text{
                                 font-size: $fz12;
                                 font-weight: 300;
@@ -394,22 +391,26 @@ ul, li{
 
 
 
-// // Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) {
-//     ...
-// }
 
-// // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) {
-//     ...
-// }
 
-// Large devices (desktops, 992px and up)
-@media (max-width: 992px) {
+@media (max-width: 1670px) {
+    .page__container {
+      max-width: 1200px !important;
+    }
+}
+  @media (max-width: 1200px) {
+    .page__container {
+      max-width: 970px !important;
+    }
+  }
+  @media (max-width: 992px) {
+    .page__container {
+      max-width: 780px !important;
+    }
     .header__navigation{
         display: none !important;
     }
-    
+        
     .contacts__what-we-do{
         display: none !important;
     }
@@ -421,14 +422,17 @@ ul, li{
         padding: rem(4) rem(12) !important;
         width: fit-content !important;
     }
-}
-
-// // X-Large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) {
-//     ...
-// }
-
-// // XX-Large devices (larger desktops, 1400px and up)
-// @media (min-width: 1400px) {
-//     ...
-// }
+  }
+  @media (max-width: 768px) {
+    // .page__container {
+    // //   max-width: none !important;
+    // }
+    .contacts__place-a-meeting{
+        width: 100% !important;
+    }
+  }
+//   @media (max-width: 600px) {
+//     .page__container {
+//     //   max-width: none !important;
+//     }
+//   }

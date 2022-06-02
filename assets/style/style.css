@@ -36,7 +36,7 @@ ul, li {
 .page__main .page__header .page__container {
   padding: 0 0.9375rem;
   margin: 0 auto;
-  max-width: 104.375rem;
+  max-width: 1670px;
 }
 .page__main .page__header .page__container .page__nav-bar {
   display: -webkit-box;
@@ -99,7 +99,7 @@ ul, li {
 .page__main .page__content .page__container {
   padding: 0 0.9375rem;
   margin: 0 auto;
-  max-width: 104.375rem;
+  max-width: 1670px;
 }
 .page__main .page__content .page__container .page__slider {
   height: calc(100vh - 112px);
@@ -312,7 +312,7 @@ ul, li {
 .page__footer .page__container {
   padding: 0 0.9375rem;
   margin: 0 auto;
-  max-width: 104.375rem;
+  max-width: 1670px;
 }
 .page__footer .page__container .footer__contact-info {
   display: -webkit-box;
@@ -355,7 +355,21 @@ ul, li {
   padding: 112px 0 0 0;
 }
 
+@media (max-width: 1670px) {
+  .page__container {
+    max-width: 1200px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .page__container {
+    max-width: 970px !important;
+  }
+}
 @media (max-width: 992px) {
+  .page__container {
+    max-width: 780px !important;
+  }
+
   .header__navigation {
     display: none !important;
   }
@@ -374,5 +388,10 @@ ul, li {
     width: -webkit-fit-content !important;
     width: -moz-fit-content !important;
     width: fit-content !important;
+  }
+}
+@media (max-width: 768px) {
+  .contacts__place-a-meeting {
+    width: 100% !important;
   }
 }
