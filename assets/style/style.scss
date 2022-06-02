@@ -179,8 +179,12 @@ ul, li{
                             letter-spacing: 0.2em;
                             // font-size: rem(16);
                             @include text_hover;
+                            img{
+                                height: 24px;
+                            }
                         }
                     }
+                    
                 }
             }
         }
