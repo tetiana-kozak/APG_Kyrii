@@ -186,32 +186,42 @@ ul, li{
                             display: flex;
                             flex-direction: column;
                             position: relative;
-                            min-width: 200px;
+                            min-width: 332px;
                             flex-grow: 1;
                             width: calc((100% - 56px) / 3);
                             // width: fit-content;
                             padding: 0 14px 28px 14px;
-                            img{
+                            .project__photo{
                                 // padding: 0 0 prc(352, 528) 0;
                                 // width: 528px;
                                 max-width: 100%;
                                 cursor: pointer;
+                                
                             }
-                            p{
+                            // .project__photo-hover{
+                            //     max-width: 100%;
+                            //     cursor: pointer;
+                            // }
+                            .project__text{
                                 font-size: $fz12;
                                 font-weight: 300;
                                 width: fit-content;
                                 text-transform: uppercase;
                                 margin-block-start: 0;
                                 margin: 8px 0 0 0;
-                                // margin: 0.666em 0 0 0;
+                                // border-bottom: transparent solid 1px;
                                 cursor: pointer;
+                                // &:hover{
+                                //     border-bottom: #727272 solid 1px;
+                                //     transition: all .5s ease;
+                                // }
                             }
                         }
                         
                     }
                     .project__more-projects{
                         display: flex;
+                        text-decoration: none;
                         .more-projects-btn{                            
                             @include btn_container;
                         }
