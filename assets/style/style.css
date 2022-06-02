@@ -88,10 +88,18 @@ ul, li {
   letter-spacing: 0.2em;
   border-bottom: transparent solid 1px;
 }
+.page__main .page__header .page__container .page__nav-bar .header__navigation li a:visited {
+  background-color: transparent;
+  border-bottom: #727272 solid 1px;
+}
 .page__main .page__header .page__container .page__nav-bar .header__navigation li a:hover {
   border-bottom: #727272 solid 1px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+.page__main .page__header .page__container .page__nav-bar .header__navigation li a:active {
+  background-color: transparent;
+  border-bottom: #727272 solid 1px;
 }
 .page__main .page__content {
   margin-top: 112px;
@@ -145,10 +153,18 @@ ul, li {
   cursor: pointer;
   border-bottom: transparent solid 1px;
 }
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__text:visited {
+  background-color: transparent;
+  border-bottom: #727272 solid 1px;
+}
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__text:hover {
   border-bottom: #727272 solid 1px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__text:active {
+  background-color: transparent;
+  border-bottom: #727272 solid 1px;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects {
   display: -webkit-box;
@@ -161,10 +177,16 @@ ul, li {
   padding: 0;
   cursor: pointer;
 }
+.page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects .more-projects-btn:visited {
+  background-color: transparent;
+}
 .page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects .more-projects-btn:hover {
   background-color: #c2c2c2;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+.page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects .more-projects-btn:active {
+  background-color: transparent;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__more-projects .more-projects-btn-text {
   color: #000;
@@ -303,10 +325,16 @@ ul, li {
   padding: 0.125rem 0;
   margin: 0 auto auto auto;
 }
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn:visited {
+  background-color: transparent;
+}
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn:hover {
   background-color: #c2c2c2;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn:active {
+  background-color: transparent;
 }
 
 .page__footer .page__container {
@@ -329,6 +357,26 @@ ul, li {
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: 0.02em;
+  border-bottom: transparent solid 1px;
+}
+.page__footer .page__container .footer__contact-info .contacts .contacts__details:visited {
+  background-color: transparent;
+  border-bottom: #727272 solid 1px;
+}
+.page__footer .page__container .footer__contact-info .contacts .contacts__details:hover {
+  border-bottom: #727272 solid 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.page__footer .page__container .footer__contact-info .contacts .contacts__details:active {
+  background-color: transparent;
+  border-bottom: #727272 solid 1px;
+}
+.page__footer .page__container .footer__contact-info .contacts .contacts__e-mail {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .page__footer .page__container .footer__contact-info .privacy-policy {
   display: -webkit-box;
