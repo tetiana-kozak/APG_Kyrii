@@ -51,8 +51,8 @@ $text-color: #000;
 
 @mixin btn_container {
     cursor: pointer;
-    width: 368px;
-    padding: rem(4) rem(42);
+    width: 352px;
+    padding: rem(4) rem(26);
     border: 1px solid #292929;
     
     
@@ -214,7 +214,7 @@ ul, li{
                             display: flex;
                             flex-direction: column;
                             position: relative;
-                            min-width: 332px;
+                            min-width: 248px;
                             flex-grow: 1;
                             width: calc((100% - 56px) / 3);
                             // width: fit-content;
@@ -257,7 +257,7 @@ ul, li{
                             flex-direction: column;
                             position: relative;
                             flex-grow: 1;
-                            min-width: 555px;                            
+                            min-width: 248px;                            
                             width: calc((100% - 56px) / 3);
                             padding: 0 14px 28px 14px;
 
@@ -265,12 +265,17 @@ ul, li{
                                 // min-width: 528px;
                                 max-width: 100%;
                             }
+                            
                             .emp-block__name{
-
+                                padding: rem(8) 0 rem(4) 0;
                             }
                             .emp-block__position{
-
+                                font-size: rem(14);
+                                color: #474747;
                             }
+                        }
+                        .emp-block-hiden{
+                            visibility: hidden;
                         }
                     }
                     .about-us__more-btn{

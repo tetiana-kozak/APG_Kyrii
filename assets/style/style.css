@@ -132,7 +132,7 @@ ul, li {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  min-width: 332px;
+  min-width: 248px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -189,12 +189,22 @@ ul, li {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  min-width: 555px;
+  min-width: 248px;
   width: calc((100% - 56px) / 3);
   padding: 0 14px 28px 14px;
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block .emp-block__photo {
   max-width: 100%;
+}
+.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block .emp-block__name {
+  padding: 0.5rem 0 0.25rem 0;
+}
+.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block .emp-block__position {
+  font-size: 0.875rem;
+  color: #474747;
+}
+.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block-hiden {
+  visibility: hidden;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container {
   display: -webkit-box;
@@ -308,8 +318,8 @@ ul, li {
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn {
   cursor: pointer;
-  width: 368px;
-  padding: 0.25rem 2.625rem;
+  width: 352px;
+  padding: 0.25rem 1.625rem;
   border: 1px solid #292929;
   color: #000;
   font-size: 0.875rem;
@@ -413,8 +423,8 @@ ul, li {
 }
 .more-btn .more-section-btn {
   cursor: pointer;
-  width: 368px;
-  padding: 0.25rem 2.625rem;
+  width: 352px;
+  padding: 0.25rem 1.625rem;
   border: 1px solid #292929;
 }
 .more-btn .more-section-btn:visited {
