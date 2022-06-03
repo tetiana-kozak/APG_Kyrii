@@ -24,6 +24,16 @@ ul, li {
   text-decoration: none;
 }
 
+html::-moz-selection, body::-moz-selection, div::-moz-selection, span::-moz-selection, object::-moz-selection, iframe::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, blockquote::-moz-selection, pre::-moz-selection, abbr::-moz-selection, address::-moz-selection, cite::-moz-selection, code::-moz-selection, del::-moz-selection, dfn::-moz-selection, em::-moz-selection, img::-moz-selection, ins::-moz-selection, kbd::-moz-selection, q::-moz-selection, samp::-moz-selection, small::-moz-selection, strong::-moz-selection, sub::-moz-selection, sup::-moz-selection, var::-moz-selection, b::-moz-selection, i::-moz-selection, dl::-moz-selection, dt::-moz-selection, dd::-moz-selection, ol::-moz-selection, ul::-moz-selection, li::-moz-selection, fieldset::-moz-selection, form::-moz-selection, label::-moz-selection, legend::-moz-selection, table::-moz-selection, caption::-moz-selection, tbody::-moz-selection, tfoot::-moz-selection, thead::-moz-selection, tr::-moz-selection, th::-moz-selection, td::-moz-selection, article::-moz-selection, aside::-moz-selection, canvas::-moz-selection, details::-moz-selection, figcaption::-moz-selection, figure::-moz-selection, footer::-moz-selection, header::-moz-selection, hgroup::-moz-selection, menu::-moz-selection, nav::-moz-selection, section::-moz-selection, summary::-moz-selection, time::-moz-selection, mark::-moz-selection, audio::-moz-selection, video::-moz-selection, a::-moz-selection, button::-moz-selection, br::-moz-selection {
+  color: #000;
+  background: rgb(201, 201, 201);
+}
+
+html::selection, body::selection, div::selection, span::selection, object::selection, iframe::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, blockquote::selection, pre::selection, abbr::selection, address::selection, cite::selection, code::selection, del::selection, dfn::selection, em::selection, img::selection, ins::selection, kbd::selection, q::selection, samp::selection, small::selection, strong::selection, sub::selection, sup::selection, var::selection, b::selection, i::selection, dl::selection, dt::selection, dd::selection, ol::selection, ul::selection, li::selection, fieldset::selection, form::selection, label::selection, legend::selection, table::selection, caption::selection, tbody::selection, tfoot::selection, thead::selection, tr::selection, th::selection, td::selection, article::selection, aside::selection, canvas::selection, details::selection, figcaption::selection, figure::selection, footer::selection, header::selection, hgroup::selection, menu::selection, nav::selection, section::selection, summary::selection, time::selection, mark::selection, audio::selection, video::selection, a::selection, button::selection, br::selection {
+  color: #000;
+  background: rgb(201, 201, 201);
+}
+
 .page__main .page__header {
   height: 112px;
   width: 100%;
@@ -235,13 +245,13 @@ ul, li {
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .main-text {
   font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.135em;
   margin-bottom: 0.5rem;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .additional-text {
   font-size: 0.75rem;
   font-weight: 300;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.135em;
   line-height: 1.0625rem;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting {
@@ -319,7 +329,7 @@ ul, li {
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn {
   cursor: pointer;
   width: 352px;
-  padding: 0.25rem 1.625rem;
+  padding: 0.25rem 0.5rem;
   border: 1px solid #292929;
   color: #000;
   font-size: 0.875rem;
@@ -424,7 +434,7 @@ ul, li {
 .more-btn .more-section-btn {
   cursor: pointer;
   width: 352px;
-  padding: 0.25rem 1.625rem;
+  padding: 0.25rem 0.5rem;
   border: 1px solid #292929;
 }
 .more-btn .more-section-btn:visited {

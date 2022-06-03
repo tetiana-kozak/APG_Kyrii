@@ -52,7 +52,7 @@ $text-color: #000;
 @mixin btn_container {
     cursor: pointer;
     width: 352px;
-    padding: rem(4) rem(26);
+    padding: rem(4) rem(8);
     border: 1px solid #292929;
     
     
@@ -93,11 +93,18 @@ $text-color: #000;
     }
 }
 
+@mixin text_selection{
+    &::selection {
+        color: $text-color;
+        background: rgb(201, 201, 201);
+    }
+} 
+
 
 
 
             // General reset settings
-            * {
+* {
     box-sizing: border-box;
     // font-size: 16px;
     font-weight: 400; 
@@ -113,6 +120,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: $text-color;
     background-color: $bg-color;
+    
 }
 
 ul, li{
@@ -122,6 +130,11 @@ ul, li{
     color: $text-color;
     text-decoration: none;
 }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, a, button, br{
+    @include text_selection;
+}
+
 
 
  
@@ -297,17 +310,18 @@ ul, li{
                             border-left: 1px #000 solid;
                             .contacts__what-we-do-text{
                                 margin-left: rem(56);
+                                
                                 .main-text{
                                     font-size: $fz20;
                                     font-weight: 700;
-                                    letter-spacing: 0.2em;
+                                    letter-spacing: 0.135em;
                                     margin-bottom: rem(8);
                                 }
                                 .additional-text{
                                     font-size: $fz12;
                                     font-weight: 300;
-                                    letter-spacing: 0.2em;
-                                    line-height: rem(17);
+                                    letter-spacing: 0.135em;
+                                    line-height: rem(17);                                                                       
                                 }
                             }
                         }
@@ -489,6 +503,9 @@ ul, li{
 @media (max-width: 768px) {
     // .page__container {
         // //   max-width: none !important;
+        // }
+        // .page__container{
+        //     padding: 0 !important;
         // }
         .contacts__place-a-meeting{
             width: 100% !important;
