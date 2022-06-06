@@ -55,12 +55,16 @@ html::selection, body::selection, div::selection, span::selection, object::selec
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 32px 0;
 }
 .page__main .page__header .page__container .page__nav-bar .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 20;
 }
 .page__main .page__header .page__container .page__nav-bar .header__logo .header_logo-pic {
   height: 48px;
@@ -80,38 +84,17 @@ html::selection, body::selection, div::selection, span::selection, object::selec
   letter-spacing: 0.2em;
   color: #000;
 }
-.page__main .page__header .page__container .page__nav-bar .header__navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.page__main .page__header .page__container .page__nav-bar .menu .menu__icon {
+  display: none;
 }
-.page__main .page__header .page__container .page__nav-bar .header__navigation li {
-  padding: 0 0 0 40px;
-}
-.page__main .page__header .page__container .page__nav-bar .header__navigation li a {
+.page__main .page__header .page__container .page__nav-bar .menu .menu__list li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
   letter-spacing: 0.2em;
-  border-bottom: transparent solid 1px;
+  height: 24px;
 }
-.page__main .page__header .page__container .page__nav-bar .header__navigation li a:visited {
-  background-color: transparent;
-  border-bottom: #727272 solid 1px;
-}
-.page__main .page__header .page__container .page__nav-bar .header__navigation li a:hover {
-  border-bottom: #727272 solid 1px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.page__main .page__header .page__container .page__nav-bar .header__navigation li a:active {
-  background-color: transparent;
-  border-bottom: #727272 solid 1px;
-}
-.page__main .page__header .page__container .page__nav-bar .header__navigation li svg {
+.page__main .page__header .page__container .page__nav-bar .menu .menu__list li svg {
   height: 24px;
 }
 .page__main .page__content {
@@ -503,6 +486,85 @@ html::selection, body::selection, div::selection, span::selection, object::selec
     display: none !important;
   }
 
+  .menu__icon {
+    z-index: 10 !important;
+    display: block !important;
+    position: relative !important;
+    height: 30px !important;
+    width: 42px !important;
+    cursor: pointer !important;
+  }
+
+  .menu__icon span,
+.menu__icon::before,
+.menu__icon::after {
+    left: 0 !important;
+    position: absolute !important;
+    height: 10% !important;
+    width: 100% !important;
+    -webkit-transition: all 0.3s ease 0s !important;
+    transition: all 0.3s ease 0s !important;
+    background-color: #000 !important;
+  }
+
+  .menu__icon::before,
+.menu__icon::after {
+    content: "" !important;
+  }
+
+  .menu__icon::before {
+    top: 0 !important;
+  }
+
+  .menu__icon::after {
+    bottom: 0 !important;
+  }
+
+  .menu__icon span {
+    top: 50% !important;
+    -webkit-transform: scale(1) translate(0px, -50%) !important;
+            transform: scale(1) translate(0px, -50%) !important;
+  }
+
+  .menu__body {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.9);
+    padding: 112px 48px 48px 48px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+  }
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 112px;
+    background-color: #F2F2F2;
+  }
+  .menu__body .menu__list {
+    margin: 24px 0 0 0;
+  }
+  .menu__body .menu__list li {
+    margin: 0 0 32px 0;
+    text-align: center;
+  }
+  .menu__body .menu__list li a {
+    font-size: 1.875rem;
+  }
+  .menu__body .menu__list li svg {
+    height: 24px;
+  }
+
+  .menu__body._active {
+    right: 0;
+  }
+
   .contacts__what-we-do {
     display: none !important;
   }
@@ -517,6 +579,35 @@ html::selection, body::selection, div::selection, span::selection, object::selec
     width: -webkit-fit-content !important;
     width: -moz-fit-content !important;
     width: fit-content !important;
+  }
+}
+@media (min-width: 992px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .menu__list li {
+    padding: 0 0 0 40px;
+  }
+  .menu__list li a {
+    border-bottom: transparent solid 1px;
+  }
+  .menu__list li a:visited {
+    background-color: transparent;
+    border-bottom: #727272 solid 1px;
+  }
+  .menu__list li a:hover {
+    border-bottom: #727272 solid 1px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .menu__list li a:active {
+    background-color: transparent;
+    border-bottom: #727272 solid 1px;
   }
 }
 @media (max-width: 768px) {

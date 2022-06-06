@@ -176,9 +176,11 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
             .page__nav-bar{
                 display: flex;
                 justify-content: space-between;
+                align-items: flex-end;
                 padding: 32px 0;
                 .header__logo{
                     display: flex;
+                    z-index: 20;
                     .header_logo-pic{
                         height: 48px;                        
                         img{                            
@@ -199,23 +201,32 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
                         }
                     }
                 }
-                .header__navigation{
-                    display: flex;
-                    align-items: flex-end;
-                    li{
-                        padding: 0 0 0 40px;
-                        a{
-                            text-decoration: none;
-                            text-transform: uppercase;
-                            color: $text-color;
-                            letter-spacing: 0.2em;
-                            // font-size: rem(16);
-                            @include text_hover;
+                .menu{
+                    // display: flex;
+                    
+                    .menu__icon{
+                        display: none;
+                    }                    
+                        
+                    .menu__list{
+                        
+                        li{
+                            
+                            a{
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                color: $text-color;
+                                letter-spacing: 0.2em;
+                                height: 24px;
+                                // font-size: rem(16);
+                                
+                            }
+    
+                            svg{
+                                height: 24px;
+                            }
                         }
-
-                        svg{
-                            height: 24px;
-                        }
+                        
                     }
                     
                 }
@@ -536,19 +547,111 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     }
     
 }
-  @media (max-width: 1200px) {
+
+@media (max-width: 1200px) {
     .page__container {
       max-width: 970px !important;
     }
     
-  }
-  @media (max-width: 992px) {
+}
+
+@media (max-width: 992px) {
     .page__container {
       max-width: 780px !important;
     }
     .header__navigation{
         display: none !important;
     }
+
+    .menu__icon{
+        z-index: 10 !important;
+        display: block !important;
+        position: relative !important;
+        height: 30px !important;
+        width: 42px !important;
+        cursor: pointer !important;
+
+    }
+    .menu__icon span,
+    .menu__icon::before, 
+    .menu__icon::after {
+        left: 0 !important;
+        position: absolute !important;
+        height: 10% !important;
+        width: 100% !important;
+        transition: all 0.3s ease 0s !important;
+        background-color: #000 !important;
+    }
+
+    .menu__icon::before, 
+    .menu__icon::after {
+        content: "" !important;
+        
+    }
+    .menu__icon::before{
+        top: 0 !important;
+    }
+    
+    .menu__icon::after {
+        bottom: 0 !important;
+    }
+    
+    .menu__icon span{
+               
+        top: 50% !important;
+        transform: scale(1) translate(0px, -50%) !important;
+        
+    }
+
+    .menu__body{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(242, 242, 242, .9);
+        padding: 112px 48px 48px 48px;
+        transition: all .3s ease 0s;
+        overflow: auto;
+
+        
+        
+        &::before{
+            content: "";
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 112px;
+            background-color: $bg-color;
+        }
+
+        .menu__list{
+            margin: 24px 0 0 0; 
+            li{
+                margin: 0 0 32px 0;
+                text-align: center;
+
+                
+                a{
+                    font-size: rem(30);
+                    
+                }
+
+                svg{
+                    height: 24px;
+                }
+            }
+            
+        }
+    }
+
+    .menu__body._active{
+        right: 0;
+    }
+
+
+
         
     .contacts__what-we-do{
         display: none !important;
@@ -562,24 +665,35 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
         width: fit-content !important;
     }
 }
+
+@media (min-width: 992px){
+    .menu__list{
+        display: flex ;
+        align-items: flex-end;
+        li{
+            padding: 0 0 0 40px;
+
+            a{
+                @include text_hover;
+            }
+        }
+    } 
+}
+
 @media (max-width: 768px) {
-    // .page__container {
-        // //   max-width: none !important;
-        // }
-        // .page__container{
-        //     padding: 0 !important;
-        // }
-        .contacts__place-a-meeting{
-            width: 100% !important;
-        }
-        .contacts__tel {
-            pointer-events: visible !important;
-        }
-        .contacts__e-mail{
-            pointer-events: visible !important;
-        }
-        
-  }
+
+    .contacts__place-a-meeting{
+        width: 100% !important;
+    }
+    .contacts__tel {
+        pointer-events: visible !important;
+    }
+    .contacts__e-mail{
+        pointer-events: visible !important;
+    }
+       
+}
+
   @media (max-width: 491px) {
     .emp-block-hiden{
         display: none !important;
