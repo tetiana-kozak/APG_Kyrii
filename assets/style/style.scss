@@ -211,9 +211,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
                             letter-spacing: 0.2em;
                             // font-size: rem(16);
                             @include text_hover;
-                            img{
-                                height: 24px;
-                            }
+                        }
+
+                        svg{
+                            height: 24px;
                         }
                     }
                     
