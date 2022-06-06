@@ -49,8 +49,33 @@ $text-color: #000;
 }
 
 
-@mixin btn_container {
-    cursor: pointer;
+// @mixin btn_container {
+//     // cursor: pointer;
+//     width: 352px;
+//     padding: rem(4) rem(8);
+//     border: 1px solid #292929;
+    
+    
+//     &:visited{
+//         background-color: transparent;
+//     }
+//     &:hover{
+//         background-color: #c2c2c2;
+//         transition: all .5s ease;
+//     }
+//     &:active{
+//         background-color: transparent;
+//     }
+// }
+
+@mixin btn_text{
+    color: $text-color;
+    font-size: $fz14;
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    
+    text-transform: uppercase;
+
     width: 352px;
     padding: rem(4) rem(8);
     border: 1px solid #292929;
@@ -66,15 +91,6 @@ $text-color: #000;
     &:active{
         background-color: transparent;
     }
-}
-
-@mixin btn_text{
-    color: $text-color;
-    font-size: $fz14;
-    font-weight: 700;
-    letter-spacing: 0.5em;
-    
-    text-transform: uppercase;
 }
 
 @mixin text_hover {
@@ -378,12 +394,12 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
                                     height: 10%;
                                     display: flex;
                                     .submit-btn{
-                                        @include btn_container;                        
                                         @include btn_text;                                        
                                         font-size: $fz18;
                                         width: 175px;
                                         padding: rem(2) 0;
                                         margin: 0 auto auto auto;
+                                        cursor: pointer;
                                     }
                                 }
                             }
@@ -455,14 +471,14 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 .more-btn{                            
     display: flex;
-    justify-content: center;
-    .more-section-btn{
-        @include btn_container;
-        .more-btn-text{
-            @include btn_text;
-            text-decoration: none;
-        }
+    justify-content: center;    
+    // @include btn_container;
+    .more-btn-text{
+        @include btn_text;
+        text-decoration: none;
+        text-align: center;
     }
+    
 }
 
 

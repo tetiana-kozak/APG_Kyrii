@@ -327,19 +327,19 @@ html::selection, body::selection, div::selection, span::selection, object::selec
   display: flex;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn {
-  cursor: pointer;
-  width: 352px;
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #292929;
   color: #000;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.5em;
   text-transform: uppercase;
+  width: 352px;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #292929;
   font-size: 1.125rem;
   width: 175px;
   padding: 0.125rem 0;
   margin: 0 auto auto auto;
+  cursor: pointer;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn:visited {
   background-color: transparent;
@@ -431,30 +431,28 @@ html::selection, body::selection, div::selection, span::selection, object::selec
       -ms-flex-pack: center;
           justify-content: center;
 }
-.more-btn .more-section-btn {
-  cursor: pointer;
-  width: 352px;
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #292929;
-}
-.more-btn .more-section-btn:visited {
-  background-color: transparent;
-}
-.more-btn .more-section-btn:hover {
-  background-color: #c2c2c2;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.more-btn .more-section-btn:active {
-  background-color: transparent;
-}
-.more-btn .more-section-btn .more-btn-text {
+.more-btn .more-btn-text {
   color: #000;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.5em;
   text-transform: uppercase;
+  width: 352px;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #292929;
   text-decoration: none;
+  text-align: center;
+}
+.more-btn .more-btn-text:visited {
+  background-color: transparent;
+}
+.more-btn .more-btn-text:hover {
+  background-color: #c2c2c2;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.more-btn .more-btn-text:active {
+  background-color: transparent;
 }
 
 @media (max-width: 1670px) {
