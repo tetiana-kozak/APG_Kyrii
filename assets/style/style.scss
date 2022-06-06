@@ -281,13 +281,15 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
                             .project__img:hover .project__photo { 
 
-                                opacity:0;                              
+                                opacity:0;
+                                transition: all .5s ease;                              
                               
                             }
                             
                             .project__img:hover .project__photo-hover, .project__img .project__photo-hover:hover {
 
                                 opacity:1;
+                                transition: all .5s ease;
                             }
 
                             .project__content-wrapper{
