@@ -505,3 +505,8 @@ html::selection, body::selection, div::selection, span::selection, object::selec
     pointer-events: visible !important;
   }
 }
+@media (max-width: 491px) {
+  .emp-block-hiden {
+    display: none !important;
+  }
+}

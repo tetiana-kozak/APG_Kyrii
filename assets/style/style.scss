@@ -516,9 +516,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
         .contacts__e-mail{
             pointer-events: visible !important;
         }
+        
   }
-//   @media (max-width: 600px) {
-//     .page__container {
-//     //   max-width: none !important;
-//     }
-//   }
+  @media (max-width: 491px) {
+    .emp-block-hiden{
+        display: none !important;
+    }
+  }
