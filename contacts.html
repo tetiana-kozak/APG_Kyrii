@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/normalize.css">  <!-- add reset style --> 
     <link rel="stylesheet" href="assets/style/style.css">   <!-- main page css -->
-     <link rel="stylesheet" href="assets/style/style_projects.css">  <!-- new css -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Anna Kyrii</title>
     <link rel="icon" type="image/png" href="assets/images/projects/00_general/logo_new.png">
@@ -14,19 +13,19 @@
 </head>
 <body>
     <main class="page__main">
-        <header class="page__header" id="page__header"> 
+        <header class="page__header" >
             <div class="page__container">
                 <div class="page__nav-bar">
                     <div class="header__logo">
                         <a href="index.html" class="header_logo-pic"><img src="assets/images/projects/00_general/logo_black.svg" class="header_logo-pic" alt="Anna Kyrii"></a>
                         <a href="index.html" class="header_name"><h1 class="header_name-text"> Anna Kyrii <br> Architectural <br> Projecting Group</h1></a>
                     </div>
-                    <ul class="header__navigation">
+                    <ul class="header__navigation" >
                         <li> <a href="projects.html" > Projects </a> </li>
-                        <li> <a href="#"> About us </a> </li>
-                        <li> <a href="contacts.html"> Contacts </a> </li>
+                        <li> <a href="about_us.html"> About us </a> </li>
+                        <li> <a href="#"> Contacts </a> </li>
                         <li> <a href="#"> Ua </a> </li>
-                        <li> <a href="https://www.facebook.com/kyriigroup/" target="_blank"><img src="assets/images/projects/00_general/fb-icon.svg"></a></li>
+                        <li> <a href="https://www.facebook.com/kyriigroup/" target="_blank"><img src="assets/images/projects/00_general/fb-icon.svg"></a></li>                        
                     </ul>
                 </div>
             </div>
@@ -34,24 +33,15 @@
 
         <section class="page__content">
             <div class="page__container">
-                
-                <div class="page__projects" id="page__projects">
-                    <div class="section-wrapper" >
-                        <div class="project__wrapper">
-                            
-                        </div>                        
-                    </div>
-                </div>
-                
-                <!-- <about-us></about-us> -->
 
                 <div include-html="HTML-snippets/contact-form.html"></div>
-                <div include-html="HTML-snippets/team.html"></div>                    
                 
-            </div> 
+            </div>
         </section>
-    </main>
 
+        <div include-html="HTML-snippets/footer-map.html"></div> 
+        
+    </main>
 
     <script>includeHTML()</script> <!-- Import parts of page HTML -->
 </body>
