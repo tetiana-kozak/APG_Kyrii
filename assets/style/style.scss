@@ -95,18 +95,14 @@ $text-color: #000;
 
 @mixin text_hover {
     border-bottom: transparent solid 1px;
-    &:visited{
-        background-color: transparent;
-        border-bottom: #727272 solid 1px;
-    }
+
+    
     &:hover{
         border-bottom: #727272 solid 1px;
         transition: all .5s ease;
+        
     }
-    &:active{
-        background-color: transparent;
-        border-bottom: #727272 solid 1px;
-    }
+   
 }
 
 @mixin text_selection{
@@ -157,6 +153,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 
             // New style code
+
+html{
+    scroll-behavior: smooth;
+}
 
 body._lock{
     overflow: hidden;
@@ -237,7 +237,7 @@ body._lock{
     // main content styles
 
     .page__content{
-        margin-top: 112px;
+        padding-top: 112px;
         .page__container{
             @include container;
             .page__slider{
@@ -559,25 +559,29 @@ body._lock{
     .page__container {
       max-width: 780px !important;
     }
-    .header__navigation{
-        display: none !important;
+    .header__menu{
+        height: 48px;
+        display: flex !important;
+        align-items: center !important;
     }
+
+    
 
     .menu__icon{
         z-index: 10 !important;
         display: block !important;
         position: relative !important;
-        height: 30px !important;
-        width: 42px !important;
+        height: 32px !important;
+        width: 42px !important;        
         cursor: pointer !important;
-
+        
     }
     .menu__icon span,
     .menu__icon::before, 
     .menu__icon::after {
         left: 0 !important;
         position: absolute !important;
-        height: 10% !important;
+        height: 3px !important;
         width: 100% !important;
         transition: all 0.3s ease 0s !important;
         background-color: #000 !important;
@@ -589,11 +593,13 @@ body._lock{
         
     }
     .menu__icon::before{
-        top: 0 !important;
+        top: 0px !important;
+
+        
     }
     
     .menu__icon::after {
-        bottom: 0 !important;
+        bottom: 0px !important;
     }
     
     .menu__icon span{
@@ -698,6 +704,10 @@ body._lock{
             }
         }
     } 
+
+    .menu__active{
+        border-bottom: #727272 solid 1px !important;
+    }    
 }
 
 @media (max-width: 768px) {

@@ -30,6 +30,10 @@ html::selection, body::selection, div::selection, span::selection, object::selec
   background: rgb(201, 201, 201);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body._lock {
   overflow: hidden;
 }
@@ -98,7 +102,7 @@ body._lock {
   height: 24px;
 }
 .page__main .page__content {
-  margin-top: 112px;
+  padding-top: 112px;
 }
 .page__main .page__content .page__container {
   padding: 0 0.9375rem;
@@ -178,18 +182,10 @@ body._lock {
   margin-top: 0.875rem;
   border-bottom: transparent solid 1px;
 }
-.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__text:visited {
-  background-color: transparent;
-  border-bottom: #727272 solid 1px;
-}
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__text:hover {
   border-bottom: #727272 solid 1px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__text:active {
-  background-color: transparent;
-  border-bottom: #727272 solid 1px;
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container {
   display: -webkit-box;
@@ -387,18 +383,10 @@ body._lock {
   letter-spacing: 0.02em;
   border-bottom: transparent solid 1px;
 }
-.page__footer .page__container .footer__contact-info .contacts .contacts__details:visited {
-  background-color: transparent;
-  border-bottom: #727272 solid 1px;
-}
 .page__footer .page__container .footer__contact-info .contacts .contacts__details:hover {
   border-bottom: #727272 solid 1px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-.page__footer .page__container .footer__contact-info .contacts .contacts__details:active {
-  background-color: transparent;
-  border-bottom: #727272 solid 1px;
 }
 .page__footer .page__container .footer__contact-info .contacts .contacts__e-mail {
   cursor: pointer;
@@ -482,15 +470,21 @@ body._lock {
     max-width: 780px !important;
   }
 
-  .header__navigation {
-    display: none !important;
+  .header__menu {
+    height: 48px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
 
   .menu__icon {
     z-index: 10 !important;
     display: block !important;
     position: relative !important;
-    height: 30px !important;
+    height: 32px !important;
     width: 42px !important;
     cursor: pointer !important;
   }
@@ -500,7 +494,7 @@ body._lock {
 .menu__icon::after {
     left: 0 !important;
     position: absolute !important;
-    height: 10% !important;
+    height: 3px !important;
     width: 100% !important;
     -webkit-transition: all 0.3s ease 0s !important;
     transition: all 0.3s ease 0s !important;
@@ -513,11 +507,11 @@ body._lock {
   }
 
   .menu__icon::before {
-    top: 0 !important;
+    top: 0px !important;
   }
 
   .menu__icon::after {
-    bottom: 0 !important;
+    bottom: 0px !important;
   }
 
   .menu__icon span {
@@ -611,18 +605,14 @@ body._lock {
   .menu__list li a {
     border-bottom: transparent solid 1px;
   }
-  .menu__list li a:visited {
-    background-color: transparent;
-    border-bottom: #727272 solid 1px;
-  }
   .menu__list li a:hover {
     border-bottom: #727272 solid 1px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  .menu__list li a:active {
-    background-color: transparent;
-    border-bottom: #727272 solid 1px;
+
+  .menu__active {
+    border-bottom: #727272 solid 1px !important;
   }
 }
 @media (max-width: 768px) {

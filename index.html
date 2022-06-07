@@ -14,13 +14,13 @@
     
 </head>
 <body>
-    <main class="page__main">
+    <main class="page__main" id="page__main">
         <header class="page__header" >
             <div class="page__container">
                 <div class="page__nav-bar">
                     <div class="header__logo">
-                        <a href="index.html" class="header_logo-pic"><img src="assets/images/projects/00_general/logo_black.svg" class="header_logo-pic" alt="Anna Kyrii"></a>
-                        <a href="index.html" class="header_name"><h1 class="header_name-text"> Anna Kyrii <br> Architectural <br> Projecting Group</h1></a>
+                        <a data-goto=".page__content" href="#" class="header_logo-pic"><img src="assets/images/projects/00_general/logo_black.svg" class="header_logo-pic" alt="Anna Kyrii"></a>
+                        <a data-goto=".page__content" href="#" class="header_name"><h1 class="header_name-text"> Anna Kyrii <br> Architectural <br> Projecting Group</h1></a>
                     </div>
 
                     <div class="header__menu menu">
@@ -48,13 +48,13 @@
             </div>
         </header>
 
-        <section class="page__content">
+        <section class="page__content" id="page__content">
             <div class="page__container">
-                <div class="page__slider">
+                <div class="page__slider" id="page__slider">
 
                 </div>
 
-                <div class="page__projects" id="page__projects">
+                <div class="page__projects scroll-section" id="page__projects">
                     <div class="section-wrapper" >
                         <div class="project__wrapper">
                             <div class="project__nszu project__content">
@@ -124,7 +124,7 @@
                     </div>
                 </div>
 
-                <div class="page__about-us" id="page__about-us">
+                <div class="page__about-us scroll-section" id="page__about-us">
                     <div class="section-wrapper about-us">
 
                         <div include-html="HTML-snippets/team.html"></div> 

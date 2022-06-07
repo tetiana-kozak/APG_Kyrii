@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/normalize.css">  <!-- add reset style --> 
     <link rel="stylesheet" href="assets/style/style.css">   <!-- main page css -->
+    <link rel="stylesheet" href="assets/style/style_projects.css">   <!-- new css -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Anna Kyrii</title>
     <link rel="icon" type="image/png" href="assets/images/projects/00_general/logo_new.png">
@@ -20,18 +21,27 @@
                         <a href="index.html" class="header_logo-pic"><img src="assets/images/projects/00_general/logo_black.svg" class="header_logo-pic" alt="Anna Kyrii"></a>
                         <a href="index.html" class="header_name"><h1 class="header_name-text"> Anna Kyrii <br> Architectural <br> Projecting Group</h1></a>
                     </div>
-                    <ul class="header__navigation" >
-                        <li> <a href="projects.html" > Projects </a> </li>
-                        <li> <a href="about_us.html"> About us </a> </li>
-                        <li> <a href="#"> Contacts </a> </li>
-                        <li> <a href="#"> Ua </a> </li>
-                        <li> <a href="https://www.facebook.com/kyriigroup/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
-                                </svg>
-                            </a> 
-                        </li>                        
-                    </ul>
+                    <div class="header__menu menu">
+                        <div class="menu__icon">
+                            <span>
+                                
+                            </span>
+                        </div>
+                        <nav class="menu__body">
+                            <ul class="menu__list" >
+                                <li> <a href="projects.html"> Projects </a> </li>
+                                <li> <a href="about_us.html"> About us </a> </li>
+                                <li> <a href="contacts.html" class="projects-link"> Contacts </a> </li>
+                                <li> <a href="#"> Ua </a> </li>
+                                <li> <a href="https://www.facebook.com/kyriigroup/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                            <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                                        </svg>
+                                    </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div> 
                 </div>
             </div>
         </header>
@@ -49,5 +59,6 @@
     </main>
 
     <script>includeHTML()</script> <!-- Import parts of page HTML -->
+    <script src="assets/js/burger.js" ></script> <!-- Import Burger menu -->
 </body>
 </html>
