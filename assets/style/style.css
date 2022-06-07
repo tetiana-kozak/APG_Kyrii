@@ -34,6 +34,10 @@ html::selection, body::selection, div::selection, span::selection, object::selec
   background: rgb(201, 201, 201);
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 .page__main .page__header {
   height: 112px;
   width: 100%;
@@ -524,6 +528,21 @@ html::selection, body::selection, div::selection, span::selection, object::selec
     top: 50% !important;
     -webkit-transform: scale(1) translate(0px, -50%) !important;
             transform: scale(1) translate(0px, -50%) !important;
+  }
+
+  .menu__icon._active span {
+    -webkit-transform: scale(0) translate(0px, -50%) !important;
+            transform: scale(0) translate(0px, -50%) !important;
+  }
+  .menu__icon._active::before {
+    top: 50% !important;
+    -webkit-transform: rotate(-45deg) translate(0px, -50%);
+            transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .menu__icon._active::after {
+    bottom: 50% !important;
+    -webkit-transform: rotate(45deg) translate(0px, 50%);
+            transform: rotate(45deg) translate(0px, 50%);
   }
 
   .menu__body {

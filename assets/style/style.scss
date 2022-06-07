@@ -161,6 +161,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
             // New style code
 
+body._lock{
+    overflow: hidden;
+}
 
 .page__main{
     .page__header{
@@ -602,6 +605,26 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
         transform: scale(1) translate(0px, -50%) !important;
         
     }
+
+    .menu__icon._active{
+        span{
+            transform: scale(0) translate(0px, -50%) !important;
+        }
+
+        &::before{
+            top: 50% !important;
+            transform: rotate(-45deg) translate(0px, -50%);
+        }
+
+        &::after{
+            bottom: 50% !important;
+            transform: rotate(45deg) translate(0px, 50%);
+        }
+
+    }
+
+
+
 
     .menu__body{
         position: fixed;
