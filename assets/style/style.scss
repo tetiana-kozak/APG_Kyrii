@@ -206,8 +206,8 @@ body._lock{
                     
                     .menu__icon{
                         display: none;
-                    }                    
-                        
+                    }
+                    
                     .menu__list{
                         
                         li{
@@ -221,12 +221,15 @@ body._lock{
                                 // font-size: rem(16);
                                 
                             }
-    
+                            
                             svg{
                                 height: 24px;
                             }
                         }
                         
+                        .menu__active{
+                            border-bottom: #727272 solid 1px;
+                        }                    
                     }
                     
                 }
@@ -705,9 +708,7 @@ body._lock{
         }
     } 
 
-    .menu__active{
-        border-bottom: #727272 solid 1px !important;
-    }    
+        
 }
 
 @media (max-width: 768px) {

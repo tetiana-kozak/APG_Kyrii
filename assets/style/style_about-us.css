@@ -1,0 +1,69 @@
+.achievements {
+  padding-top: 112px;
+}
+
+.achievements__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.achievements__wrapper .achievements__block {
+  padding: 0 52px 0 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.achievements__wrapper .achievements__block .number {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0.23em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.achievements__wrapper .achievements__block .text {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.info__paragraphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.info__paragraphs .par-group {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.info__paragraphs .par-group:nth-child(even) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.info__paragraphs .par-group .par {
+  width: 48%;
+  line-height: 28px;
+  font-size: 18px;
+}
+.info__paragraphs .par-group .par span {
+  font-weight: 700;
+}

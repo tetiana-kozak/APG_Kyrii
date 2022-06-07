@@ -101,6 +101,9 @@ body._lock {
 .page__main .page__header .page__container .page__nav-bar .menu .menu__list li svg {
   height: 24px;
 }
+.page__main .page__header .page__container .page__nav-bar .menu .menu__list .menu__active {
+  border-bottom: #727272 solid 1px;
+}
 .page__main .page__content {
   padding-top: 112px;
 }
@@ -609,10 +612,6 @@ body._lock {
     border-bottom: #727272 solid 1px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-  }
-
-  .menu__active {
-    border-bottom: #727272 solid 1px !important;
   }
 }
 @media (max-width: 768px) {
