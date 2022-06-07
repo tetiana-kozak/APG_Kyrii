@@ -45,7 +45,7 @@ $text-color: #000;
     max-width: 1670px;
 }
 @mixin section {
-    padding: 112px 0 0 0;
+    padding:  0 0 112px 0;
 }
 
 
@@ -126,9 +126,6 @@ $text-color: #000;
     font-weight: 400; 
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
 body{
     padding: 0;
