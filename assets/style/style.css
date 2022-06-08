@@ -189,6 +189,10 @@ body._lock {
   border-bottom: #727272 solid 1px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  cursor: pointer;
+}
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__text:active {
+  border: transparent;
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container {
   display: -webkit-box;
@@ -390,16 +394,20 @@ body._lock {
   border-bottom: #727272 solid 1px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  cursor: pointer;
+}
+.page__footer .page__container .footer__contact-info .contacts .contacts__details:active {
+  border: transparent;
 }
 .page__footer .page__container .footer__contact-info .contacts .contacts__e-mail {
-  cursor: pointer;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  pointer-events: none;
 }
 .page__footer .page__container .footer__contact-info .contacts .contacts__tel {
-  pointer-events: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .page__footer .page__container .footer__contact-info .privacy-policy {
   display: -webkit-box;
@@ -612,19 +620,15 @@ body._lock {
     border-bottom: #727272 solid 1px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .menu__list li a:active {
+    border: transparent;
   }
 }
 @media (max-width: 768px) {
   .contacts__place-a-meeting {
     width: 100% !important;
-  }
-
-  .contacts__tel {
-    pointer-events: visible !important;
-  }
-
-  .contacts__e-mail {
-    pointer-events: visible !important;
   }
 }
 @media (max-width: 491px) {

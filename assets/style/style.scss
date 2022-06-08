@@ -100,7 +100,10 @@ $text-color: #000;
     &:hover{
         border-bottom: #727272 solid 1px;
         transition: all .5s ease;
-        
+        cursor: pointer;       
+    }
+    &:active{
+        border: transparent;
     }
    
 }
@@ -500,12 +503,10 @@ body._lock{
                 .contacts__adress{
                 }
                 .contacts__e-mail{
-                    cursor: pointer;
                     width: fit-content;
-                    pointer-events: none
                 }
                 .contacts__tel{
-                    pointer-events: none
+                    width: fit-content;
                 }
             }
             .privacy-policy{
@@ -717,10 +718,8 @@ body._lock{
         width: 100% !important;
     }
     .contacts__tel {
-        pointer-events: visible !important;
     }
     .contacts__e-mail{
-        pointer-events: visible !important;
     }
        
 }
