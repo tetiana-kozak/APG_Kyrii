@@ -600,6 +600,13 @@ body._lock {
     width: -moz-fit-content !important;
     width: fit-content !important;
   }
+
+  .info__paragraphs .par-group {
+    display: block !important;
+  }
+  .info__paragraphs .par-group .par {
+    width: 100% !important;
+  }
 }
 @media (min-width: 992px) {
   .menu__list {

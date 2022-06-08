@@ -9,9 +9,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .achievements__wrapper .achievements__block {
-  padding: 0 52px 0 52px;
+  padding: 20px 52px 20px 52px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

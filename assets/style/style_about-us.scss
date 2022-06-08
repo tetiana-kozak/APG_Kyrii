@@ -5,9 +5,10 @@
 .achievements__wrapper{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
     .achievements__block{
-        padding: 0 52px 0 52px;
+        padding: 20px 52px 20px 52px;
         display: flex;
         flex-direction: column;
         .number{

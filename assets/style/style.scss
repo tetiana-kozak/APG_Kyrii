@@ -694,6 +694,17 @@ body._lock{
         padding: rem(4) rem(12) !important;
         width: fit-content !important;
     }
+
+    .info__paragraphs{
+        // display: block !important;
+        .par-group{
+            display: block !important;
+            .par{
+                width: 100% !important;
+            } 
+        }
+    }
+    
 }
 
 @media (min-width: 992px){
@@ -707,9 +718,7 @@ body._lock{
                 @include text_hover;
             }
         }
-    } 
-
-        
+    }        
 }
 
 @media (max-width: 768px) {
