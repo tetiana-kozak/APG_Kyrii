@@ -214,19 +214,37 @@ body._lock{
                     .menu__list{
                         
                         li{
-                            
-                            a{
+                            height: 20px;
+                            .mobile{
                                 text-decoration: none;
                                 text-transform: uppercase;
                                 color: $text-color;
                                 letter-spacing: 0.2em;
                                 height: 24px;
-                                // font-size: rem(16);
+                                font-size: rem(15);
                                 
                             }
-                            
-                            svg{
-                                height: 24px;
+                            .menu__icons{
+                                display: flex;
+                                .icon{
+                                    margin-left: 20px;
+                                    &:first-child{
+                                        margin-left: 0;
+                                    }
+                                    svg{
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        .icons-mobile{
+                            display: flex;
+                            height: fit-content;
+                            a{
+                                height: 20px;
+                                svg{
+                                    height: 100%;
+                                }
                             }
                         }
                         
@@ -552,16 +570,16 @@ body._lock{
     
 }
 
+// @media (max-width: 1200px) {
+//     .page__container {
+//       max-width: 970px !important;
+//     }
+    
+// }
+
 @media (max-width: 1200px) {
     .page__container {
       max-width: 970px !important;
-    }
-    
-}
-
-@media (max-width: 992px) {
-    .page__container {
-      max-width: 780px !important;
     }
     .header__menu{
         height: 48px;
@@ -570,7 +588,6 @@ body._lock{
     }
 
     
-
     .menu__icon{
         z-index: 10 !important;
         display: block !important;
@@ -658,21 +675,42 @@ body._lock{
 
         .menu__list{
             margin: 24px 0 0 0; 
+            .mobile{
+                font-size: rem(24) !important;
+            }
             li{
-                margin: 0 0 32px 0;
-                text-align: center;
-
-                
-                a{
-                    font-size: rem(30);
-                    
+                margin: 0 0 54px 0 !important;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                .menu__icons{
+                    height: fit-content;
                 }
+                
+            }
+            a{
+                width: fit-content;
+            }
 
+            
+        }
+        .icons-mobile{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin-top: 100px;
+            height: 30px !important;
+            align-items: center !important;
+            li{
+                margin: 0 !important;
+                height: fit-content;
+            }
+            a{
+                height: 24px !important;
                 svg{
-                    height: 24px;
+                    height: 100% !important;
                 }
             }
-            
         }
     }
 
@@ -707,7 +745,7 @@ body._lock{
     
 }
 
-@media (min-width: 992px){
+@media (min-width: 1200px){
     .menu__list{
         display: flex ;
         align-items: flex-end;
@@ -718,7 +756,8 @@ body._lock{
                 @include text_hover;
             }
         }
-    }        
+    } 
+           
 }
 
 @media (max-width: 768px) {
@@ -726,10 +765,7 @@ body._lock{
     .contacts__place-a-meeting{
         width: 100% !important;
     }
-    .contacts__tel {
-    }
-    .contacts__e-mail{
-    }
+    
        
 }
 
