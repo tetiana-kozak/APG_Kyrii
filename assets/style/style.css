@@ -594,7 +594,7 @@ body._lock {
   .menu__body .menu__list li .menu__icons {
     height: 30px !important;
     position: fixed;
-    bottom: 0px;
+    bottom: 5px;
   }
   .menu__body .menu__list li .menu__icons .icon {
     margin-left: 50px !important;

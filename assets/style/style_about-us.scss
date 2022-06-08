@@ -50,3 +50,53 @@
         }
     }
 }
+
+.awards__content{
+    .awards__title{
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+    .awards__wrapper{
+        
+        .awards__block{
+            border-bottom: 1px solid rgb(131, 131, 131);
+            max-width: 800px;
+            padding: 20px 0 20px 0;
+            p{
+                padding-bottom: 5px;
+            }
+            .awards__name{
+                font-weight: 700;
+                font-size: 18px;
+                
+            }
+        }
+        .__first{
+            padding-top: 0;
+        }
+    }
+}
+
+.footer__icons{
+    display: flex;
+    justify-content: center;
+    .icon{
+        height: 20px;
+        padding: 0 15px;
+        svg{
+            height: 20px;
+        }
+    }
+}
+
+.footer__PP{
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+
+@import "media"
