@@ -450,6 +450,10 @@ body._lock {
   padding: 0 0 112px 0;
 }
 
+.page__footer {
+  padding: 0 !important;
+}
+
 .more-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,7 +598,7 @@ body._lock {
   .menu__body .menu__list li .menu__icons {
     height: 30px !important;
     position: fixed;
-    bottom: 5px;
+    bottom: 15px;
   }
   .menu__body .menu__list li .menu__icons .icon {
     margin-left: 50px !important;

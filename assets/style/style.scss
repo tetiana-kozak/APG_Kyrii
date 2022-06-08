@@ -540,7 +540,13 @@ body._lock{
 
 .section-wrapper{
     @include section;
+    
 }
+
+.page__footer {
+    padding: 0 !important;
+}
+
 
 .more-btn{                            
     display: flex;
