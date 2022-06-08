@@ -242,8 +242,10 @@ body._lock{
                         } 
                         .__hover{
                             @include text_hover; 
-                        }  
-
+                        } 
+                        .projects-link{
+                            border-bottom: #727272 solid 1px;        
+                        }
                         
                         .menu__active{
                             border-bottom: #727272 solid 1px;

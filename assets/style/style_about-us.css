@@ -226,7 +226,7 @@
   .menu__body .menu__list li .menu__icons {
     height: 30px !important;
     position: fixed;
-    bottom: 5px;
+    bottom: 15px;
   }
   .menu__body .menu__list li .menu__icons .icon {
     margin-left: 50px !important;
@@ -277,18 +277,6 @@
   }
   .menu__list li {
     padding: 0 0 0 40px;
-  }
-  .menu__list li a {
-    border-bottom: transparent solid 1px;
-  }
-  .menu__list li a:hover {
-    border-bottom: #727272 solid 1px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    cursor: pointer;
-  }
-  .menu__list li a:active {
-    border: transparent;
   }
 }
 @media (max-width: 768px) {

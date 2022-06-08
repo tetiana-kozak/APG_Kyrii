@@ -129,6 +129,9 @@ body._lock {
 .page__main .page__header .page__container .page__nav-bar .menu .menu__list .__hover:active {
   border: transparent;
 }
+.page__main .page__header .page__container .page__nav-bar .menu .menu__list .projects-link {
+  border-bottom: #727272 solid 1px;
+}
 .page__main .page__header .page__container .page__nav-bar .menu .menu__list .menu__active {
   border-bottom: #727272 solid 1px;
 }
