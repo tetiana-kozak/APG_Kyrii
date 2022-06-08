@@ -117,6 +117,18 @@ body._lock {
 .page__main .page__header .page__container .page__nav-bar .menu .menu__list li .menu__icons .icon svg {
   height: 100%;
 }
+.page__main .page__header .page__container .page__nav-bar .menu .menu__list .__hover {
+  border-bottom: transparent solid 1px;
+}
+.page__main .page__header .page__container .page__nav-bar .menu .menu__list .__hover:hover {
+  border-bottom: #727272 solid 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.page__main .page__header .page__container .page__nav-bar .menu .menu__list .__hover:active {
+  border: transparent;
+}
 .page__main .page__header .page__container .page__nav-bar .menu .menu__list .menu__active {
   border-bottom: #727272 solid 1px;
 }
@@ -649,18 +661,6 @@ body._lock {
   }
   .menu__list li {
     padding: 0 0 0 40px;
-  }
-  .menu__list li a {
-    border-bottom: transparent solid 1px;
-  }
-  .menu__list li a:hover {
-    border-bottom: #727272 solid 1px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    cursor: pointer;
-  }
-  .menu__list li a:active {
-    border: transparent;
   }
 }
 @media (max-width: 768px) {

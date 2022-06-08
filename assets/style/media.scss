@@ -258,10 +258,11 @@ $text-color: #000;
         li{
             padding: 0 0 0 40px;
 
-            a{
-                @include text_hover;
-            }
+            // a{
+            //     @include text_hover;
+            // }
         }
+        
     } 
            
 }

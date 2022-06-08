@@ -239,7 +239,11 @@ body._lock{
                                     }
                                 }
                             }
-                        }                        
+                        } 
+                        .__hover{
+                            @include text_hover; 
+                        }  
+
                         
                         .menu__active{
                             border-bottom: #727272 solid 1px;
