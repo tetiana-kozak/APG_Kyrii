@@ -471,6 +471,9 @@ body._lock{
                                             }
                                             
                                         }
+                                        .input-field._error{
+                                            box-shadow: red 0 0 10px;
+                                        }
                                         .input-error{
                                             font-size: $fz12;
                                             font-weight: 300;

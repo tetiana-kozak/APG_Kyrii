@@ -360,6 +360,10 @@ body._lock {
   border: #000 2px solid;
   border-radius: 5px;
 }
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-field._error {
+  -webkit-box-shadow: red 0 0 10px;
+          box-shadow: red 0 0 10px;
+}
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-error {
   font-size: 0.75rem;
   font-weight: 300;
