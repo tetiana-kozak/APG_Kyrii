@@ -1,5 +1,8 @@
 "use strict"
 
+phoneMask()
+
+
 document.addEventListener('DOMContentLoaded', function(){
     const form = document.getElementById('contacts__form');
     form.addEventListener('submit', formSend);
@@ -31,13 +34,13 @@ document.addEventListener('DOMContentLoaded', function(){
                 error ++;
             } else if (input.classList.contains('_email')) {
                 
-                if (emailTest(input)) {
+                if (!isEmailCorrect(input)) {
                     
                     formAddError(input);
                     error ++;
                 }
             } else if (input.classList.contains('_name')){
-                if(nameTest(input)) {
+                if(!nameTest(input)) {
 
                     formAddError(input);
                     error ++;
@@ -57,12 +60,24 @@ document.addEventListener('DOMContentLoaded', function(){
         input.classList.remove('_error')
     }
 
-    // email test
 
-    function emailTest(input){
-        return /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(input.value);
+    function isEmailCorrect(input){
+        const result = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(input.value);
+        console.log("email", result)
+        return result;
     }
     function nameTest(input){
-        return /^[0-9]+$/.test(input.value);
+        const isAnyNum = /^[0-9]+$/.test(input.value)
+        console.log(isAnyNum)
+        return isAnyNum;
     }
 })
+
+
+
+function phoneMask(){
+    document.getElementById('inp-phone').addEventListener('input', function (e) {
+    var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+    e.target.value = !x[2] ? x[1] : '+(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+});
+}
