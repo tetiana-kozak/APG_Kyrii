@@ -396,7 +396,8 @@ body._lock{
                     .contacts__container{
                         display: flex;
                         justify-content: space-between;
-                        height: 520px;
+                        height: 544px;
+                        padding-top: 5px;
                         .contacts__what-we-do{
                             width: 768px;
                             display: flex;
@@ -424,34 +425,35 @@ body._lock{
                             width: 410px;
                             border: #000 solid 1px;  
                             .contacts__place-a-meeting-container{
-                                width: 80%;
-                                height: 520px;
-                                margin: auto;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                .contacts__cotact-us-title{
-                                    height: 8%;
+                                height: 100%;
+                                .contacts__form{
+                                    height: 100%;
+                                    width: 80%;
+                                    margin: 0 auto;
                                     display: flex;
-                                    .cotact-us-text{
+                                    flex-direction: column;
+                                    justify-content: space-between;
+
+                                    
+
+                                    .contacts__cotact-us-title{
                                         font-size: $fz20;
                                         font-weight: 700;
                                         letter-spacing: 0.2em;
-                                        width: fit-content;
-                                        margin: auto auto 0 auto;
+                                        width: 100%;
                                         text-transform: uppercase;
+                                        text-align: center;
+                                        padding-top: 15px;
+                                        
                                     }
-                                }
-                                .contacts__form{
+                                    
                                     .contacts__input-block{
                                         display: flex;
                                         flex-direction: column;
-                                        justify-content: space-between;
                                         .input-label{
                                             display: block;
-                                            padding: 8px 0 2px 0;
-                                            // font-size: 16px;
-                                            font-weight: 300;
+                                            padding: 0 0 2px 0;
+                                            font-weight: 500;
                                         }
                                         .input-field{
                                             display: block;
@@ -462,35 +464,50 @@ body._lock{
                                             color: $text-color;
                                             background-color: transparent;
                                             border: $text-color 1px solid;
+
+                                            &:focus{
+                                                border: #000 2px solid;
+                                                border-radius: 5px;
+                                            }
+                                            
+                                        }
+                                        .input-error{
+                                            font-size: $fz12;
+                                            font-weight: 300;
+                                            padding: 2px 0 0 0;
+                                            color: #ca0000;
                                         }
                                         textarea{
                                             resize: none;
                                             margin: 0;
                                         }
                                     }
-                                }
-                                .contacts__submit{
-                                    height: 10%;
-                                    display: flex;
-                                    .submit-btn{
+
+                                    .contacts__submit{
                                         @include btn_text;                                        
                                         font-size: $fz18;
                                         width: 175px;
                                         padding: rem(2) 0;
-                                        margin: 0 auto auto auto;
+                                        margin: 0 auto;
                                         cursor: pointer;
                                     }
+                                    .contacts__cotact-us-PP{
+                                        width: 90%;
+                                        font-size: $fz12;
+                                        text-align: center;
+                                        margin: 0 auto 0 auto;
+                                        padding: 5px 0 12px 0;
+                                    }
+                                    
+                                }
+                                .contacts__form * {
+                                    outline: none;
                                 }
                             }
                         }
                     }
                 }
             }
-
-
-
-
-
         }
     }
 }

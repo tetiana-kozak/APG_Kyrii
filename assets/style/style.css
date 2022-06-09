@@ -269,7 +269,8 @@ body._lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 520px;
+  height: 544px;
+  padding-top: 5px;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do {
   width: 768px;
@@ -305,9 +306,12 @@ body._lock {
   border: #000 solid 1px;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container {
+  height: 100%;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form {
+  height: 100%;
   width: 80%;
-  height: 520px;
-  margin: auto;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,21 +323,14 @@ body._lock {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__cotact-us-title {
-  height: 8%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__cotact-us-title .cotact-us-text {
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__cotact-us-title {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.2em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: auto auto 0 auto;
+  width: 100%;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block {
   display: -webkit-box;
@@ -343,14 +340,11 @@ body._lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-label {
   display: block;
-  padding: 8px 0 2px 0;
-  font-weight: 300;
+  padding: 0 0 2px 0;
+  font-weight: 500;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-field {
   display: block;
@@ -362,17 +356,21 @@ body._lock {
   background-color: transparent;
   border: #000 1px solid;
 }
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-field:focus {
+  border: #000 2px solid;
+  border-radius: 5px;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-error {
+  font-size: 0.75rem;
+  font-weight: 300;
+  padding: 2px 0 0 0;
+  color: #ca0000;
+}
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block textarea {
   resize: none;
   margin: 0;
 }
-.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit {
-  height: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn {
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__submit {
   color: #000;
   font-size: 0.875rem;
   font-weight: 700;
@@ -384,19 +382,29 @@ body._lock {
   font-size: 1.125rem;
   width: 175px;
   padding: 0.125rem 0;
-  margin: 0 auto auto auto;
+  margin: 0 auto;
   cursor: pointer;
 }
-.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn:visited {
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__submit:visited {
   background-color: transparent;
 }
-.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn:hover {
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__submit:hover {
   background-color: #c2c2c2;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__submit .submit-btn:active {
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__submit:active {
   background-color: transparent;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__cotact-us-PP {
+  width: 90%;
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  padding: 5px 0 12px 0;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form * {
+  outline: none;
 }
 
 .page__footer .page__container {

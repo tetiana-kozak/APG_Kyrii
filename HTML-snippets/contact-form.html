@@ -21,31 +21,32 @@
             </div>
             
             <div class="contacts__place-a-meeting">
-                <div class="contacts__place-a-meeting-container">
-                    <div class="contacts__cotact-us-title"> 
-                        <p class="cotact-us-text"> Contact us </p> 
-                    </div>
-                    <form class="contacts__form">
+                <div class="contacts__place-a-meeting-container">                    
+                    <form action="#" id="contacts__form" class="contacts__form">
+                        <p class="contacts__cotact-us-title"> Contact us </p>
                         <div class="contacts__input-block">
-                            <label class="input-label"> Name </label>
-                            <input type="text" class="input-field" required>
+                            <label for="inp-name" class="input-label"> Your Name* </label>
+                            <input id="inp-name" type="text" name="name" class="input-field" required>
+                            <p class="input-error"> Provide a name</p>
                         </div> 
                         <div class="contacts__input-block">
-                            <label class="input-label"> Phone Number </label>
-                            <input type="tel" class="input-field" required>
+                            <label for="inp-phone" class="input-label"> Your Phone Number* </label>
+                            <input id="inp-phone" type="tel" name="phone" class="input-field" required>
+                            <p class="input-error"> Provide a phone number</p>
                         </div> 
                         <div class="contacts__input-block">
-                            <label class="input-label"> Email Address </label>
-                            <input type="email" class="input-field" required>
+                            <label for="inp-email" class="input-label"> Your Email Address* </label>
+                            <input id="inp-email" type="email" name="email" class="input-field" required>
+                            <p class="input-error"> Provide an e-mail</p>
                         </div> 
                         <div class="contacts__input-block">
-                            <label class="input-label"> Message </label>
-                            <textarea class="input-field" rows="9" style="height: 152px;"></textarea>                       
+                            <label for="inp-message" class="input-label"> Your Message* </label>
+                            <textarea id="inp-message" name="message" class="input-field" rows="9" style="height: 144px;"></textarea>  
+                            <p class="input-error"> Provide a message</p>                     
                         </div> 
-                    </form>  
-                    <div class="contacts__submit">
-                        <button type="submit" class="submit-btn"> Submit </button>
-                    </div> 
+                        <button type="submit" class="contacts__submit"> Submit </button>
+                        <p class="contacts__cotact-us-PP"> By pressing the submit button you agree with the privacy policy terms </p>
+                    </form>                   
                       
                 </div>             
             </div>
