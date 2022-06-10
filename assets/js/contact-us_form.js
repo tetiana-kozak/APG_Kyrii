@@ -134,8 +134,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     function isNameCorrect(input){
-        const isAnyLet = /^[a-zA-Z]+$/.test(input.value)
-        console.log(isAnyLet)
+        const isAnyLet = /^[a-zA-Zа-яА-Я ]+$/.test(input.value)
+        console.log("letters = " + isAnyLet)
         return isAnyLet;
     }
 
