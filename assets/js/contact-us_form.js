@@ -27,21 +27,29 @@ document.addEventListener('DOMContentLoaded', function(){
             const input = formReq[index];
             formRemoveError(input);
 
-            // inpurs verification
+            // inputs verification
            
             if (input.value === ''){
                 formAddError(input);
                 error ++;
-            } else if (input.classList.contains('_email')) {
+            } else if (input.classList.contains('_name')){
                 
-                if (!isEmailCorrect(input)) {
-                    
+                if(!isNameCorrect(input)) {
+
                     formAddError(input);
                     error ++;
                 }
-            } else if (input.classList.contains('_name')){
-                if(!isNameCorrect(input)) {
-
+            } else if (input.classList.contains('_phone')){
+                
+                if(input.value.length < 14) {
+                    // console.log(input.value.length)
+                    formAddError(input);
+                    error ++;            
+                } 
+            } else if (input.classList.contains('_email')) {
+            
+                if (!isEmailCorrect(input)) {
+                    
                     formAddError(input);
                     error ++;
                 }
@@ -50,6 +58,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
         return error;
     };
+
+
+
 
     function formAddError(input){
         input.parentElement.classList.add('_error');
@@ -67,10 +78,15 @@ document.addEventListener('DOMContentLoaded', function(){
         return result;
     }
     function isNameCorrect(input){
-        const isAnyNum = /^[0-9]+$/.test(input.value)
-        console.log(isAnyNum)
-        return isAnyNum;
+        const isAnyLet = /^[a-zA-Z]+$/.test(input.value)
+        console.log(isAnyLet)
+        return isAnyLet;
     }
+    // function isNameCorrect(input){
+    //     const isAnyNum = /^[0-9]+$/.test(input.value)
+    //     console.log(isAnyNum)
+    //     return isAnyNum;
+    // }
 })
 
 

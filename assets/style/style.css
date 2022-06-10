@@ -370,6 +370,10 @@ body._lock {
   padding: 2px 0 0 0;
   color: #ca0000;
 }
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-error1 {
+  height: 16px;
+  padding-top: 2px;
+}
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block textarea {
   resize: none;
   margin: 0;
