@@ -154,7 +154,65 @@
                 </div>
                 <!-- <div include-html="HTML-snippets/team.html"></div> -->
 
-                <div include-html="HTML-snippets/contact-form.html"></div>               
+                <!-- <div include-html="HTML-snippets/contact-form.html"></div> -->
+
+                <div class="page__contacts scroll-section" id="page__contacts">
+                    <div class="section-wrapper contacts">
+                        <div class="contacts__container">
+                            <div class="contacts__what-we-do">
+                                <div class="contacts__what-we-do-text">
+                                    <p class="main-text"> Consulting on issues </p>
+                                    <p class="additional-text"> related to the design process of the <br> development of architectural objects </p>
+                                </div>
+                                <div class="contacts__what-we-do-text">
+                                    <p class="main-text"> Town-planning calculations  </p>
+                                    <p class="additional-text"> with the definition of boundary building <br> parameters and possible risks </p>
+                                </div>
+                                <div class="contacts__what-we-do-text">
+                                    <p class="main-text"> Project documentation </p>
+                                    <p class="additional-text"> Pre-project, Schematic Design, Project, <br> Work Project and Working Documentation </p>
+                                </div>
+                                <div class="contacts__what-we-do-text">
+                                    <p class="main-text"> Construction design supervision </p>
+                                    <p class="additional-text"> public buildings and constructions, residential multi-apartment buildings, office buildings and business centers, multifunctional complexes, medical institutions, schools, kindergartens, leisure centers, cottage towns, interiors of public spaces. </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contacts__place-a-meeting">
+                                <div class="contacts__place-a-meeting-container">                    
+                                    <form action="#" id="contacts__form" class="contacts__form">
+                                        <p class="contacts__cotact-us-title"> Contact us </p>
+                                        <div class="contacts__input-block">
+                                            <label for="inp-name" class="input-label"> Your Name* </label>
+                                            <input id="inp-name" type="text" name="name" class="input-field _req _name">
+                                            <p class="input-error"> Provide a name</p>
+                                        </div> 
+                                        <div class="contacts__input-block">
+                                            <label for="inp-phone" class="input-label"> Your Phone Number* </label>
+                                            <input id="inp-phone" type="text" name="phone" class="input-field _req" placeholder="+(38)"> <!-- placeholder="+38(000)000-00-00" value="+(380)" -->
+                                            <p class="input-error"> Provide a phone number</p>
+                                        </div> 
+                                        <div class="contacts__input-block">
+                                            <label for="inp-email" class="input-label"> Your Email Address* </label>
+                                            <input id="inp-email" type="text" name="email" class="input-field _req _email">
+                                            <p class="input-error" id="email-error"> Provide an e-mail</p>
+                                        </div> 
+                                        <div class="contacts__input-block">
+                                            <label for="inp-message" class="input-label"> Your Message* </label>
+                                            <textarea id="inp-message" name="message" class="input-field _req" rows="9" style="height: 144px;"></textarea>  
+                                            <p class="input-error"> Provide a message</p>                     
+                                        </div> 
+                                        <button type="submit" class="contacts__submit"> Submit </button>
+                                        <p class="contacts__cotact-us-PP"> By pressing the submit button you agree with the privacy policy terms </p>
+                                    </form>                   
+                                      
+                                </div>             
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                
                 
 
             </div> 
@@ -164,7 +222,9 @@
     <div include-html="HTML-snippets/footer-map.html"></div>
     
     <script>includeHTML()</script> <!-- Import parts of page HTML -->
-    <script src="assets/js/burger.js" ></script> <!-- Import Burger menu -->
     <script src="assets/js/contact-us_form.js" ></script> <!-- Import contact-us form -->
+    <script src="assets/js/burger.js" ></script> <!-- Import Burger menu -->
+    <script src="assets/js/page-scrolling.js" ></script> <!-- Import page scrolling -->
+    <script src="assets/js/phone-mask.js" ></script> <!-- Import phone mask -->
 </body>
 </html>

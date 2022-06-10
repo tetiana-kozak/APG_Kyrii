@@ -1,11 +1,11 @@
 "use strict"
 
-phoneMask()
-
-
 document.addEventListener('DOMContentLoaded', function(){
     const form = document.getElementById('contacts__form');
-    form.addEventListener('submit', formSend);
+    if(form){
+
+        form.addEventListener('submit', formSend);
+    }
 
     async function formSend(e){
         e.preventDefault();
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     error ++;
                 }
             } else if (input.classList.contains('_name')){
-                if(!nameTest(input)) {
+                if(!isNameCorrect(input)) {
 
                     formAddError(input);
                     error ++;
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function(){
         console.log("email", result)
         return result;
     }
-    function nameTest(input){
+    function isNameCorrect(input){
         const isAnyNum = /^[0-9]+$/.test(input.value)
         console.log(isAnyNum)
         return isAnyNum;
@@ -75,9 +75,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-function phoneMask(){
-    document.getElementById('inp-phone').addEventListener('input', function (e) {
-    var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-    e.target.value = !x[2] ? x[1] : '+(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
-});
-}
+
+
+
+
+
