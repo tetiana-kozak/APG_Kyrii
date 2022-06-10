@@ -307,6 +307,7 @@ body._lock {
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container {
   height: 100%;
+  position: relative;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form {
   height: 100%;
@@ -322,6 +323,7 @@ body._lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__cotact-us-title {
   font-size: 1.25rem;
@@ -361,22 +363,30 @@ body._lock {
   border-radius: 5px;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-field._error {
-  -webkit-box-shadow: red 0 0 10px;
-          box-shadow: red 0 0 10px;
+  border: #8a0202 solid 1px;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-label._errorText {
+  color: #8a0202;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-error {
-  font-size: 0.75rem;
-  font-weight: 300;
-  padding: 2px 0 0 0;
-  color: #ca0000;
-}
-.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-error1 {
   height: 16px;
   padding-top: 2px;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #ca0000;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block textarea {
   resize: none;
   margin: 0;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .error-hiden {
+  position: absolute;
+  bottom: 82px;
+  left: 25%;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #ca0000;
+  visibility: hidden;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__submit {
   color: #000;
@@ -411,8 +421,25 @@ body._lock {
   margin: 0 auto 0 auto;
   padding: 5px 0 12px 0;
 }
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.8) url(../images/projects/00_general/loading-lines.gif) center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form * {
   outline: none;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form._sending::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .page__footer .page__container {

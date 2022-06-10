@@ -426,6 +426,9 @@ body._lock{
                             border: #000 solid 1px;  
                             .contacts__place-a-meeting-container{
                                 height: 100%;
+                                position: relative;
+
+                                
                                 .contacts__form{
                                     height: 100%;
                                     width: 80%;
@@ -434,7 +437,10 @@ body._lock{
                                     flex-direction: column;
                                     justify-content: space-between;
 
-                                    
+                                    position: relative;
+
+                                   
+
 
                                     .contacts__cotact-us-title{
                                         font-size: $fz20;
@@ -472,25 +478,37 @@ body._lock{
                                             
                                         }
                                         .input-field._error{
-                                            box-shadow: red 0 0 10px;
+                                            border: #8a0202 solid 1px;
+                                            // box-shadow: red 0 0 2px;
                                         }
+                                        .input-label._errorText{
+                                            color: #8a0202;
+                                        }
+                                        
                                         .input-error{
+                                            height: 16px;
+                                            padding-top: 2px;
                                             font-size: $fz12;
                                             font-weight: 300;
-                                            padding: 2px 0 0 0;
                                             color: #ca0000;
                                         }
 
-                                        .input-error1{
-                                            height: 16px;
-                                            padding-top: 2px;
-                                        }
                                         textarea{
                                             resize: none;
                                             margin: 0;
                                         }
-                                    }
 
+                                    }
+                                    
+                                    .error-hiden{
+                                        position: absolute;
+                                        bottom: 82px;
+                                        left: 25%;
+                                        font-size: $fz12;
+                                        font-weight: 300;
+                                        color: #ca0000;
+                                        visibility: hidden;
+                                    }
                                     .contacts__submit{
                                         @include btn_text;                                        
                                         font-size: $fz18;
@@ -506,12 +524,35 @@ body._lock{
                                         margin: 0 auto 0 auto;
                                         padding: 5px 0 12px 0;
                                     }
+
+                                    &::after{
+                                        content: '';
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: rgb(242, 242, 242, .8) url(../images/projects/00_general/loading-lines.gif) center / 50px no-repeat;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        transition: all 0.5s ease 0s;
+                                    }
                                     
                                 }
                                 .contacts__form * {
                                     outline: none;
                                 }
+
+                                .contacts__form._sending::after{
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+
+
+                                
                             }
+
+                            
                         }
                     }
                 }

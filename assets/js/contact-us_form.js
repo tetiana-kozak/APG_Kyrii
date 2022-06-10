@@ -1,5 +1,12 @@
 "use strict"
 
+const formReq = document.querySelectorAll('._req');
+// const labelError = document.querySelectorAll('.input-label')
+const ifNameError = document.querySelector('.name-error');
+const ifPhoneError = document.querySelector('.phone-error');
+const ifEmailError = document.querySelector('.email-error');    
+
+
 document.addEventListener('DOMContentLoaded', function(){
     const form = document.getElementById('contacts__form');
     if(form){
@@ -11,46 +18,77 @@ document.addEventListener('DOMContentLoaded', function(){
         e.preventDefault();
 
         let error = formValidate(form);
-
+        
         if (error === 0) {
+            form.classList.add('_sending')
             
+            document.querySelector('.error-hiden').style.visibility = "hidden"
+
+            let response = await fetch('send-mail.php', {
+                method: 'POST',
+                body: formData
+            })
+            if (response.ok) {
+                let result = await response.json()
+                alert(result.message)
+                form.reset()
+                form.classList.remove('_sending')
+            } else {
+                alert("Mistake")
+                form.classList.remove('_sending')
+            }
+
         }else{
-            alert('Enter fields')
+            document.querySelector('.error-hiden').style.visibility = "visible"
         }
     };
 
+
+
     function formValidate(form){
         let error = 0;
-        let formReq = document.querySelectorAll('._req');
-
-        for (let index = 0; index < formReq.length; index++) {
+        
+        formRemoveError()
+        
+        for (let index = 0; index < formReq.length; index++) {            
+            
             const input = formReq[index];
-            formRemoveError(input);
+            
+            formRemoveErrorBorder(input);
+
 
             // inputs verification
            
             if (input.value === ''){
+
                 formAddError(input);
+
                 error ++;
             } else if (input.classList.contains('_name')){
                 
                 if(!isNameCorrect(input)) {
-
-                    formAddError(input);
+                    
+                    // formAddError(input);
+                    ifNameError.innerHTML = "Name error"
+                    
                     error ++;
                 }
             } else if (input.classList.contains('_phone')){
                 
                 if(input.value.length < 14) {
-                    // console.log(input.value.length)
-                    formAddError(input);
+
+                    // formAddError(input);
+                    ifPhoneError.innerHTML = "Phone error"
+
                     error ++;            
                 } 
             } else if (input.classList.contains('_email')) {
             
                 if (!isEmailCorrect(input)) {
-                    
-                    formAddError(input);
+
+                    // formAddError(input);
+                    ifEmailError.innerHTML = "Email error"
+
                     error ++;
                 }
             }
@@ -63,25 +101,45 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     function formAddError(input){
+        const ifEmptyError = document.querySelectorAll('.input-error');
+          
         input.parentElement.classList.add('_error');
         input.classList.add('_error')
+        
+   
     }
-    function formRemoveError(input){
+      
+
+    function formRemoveErrorBorder(input){
+
         input.parentElement.classList.remove('_error');
         input.classList.remove('_error')
+      
+    }
+
+    function formRemoveError(){
+
+        ifNameError.innerHTML = ""
+        ifPhoneError.innerHTML = ""
+        ifEmailError.innerHTML = ""
+        
     }
 
 
     function isEmailCorrect(input){
         const result = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(input.value);
-        console.log("email", result)
+        // console.log("email", result)
         return result;
     }
+
+
     function isNameCorrect(input){
         const isAnyLet = /^[a-zA-Z]+$/.test(input.value)
         console.log(isAnyLet)
         return isAnyLet;
     }
+
+
     // function isNameCorrect(input){
     //     const isAnyNum = /^[0-9]+$/.test(input.value)
     //     console.log(isAnyNum)
