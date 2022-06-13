@@ -363,7 +363,7 @@ body._lock {
   border-radius: 5px;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-field._error {
-  border: #8a0202 solid 1px;
+  border: #8a0202 solid 2px;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__input-block .input-label._errorText {
   color: #8a0202;
