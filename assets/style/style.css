@@ -184,13 +184,13 @@ body._lock {
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img:hover .project__photo {
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img:hover .project__photo-hover, .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img .project__photo-hover:hover {
   opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper {
   display: -webkit-box;
