@@ -153,6 +153,7 @@ body._lock {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -14px;
+  padding-top: 5px;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content {
   position: relative;
@@ -231,7 +232,8 @@ body._lock {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -14px;
+  margin: 0 -22px;
+  padding-top: 5px;
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block {
   display: -webkit-box;
@@ -246,8 +248,8 @@ body._lock {
       -ms-flex-positive: 1;
           flex-grow: 1;
   min-width: 248px;
-  width: calc((100% - 56px) / 3);
-  padding: 0 14px 28px 14px;
+  width: calc((100% - 132px) / 4);
+  padding: 0 22px 36px 22px;
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block .emp-block__photo {
   max-width: 100%;
@@ -259,7 +261,10 @@ body._lock {
   font-size: 0.875rem;
   color: #474747;
 }
-.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block-hiden {
+.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block-hiden481 {
+  visibility: hidden;
+}
+.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block-hiden-992-1199 {
   visibility: hidden;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container {

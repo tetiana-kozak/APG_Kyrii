@@ -23,7 +23,7 @@ if (menuLinks.length > 0) {
             }            
 
             window.scrollTo({
-                top: gotoBlockValue,
+                top: gotoBlockValue + 1,
                 behavior: "smooth"
             });
 
