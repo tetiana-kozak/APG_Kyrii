@@ -1,0 +1,67 @@
+@mixin text_hover {
+    border-bottom: transparent solid 1px;
+
+    
+    &:hover{
+        border-bottom: #727272 solid 1px;
+        transition: all .5s ease;
+        cursor: pointer;       
+    }
+    &:active{
+        border: transparent;
+    }
+   
+}
+
+
+
+.page__filter > .section-wrapper{
+    padding: 0;
+}
+
+.filter__navigation{
+    padding: 0 0 24px 0;
+    .filter__navigation-list{
+        display: flex;
+        justify-content: space-around;
+        li{
+            border-bottom: transparent solid 1px;
+            @include text_hover;
+        }
+    }
+}
+.project__content{
+    transition: all 0.5s;
+
+}
+
+.anime{
+    transform: scale(0);
+    opacity: 0;
+}
+
+.filter_hidden{
+    display: none;
+}
+
+// .filter_hidden{
+//     animation-name: hide;
+//     animation-duration: .5s;
+//     animation-fill-mode: forwards;
+// }
+
+// @keyframes hide{
+//     from{
+//         // visibility: visible;
+//         height: fit-content;
+//     }
+//     to{
+//         width: 0;
+//         height: 0;
+//         margin: 0;
+//         padding: 0;
+//         font-size: 0;        
+//         display: none;
+//     }
+// }
+
