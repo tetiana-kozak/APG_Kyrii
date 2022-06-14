@@ -271,21 +271,27 @@ body._lock{
                 .section-wrapper{
                     // @include section;
                     .project__wrapper{
-                        display: flex;
-                        flex-wrap: wrap;
-                        margin: 0 -14px;                        
+                        // display: flex;!
+                        // flex-wrap: wrap;!
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        // grid-template-columns: repeat(auto-fit, minmax(528px, 1fr));
+                        gap: 28px;
+                        // margin: 0 -14px;                        
+                        margin-bottom: 28px;                        
                         padding-top: 5px;
                         .project__content{
                             // display: flex;
                             // flex-direction: column;
                             position: relative;
                             min-width: 248px;
-                            flex-grow: 1;
-                            width: calc((100% - 56px) / 3);
-                            padding: 0 14px rem(28) 14px;  
+                            // flex-grow: 1; !
+                            // width: calc((100% - 56px) / 3); !
+                            width: 100%;
+                            // padding: 0 14px rem(28) 14px;  
                             .project__img{
                                 position: relative;
-                                max-width: 528px;
+                                // max-width: 528px;
                                 // min-height: 145px;
                                 // max-height: 352px;
 
@@ -293,11 +299,14 @@ body._lock{
                                     position: absolute;
                                     left: 0;
                                     top: 0;
+                                    // width: 100%;
+                                    // height: 100%;
+                                    object-fit: cover;
                                 }
 
                                 .project__photo{
                                     // padding: 0 0 prc(352, 528) 0;
-                                    // width: 528px;
+                                    width: 528px;
                                     max-width: 100%;
                                     cursor: pointer;
 

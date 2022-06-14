@@ -2,6 +2,10 @@
   padding: 0;
 }
 
+.project__wrapper {
+  margin-bottom: 0 !important;
+}
+
 .filter__navigation {
   padding: 0 0 24px 0;
 }

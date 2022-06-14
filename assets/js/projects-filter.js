@@ -19,15 +19,15 @@ filterList.addEventListener('click', function(evt){
         element.classList.remove('filter_hidden')        
         if (!element.classList.contains(filterClass) && filterClass !== 'all') {
             // console.log("inside if")
-            element.classList.add('anime')        
-            setTimeout(element.classList.add('filter_hidden'), 1500)       
-            // projects.forEach(card => {
-            //     card.ontransitionend = function () {
-            //         if (card.classList.contains('anime')) {
-            //             card.classList.add('filter_hidden')
-            //         }
-            //     }
-            // });
+            element.classList.add('anime') 
+
+            projects.forEach(card => {
+                card.ontransitionend = function () {
+                    if (card.classList.contains('anime')) {
+                        card.classList.add('filter_hidden')
+                    }
+                }
+            });
         }
 
     
