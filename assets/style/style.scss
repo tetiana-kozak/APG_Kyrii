@@ -366,24 +366,31 @@ body._lock{
             .page__about-us{
                 .about-us{
                     .about-us__container{
-                        display: flex;
-                        flex-wrap: wrap;
-                        margin: 0 -22px;
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 22px;
+                        // display: flex; !
+                        // flex-wrap: wrap; !
+                        // margin: 0 -22px; !
                         // margin: 0 -14px;
                         padding-top: 5px;
                         .emp-block{
-                            display: flex;
-                            flex-direction: column;
+                            // display: flex;
+                            // flex-direction: column;
                             position: relative;
-                            flex-grow: 1;
+                            // flex-grow: 1;!
                             min-width: 248px;                            
-                            width: calc((100% - 132px) / 4);
+                            width: 100%;
                             // width: calc((100% - 56px) / 3);
-                            padding: 0 22px 36px 22px;
+                            // padding: 0 22px 36px 22px;
 
                             .emp-block__photo{
-                                // min-width: 528px;
+                                width: 528px;
                                 max-width: 100%;
+                                // position: absolute;
+                                // left: 0;
+                                // top: 0;
+                                object-fit: cover;
                             }
                             
                             .emp-block__name{
