@@ -243,7 +243,7 @@ body._lock {
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block {
   position: relative;
-  min-width: 248px;
+  min-width: 100px;
   width: 100%;
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block .emp-block__photo {
