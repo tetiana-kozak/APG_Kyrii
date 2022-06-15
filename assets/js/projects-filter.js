@@ -1,40 +1,89 @@
 "use strict"
 
-const filterList = document.querySelector('.filter__navigation')
-// const filterList = document.querySelector('.filter__navigation-list')
-const projects = document.querySelectorAll('.project__content')
 
-    
-filterList.addEventListener('click', function(evt){
-    // console.log('click')
-    if(evt.target.tagName !== 'LI') return false;
+function app() {
+    const filterList = document.querySelectorAll('.filter__btn')
+    const projects = document.querySelectorAll('.project__content')
 
-    let filterClass = evt.target.dataset['filter']
-    console.log(filterClass)
-
-    
-    projects.forEach(element => {
+    filterList.forEach((button) => {
         
-        element.classList.remove('anime')        
-        element.classList.remove('filter_hidden')        
-        if (!element.classList.contains(filterClass) && filterClass !== 'all') {
-            // console.log("inside if")
-            element.classList.add('anime') 
 
-            projects.forEach(card => {
-                card.ontransitionend = function () {
-                    if (card.classList.contains('anime')) {
-                        card.classList.add('filter_hidden')
-                    }
+        function filter (category, items) {
+            
+            items.forEach(item => {
+                const isItemFiltered = !item.classList.contains(category)
+                const isShowAll = category.toLowerCase() === 'all'
+                if (isItemFiltered && !isShowAll) {
+                    item.classList.add('filter_hidden')
+                } else{
+                    item.classList.remove('filter_hidden')
                 }
             });
+
+
         }
 
-    
+
+        button.addEventListener('click', () => {
+            const currentCategory = button.dataset.filter
+
+            filter(currentCategory, projects)
+            console.log(button.dataset.filter)
+        })
     });
 
 
-})
+
+
+}
+
+app()
+
+
+
+
+
+
+// const filterList = document.querySelector('.filter__navigation')
+// // const filterList = document.querySelector('.filter__navigation-list')
+// const projects = document.querySelectorAll('.project__content')
+
+    
+// filterList.addEventListener('click', function(evt){
+//     // console.log('click')
+//     if(evt.target.tagName !== 'LI') return false;
+
+//     let filterClass = evt.target.dataset['filter']
+//     console.log(filterClass)
+
+    
+//     projects.forEach(element => {
+        
+//         if (element.classList.contains('filter_hidden')) {
+//             element.classList.remove('filter_hidden')
+//         } else
+//         // element.classList.remove('filter_hidden')        
+//         // element.classList.remove('filter_hidden')        
+//         if (!element.classList.contains(filterClass) && filterClass !== 'all') {
+//             // console.log("inside if")
+//             element.classList.add('filter_hidden') 
+
+//             // projects.forEach(card => {
+//             //     card.ontransitionend = function () {
+//             //         if (card.classList.contains('anime')) {
+//             //             card.classList.add('filter_hidden')
+//             //         }
+//             //     }
+//             // });
+//         } 
+        
+
+    
+//     });
+   
+
+
+// })
 
 
 
