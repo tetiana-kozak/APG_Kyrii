@@ -14,9 +14,11 @@ function app() {
                 const isItemFiltered = !item.classList.contains(category)
                 const isShowAll = category.toLowerCase() === 'all'
                 if (isItemFiltered && !isShowAll) {
-                    item.classList.add('filter_hidden')
+                    item.classList.add('animation')
                 } else{
                     item.classList.remove('filter_hidden')
+                    // item.classList.remove('card-hide')
+                    item.classList.remove('animation')
                 }
             });
 
@@ -28,8 +30,22 @@ function app() {
             const currentCategory = button.dataset.filter
 
             filter(currentCategory, projects)
-            console.log(button.dataset.filter)
         })
+
+        projects.forEach(card => {
+            card.ontransitionend = function () {
+                if (card.classList.contains('animation')) {
+                    console.log("finish")
+
+                    card.classList.add('filter_hidden')
+                    // card.classList.add('card-hide')
+                    
+                }
+                
+            }
+            
+        });
+        
     });
 
 
@@ -68,13 +84,7 @@ app()
 //             // console.log("inside if")
 //             element.classList.add('filter_hidden') 
 
-//             // projects.forEach(card => {
-//             //     card.ontransitionend = function () {
-//             //         if (card.classList.contains('anime')) {
-//             //             card.classList.add('filter_hidden')
-//             //         }
-//             //     }
-//             // });
+//             
 //         } 
         
 

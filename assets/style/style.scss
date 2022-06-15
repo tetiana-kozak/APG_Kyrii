@@ -271,27 +271,27 @@ body._lock{
                 .section-wrapper{
                     // @include section;
                     .project__wrapper{
-                        // display: flex;!
-                        // flex-wrap: wrap;!
-                        display: grid;
-                        grid-template-columns: repeat(3, 1fr);
+                        display: flex;
+                        flex-wrap: wrap;
+                        // display: grid;
+                        // grid-template-columns: repeat(3, 1fr);
                         // grid-template-columns: repeat(auto-fit, minmax(528px, 1fr));
-                        gap: 28px;
-                        // margin: 0 -14px;                        
+                        // gap: 28px;
+                        margin: 0 -14px;                        
                         margin-bottom: 28px;                        
                         padding-top: 5px;
                         .project__content{
-                            // display: flex;
-                            // flex-direction: column;
+                            display: flex;
+                            flex-direction: column;
                             position: relative;
                             min-width: 248px;
-                            // flex-grow: 1; !
-                            // width: calc((100% - 56px) / 3); !
-                            width: 100%;
-                            // padding: 0 14px rem(28) 14px;  
+                            // flex-grow: 1; 
+                            width: calc(((100% - 56px) / 3 ) + 18px); 
+                            // width: 100%;
+                            padding: 0 14px rem(28) 14px;  
                             .project__img{
                                 position: relative;
-                                // max-width: 528px;
+                                max-width: 528px;
                                 // min-height: 145px;
                                 // max-height: 352px;
 
@@ -300,8 +300,9 @@ body._lock{
                                     left: 0;
                                     top: 0;
                                     // width: 100%;
+                                    width: 528px;
                                     // height: 100%;
-                                    object-fit: cover;
+                                    // object-fit: cover;
                                 }
 
                                 .project__photo{
