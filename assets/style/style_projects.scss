@@ -7,13 +7,14 @@
         transition: all .5s ease;
         cursor: pointer;       
     }
-    &:active{
-        border: transparent;
-    }
+    
    
 }
 
-
+._underscore{
+    border-bottom: #727272 solid 1px;
+    transition: all .5s ease;
+}
 
 .page__filter > .section-wrapper{
     padding: 0px 0 0 0;
