@@ -45,7 +45,7 @@ body._lock {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 9;
 }
 .page__main .page__header .page__container {
   padding: 0 0.9375rem;
