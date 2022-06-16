@@ -35,7 +35,7 @@ function app() {
         projects.forEach(card => {
             card.ontransitionend = function () {
                 if (card.classList.contains('animation')) {
-                    console.log("finish")
+                    // console.log("finish")
 
                     card.classList.add('filter_hidden')
                     // card.classList.add('card-hide')

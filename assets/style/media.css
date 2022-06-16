@@ -47,7 +47,9 @@
     }
 
 
-
+    .page__filter > .section-wrapper{
+        padding: 112px 0 0 0;
+    }
 
     
     .filter__navigation{
@@ -111,7 +113,7 @@
         /* margin: auto 0; */
         /* margin-right: 32px; */
         font-size: 25px;
-        font-weight: 700;
+        /* font-weight: 700; */
     }
 
     .page__main .page__header{

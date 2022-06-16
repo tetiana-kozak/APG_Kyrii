@@ -10,11 +10,11 @@ const arrow = document.querySelector('.menu__filter');
 
 if (arrow) {
     arrow.addEventListener('click', function (e) {
-        document.body.classList.add('_lock');
-        projects.classList.add('_filter-active')
-        footer.classList.add('_filter-active')
-        filterNav.classList.add('_filter-active')
-        arrow.classList.add('_filter-active')
+        document.body.classList.toggle('_lock');
+        projects.classList.toggle('_filter-active')
+        footer.classList.toggle('_filter-active')
+        filterNav.classList.toggle('_filter-active')
+        arrow.classList.toggle('_filter-active')
     })
 }
 
