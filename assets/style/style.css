@@ -153,7 +153,6 @@ body._lock {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -14px;
-  margin-bottom: 28px;
   padding-top: 5px;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content {
@@ -214,12 +213,11 @@ body._lock {
   visibility: hidden;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__text {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 300;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  text-transform: uppercase;
   cursor: pointer;
   margin-top: 0.875rem;
   border-bottom: transparent solid 1px;
@@ -411,7 +409,8 @@ body._lock {
   background-color: transparent;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__submit:hover {
-  background-color: #c2c2c2;
+  background-color: #1a1a1a;
+  color: #F2F2F2;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -540,10 +539,59 @@ body._lock {
   background-color: transparent;
 }
 .more-btn .more-btn-text:hover {
-  background-color: #c2c2c2;
+  background-color: #1a1a1a;
+  color: #F2F2F2;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .more-btn .more-btn-text:active {
   background-color: transparent;
+}
+
+.section__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-bottom: 12px;
+}
+.section__title .title {
+  font-size: 24px;
+}
+.section__title .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section__title .icon .title__more-btn {
+  font-size: 20px;
+  text-decoration: none;
+  color: #575757;
+  border-bottom: transparent solid 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.section__title .icon .title__more-btn:hover {
+  color: #131313;
+  font-weight: 500;
+  border-bottom: #474747 solid 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.section__title .icon svg {
+  margin-left: 8px;
+  width: 20px;
+  height: 16px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  fill: #727272;
+  cursor: pointer;
 }

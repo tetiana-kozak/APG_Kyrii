@@ -4,8 +4,12 @@
   transition: all 0.5s ease;
 }
 
+.section-wrapper {
+  padding-bottom: 80px;
+}
+
 .page__filter > .section-wrapper {
-  padding: 0px 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .project__wrapper {
@@ -19,8 +23,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .filter__navigation .filter__navigation-list li {
   border-bottom: transparent solid 1px;
@@ -31,6 +36,9 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: pointer;
+}
+.filter__navigation .filter__navigation-list span {
+  border-left: 1px solid #cfcfcf;
 }
 
 .project__content {

@@ -11,13 +11,21 @@
    
 }
 
+
+
 ._underscore{
     border-bottom: #727272 solid 1px;
     transition: all .5s ease;
 }
 
+.section-wrapper{
+    padding-bottom: 80px;
+
+}
+
+
 .page__filter > .section-wrapper{
-    padding: 0px 0 0 0;
+    padding: 0 0 0 0;
 }
 .project__wrapper{
     margin-bottom: 0 !important;
@@ -27,10 +35,13 @@
     padding: 0 0 24px 0;
     .filter__navigation-list{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         li{
             border-bottom: transparent solid 1px;
             @include text_hover;
+        }
+        span{
+            border-left: 1px solid #cfcfcf;
         }
     }
 }
