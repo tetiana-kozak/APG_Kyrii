@@ -284,7 +284,7 @@ body._lock{
                             display: flex;
                             flex-direction: column;
                             position: relative;
-                            min-width: 248px;
+                            min-width: 100px;
                             // flex-grow: 1; 
                             width: calc(((100% - 56px) / 3 ) + 18px); 
                             // width: 100%;
@@ -375,6 +375,7 @@ body._lock{
                         // margin: 0 -22px; !
                         // margin: 0 -14px;
                         padding-top: 5px;
+                        margin-bottom: 28px;
                         .emp-block{
                             // display: flex;
                             // flex-direction: column;

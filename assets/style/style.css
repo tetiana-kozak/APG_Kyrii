@@ -165,7 +165,7 @@ body._lock {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  min-width: 248px;
+  min-width: 100px;
   width: calc((100% - 56px) / 3 + 18px);
   padding: 0 14px 1.75rem 14px;
 }
@@ -240,6 +240,7 @@ body._lock {
   grid-template-columns: repeat(4, 1fr);
   gap: 22px;
   padding-top: 5px;
+  margin-bottom: 28px;
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block {
   position: relative;

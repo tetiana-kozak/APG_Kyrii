@@ -1,3 +1,8 @@
+.page__main .page__content .page__container .page__about-us .about-us .about-us__container {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
 .achievements {
   padding-top: 112px;
 }
