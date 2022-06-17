@@ -151,7 +151,18 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     @include text_selection;
 }
 
-
+.page__projects a{
+    text-decoration: none;
+    color: #000;
+    font-size: $fz14;
+    font-weight: 300;
+    width: fit-content;
+    // text-transform: uppercase;
+    // cursor: pointer;
+    margin-top: rem(14);
+    @include text_hover; 
+    
+}
 
  
 
@@ -348,15 +359,15 @@ body._lock{
                                     visibility: hidden;
                                 }
     
-                                .project__text{
-                                    font-size: $fz14;
-                                    font-weight: 300;
-                                    width: fit-content;
-                                    // text-transform: uppercase;
-                                    cursor: pointer;
-                                    margin-top: rem(14);
-                                    @include text_hover;                                
-                                }
+                                // .project__text{
+                                //     font-size: $fz14;
+                                //     font-weight: 300;
+                                //     width: fit-content;
+                                //     // text-transform: uppercase;
+                                //     cursor: pointer;
+                                //     margin-top: rem(14);
+                                //     @include text_hover;                                
+                                // }
                             }
 
                         }

@@ -30,6 +30,27 @@ html::selection, body::selection, div::selection, span::selection, object::selec
   background: rgb(201, 201, 201);
 }
 
+.page__projects a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 300;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 0.875rem;
+  border-bottom: transparent solid 1px;
+}
+.page__projects a:hover {
+  border-bottom: #727272 solid 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.page__projects a:active {
+  border: transparent;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -211,25 +232,6 @@ body._lock {
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__photo-hiden {
   max-width: 100%;
   visibility: hidden;
-}
-.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__text {
-  font-size: 0.875rem;
-  font-weight: 300;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  cursor: pointer;
-  margin-top: 0.875rem;
-  border-bottom: transparent solid 1px;
-}
-.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__text:hover {
-  border-bottom: #727272 solid 1px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__text:active {
-  border: transparent;
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container {
   display: -ms-grid;
