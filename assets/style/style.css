@@ -38,7 +38,6 @@ html::selection, body::selection, div::selection, span::selection, object::selec
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 0.875rem;
   border-bottom: transparent solid 1px;
 }
 .page__projects a:hover {
@@ -232,6 +231,9 @@ body._lock {
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__photo-hiden {
   max-width: 100%;
   visibility: hidden;
+}
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__text {
+  margin-top: 0.875rem;
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container {
   display: -ms-grid;
