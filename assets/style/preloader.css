@@ -1,0 +1,151 @@
+#preloader__loader{
+    position:fixed;
+    top:0;
+    z-index:100;
+    background: #333333;
+    display:flex;
+    min-height:100vh;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    animation-delay: .5s;
+}
+
+
+.no-scroll-y {
+	overflow-y: hidden;
+}
+ 
+#preloader__loader path{
+    stroke-linecap:round;
+    stroke-width:10;
+    stroke-linejoin:"round";
+}
+
+#left-half{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 999;
+    animation: animate-right-half 2s ease-in;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+#right-half{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 999;
+    animation: animate-right-half 2s ease-in;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate-right-half{
+    to{
+            stroke-dashoffset: 0;
+    }
+}
+
+#preloader__loader svg{
+    animation: shrink 1s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+    width:100px;
+} 
+
+@keyframes shrink{
+    to{
+        transform: scale(0);
+        opacity:0;
+    }
+}
+
+#preloader__loader{
+    animation: disappear 2s ease-in-out;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+ 
+ 
+@keyframes disappear{
+    from{
+       opacity:1;
+    }
+    to{
+       opacity:0;
+    }
+}
+
+ 
+
+#preloader__content{
+    min-height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: #F2F2F2;
+    background-size: cover;
+    animation: zoom-in 4s;
+    /* animation: zoom-in 6s, 4s hide 4s; */
+    background-position:center;
+    background-repeat:no-repeat;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    transform:scale(0.8);
+    position: absolute;
+    z-index: 75;
+}
+ 
+@keyframes zoom-in{
+    100%{
+       transform:scale(1.2);
+    }
+    
+}
+
+#preloader__content .content-logo-pic{
+    transition: all 400ms ease-in-out;
+}
+
+#preloader__content .content-text{
+    transition: all 400ms ease-in-out;
+}
+
+
+
+
+/* #preloader__content{
+
+    animation: disappear 2s ease-in-out;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+} */
+ 
+ 
+@keyframes hide{
+    from{
+        
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+} 
+
+.disapear{ 
+    display: none;
+} 
+
+/* @keyframes vanish{
+    100%{
+        opacity: 1;
+        /* visibility: hidden; */
+    /* }
+    0%{
+        opacity: 0;
+        display: none;
+
+    } */
+/* } */
