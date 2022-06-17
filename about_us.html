@@ -9,12 +9,31 @@
      <link rel="stylesheet" href="assets/style/style_projects.css">  <!-- css projects -->
      <link rel="stylesheet" href="assets/style/style_about-us.css">  <!-- new css -->
      <link rel="stylesheet" href="assets/style/media.css">   <!-- media queries -->
+     <link rel="stylesheet" href="assets/style/preloader.css">   <!-- preloader -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Anna Kyrii</title>
     <link rel="icon" type="image/png" href="assets/images/projects/00_general/logo_new.png">
     <script src="assets/js/snippets_html.js"></script> <!-- Import parts of page HTML -->
 </head>
-<body>
+<body class="no-scroll-y">
+    <div class="preloader">
+        <div id="preloader__loader">
+            <svg width="274" height="275" viewBox="0 0 274 275" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path id="left-half" d="M137.5 265C102.624 265 69.1765 251.146 44.5155 226.485C19.8544 201.824 6 168.376 5.99999 133.5C5.99999 98.624 19.8544 65.1765 44.5154 40.5155C69.1765 15.8544 102.624 2.00001 137.5 2.00001" stroke="white"/>
+                </g>
+                <g>
+                    <path id="right-half" d="M137 2C171.876 2 205.324 15.8544 229.985 40.5155C254.646 65.1765 268.5 98.624 268.5 133.5C268.5 168.376 254.646 201.824 229.985 226.485C205.324 251.146 171.876 265 137 265" stroke="white"/>
+                </g>
+            </svg>   
+        </div>
+        
+        <!-- <div id="preloader__content">
+            <img src="assets/pic/00_general/logo_black.svg" class="content-logo-pic" alt="">
+            <h1 class="content-text"> Anna Kyrii <br> Architectural <br> Projecting Group</h1>
+        </div> -->
+    </div>
+
     <main class="page__main">
         <header class="page__header" id="page__header"> 
             <div class="page__container">
@@ -200,6 +219,7 @@
 
 
     <script>includeHTML()</script> <!-- Import parts of page HTML -->
+    <script src="assets/js/preloader.js"></script> <!-- Preloader script -->
     <script src="assets/js/burger.js" ></script> <!-- Import Burger menu -->
 </body>
 </html>
