@@ -18,6 +18,12 @@
 
 
 @media (min-width: 991px) {
+
+    .contacts__place-a-meeting{
+        
+        margin-left: 50px;
+    }
+
     .menu__filter{
         display: none;
     }
@@ -30,6 +36,7 @@
     .contacts__place-a-meeting{
         width: 70%;
         margin: 0 auto;
+        
     }
     
     /* .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper{
@@ -47,9 +54,9 @@
     }
 
 
-    .page__filter > .section-wrapper{
+    /* .page__filter > .section-wrapper{
         padding: 112px 0 0 0;
-    }
+    } */
 
     
     .filter__navigation{

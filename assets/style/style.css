@@ -299,10 +299,12 @@ body._lock {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.135em;
+}
+.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .main-text:not(:last-of-type) {
   margin-bottom: 0.5rem;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .additional-text {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 300;
   letter-spacing: 0.135em;
   line-height: 1.0625rem;

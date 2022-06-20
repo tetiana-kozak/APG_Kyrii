@@ -455,10 +455,13 @@ body._lock{
                                     font-size: $fz20;
                                     font-weight: 700;
                                     letter-spacing: 0.135em;
+                                    // margin-bottom: rem(8);
+                                }
+                                .main-text:not(:last-of-type){                                    
                                     margin-bottom: rem(8);
                                 }
                                 .additional-text{
-                                    font-size: $fz12;
+                                    font-size: $fz14;
                                     font-weight: 300;
                                     letter-spacing: 0.135em;
                                     line-height: rem(17);                                                                       
@@ -468,6 +471,7 @@ body._lock{
                         .contacts__place-a-meeting{
                             width: 410px;
                             border: #000 solid 1px;  
+                            
                             .contacts__place-a-meeting-container{
                                 height: 100%;
                                 position: relative;
