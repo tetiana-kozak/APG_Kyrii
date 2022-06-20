@@ -37,8 +37,8 @@
         display: flex;
         justify-content: space-between;
         li{
-            border-bottom: transparent solid 1px;
-            @include text_hover;
+            // border-bottom: transparent solid 1px;
+            // @include text_hover;
         }
         span{
             border-left: 1px solid #cfcfcf;
@@ -47,7 +47,20 @@
 }
 .project__content{
     transition: all 0.5s;
+    
+}
+.project__text{
+    border-bottom: transparent solid 1px;
 
+}
+
+.project__content:hover .project__text{ 
+
+    border-bottom: #727272 solid 1px;
+    // transition: all .5s ease;
+    cursor: pointer; 
+                                                          
+                          
 }
 
 .animation{
