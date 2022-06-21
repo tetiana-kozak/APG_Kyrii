@@ -45,23 +45,56 @@
 
 .slider{
     position: relative;
+    overflow: hidden;
     .slider__line{
+        display: flex;
         
         .photo-bg{
-            display: flex;
-            width: 1640px;
+            max-width: 1640px;
             height: 912px;
             .img-bg{
                 width: 1640px;
-                background-color: rgb(170, 170, 170);
-                // display: flex;
-                // justify-content: center;
+                // background-color: rgb(170, 170, 170);
+                display: flex;
+                justify-content: center;
                 img{
                     // height: auto;
-                    margin: 0 auto;
-                    // max-height: 912px;
+                    // margin: 0 auto;
+                    max-height: 912px;
 
                 } 
+
+                .photo-text{
+                    display: flex;
+                    color: #222222;
+                    // justify-content: space-between;
+                    .photo-text-left{
+                        max-width: 1170px;
+                        margin-right: 120px;
+                    }
+                    .photo-text-right{
+                        // width: 50%;
+                    }
+                    .title{
+                        font-size: $fz18;
+                        font-weight: 700;
+                        padding: 10px 0 10px 0;
+                    }
+                    .text{
+                        // font-size: $fz16;
+                        li::before{
+                            content: "";
+                            height: 5px;
+                            width: 5px;
+                            background-color: rgb(73, 73, 73);
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-right: 4px;
+                            
+                        }
+
+                    }
+                }
             }           
         }
     }
