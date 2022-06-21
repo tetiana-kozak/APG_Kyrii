@@ -224,8 +224,8 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-    -webkit-appearance: none;
-    /* -webkit-appearance: button; */
+    /* -webkit-appearance: none; */
+    -webkit-appearance: button;
 }
 
 /**
@@ -237,6 +237,7 @@ button::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
     border-style: none;
+    border-radius: 0;
     padding: 0;
 }
 

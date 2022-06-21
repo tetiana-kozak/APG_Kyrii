@@ -159,8 +159,26 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     width: fit-content;
     // text-transform: uppercase;
     // cursor: pointer;
-    @include text_hover; 
+    // @include text_hover; 
     
+}
+
+.project__content{
+    transition: all 0.5s;
+    
+}
+.project__text{
+    border-bottom: transparent solid 1px;
+
+}
+
+.project__content:hover .project__text{ 
+
+    border-bottom: #727272 solid 1px;
+    transition: all .5s ease;
+    cursor: pointer; 
+                                                          
+                          
 }
 
 // button{
@@ -559,7 +577,9 @@ body._lock{
                                         visibility: hidden;
                                     }
                                     .contacts__submit{
-                                        @include btn_text;                                        
+                                        @include btn_text;
+                                        background-color: transparent;
+                                        border-radius: 0;                                        
                                         font-size: $fz18;
                                         width: 175px;
                                         padding: rem(2) 0;

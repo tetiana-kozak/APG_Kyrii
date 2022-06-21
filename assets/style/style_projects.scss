@@ -45,23 +45,23 @@
         }
     }
 }
-.project__content{
-    transition: all 0.5s;
+// .project__content{
+//     transition: all 0.5s;
     
-}
-.project__text{
-    border-bottom: transparent solid 1px;
+// }
+// .project__text{
+//     border-bottom: transparent solid 1px;
 
-}
+// }
 
-.project__content:hover .project__text{ 
+// .project__content:hover .project__text{ 
 
-    border-bottom: #727272 solid 1px;
-    // transition: all .5s ease;
-    cursor: pointer; 
+//     border-bottom: #727272 solid 1px;
+//     // transition: all .5s ease;
+//     cursor: pointer; 
                                                           
                           
-}
+// }
 
 .animation{
     transform: scale(0);

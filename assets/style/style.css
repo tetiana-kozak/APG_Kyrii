@@ -38,16 +38,22 @@ html::selection, body::selection, div::selection, span::selection, object::selec
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.project__content {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.project__text {
   border-bottom: transparent solid 1px;
 }
-.page__projects a:hover {
+
+.project__content:hover .project__text {
   border-bottom: #727272 solid 1px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: pointer;
-}
-.page__projects a:active {
-  border: transparent;
 }
 
 html {
@@ -405,6 +411,8 @@ body._lock {
   width: 352px;
   padding: 0.25rem 0.5rem;
   border: 1px solid #292929;
+  background-color: transparent;
+  border-radius: 0;
   font-size: 1.125rem;
   width: 175px;
   padding: 0.125rem 0;
