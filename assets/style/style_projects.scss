@@ -37,8 +37,9 @@
         display: flex;
         justify-content: space-between;
         li{
-            // border-bottom: transparent solid 1px;
-            // @include text_hover;
+            border-bottom: transparent solid 1px;
+            @include text_hover;
+            cursor: pointer;
         }
         span{
             border-left: 1px solid #cfcfcf;

@@ -27,6 +27,17 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.filter__navigation .filter__navigation-list li {
+  border-bottom: transparent solid 1px;
+  border-bottom: transparent solid 1px;
+  cursor: pointer;
+}
+.filter__navigation .filter__navigation-list li:hover {
+  border-bottom: #727272 solid 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
 .filter__navigation .filter__navigation-list span {
   border-left: 1px solid #cfcfcf;
 }
