@@ -296,9 +296,45 @@ body._lock{
         padding-top: 112px;
         .page__container{
             @include container;
-            .page__slider{
+
+            
+            .page__title{
+                // height: calc(100vh);
                 height: calc(100vh - 112px);
+
+                .title-container{
+                    position: relative;
+                    height: 100%;
+                    // top: calc(50vh - 112px);
+                    // max-width: 1640px;
+                    .title-gif{
+                        position: absolute;
+                        // top: 50%;
+                        left: 0;
+                        margin: 0;
+                        top: calc(50% - 112px / 2);
+                        // top: 50%;
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+                    .title-text{
+                        position: absolute;
+                        // top: 50%;
+                        left: 0;
+                        margin: 0;
+                        top: calc(50% - 112px / 2);
+                        // top: 50%;
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
             }
+
+
             .page__projects{
                 .section-wrapper{
                     
