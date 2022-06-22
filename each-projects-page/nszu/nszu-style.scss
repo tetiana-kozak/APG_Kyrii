@@ -41,6 +41,10 @@
 
 
             // New style code
+::-webkit-scrollbar { width: 0;}
+
+body {overflow: hidden;}
+
 
 .section-wrapper  {
     padding: 0;
@@ -63,6 +67,7 @@
 
 .image-slider__image{
     text-align: center;
+    height: 100%;
 }
 
 .image-slider__image img{
