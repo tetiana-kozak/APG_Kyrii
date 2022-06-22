@@ -46,15 +46,19 @@
     padding: 0;
 }
 
+.page__main .page__content{
+    padding: 0;
+}
+
 .image-slider{
 }
 
 .image-slider__wrapper{
+    padding-top: 112px;
 
 }
 
 .image-slider__slide{
-
 }
 
 .image-slider__image{
@@ -63,7 +67,9 @@
 
 .image-slider__image img{
     max-width: 100%;
-    max-height: 832px;
+    // max-height: 832px;
+    max-height: calc(100vh - 112px);
+    padding-bottom: 10px;
 }
 
 .image-slider .swiper-button-prev::after,
