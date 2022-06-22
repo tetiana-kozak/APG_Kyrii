@@ -17,6 +17,7 @@
 .image-slider__image img {
   max-width: 100%;
   max-height: calc(100vh - 112px);
+  min-height: 100%;
   padding-bottom: 10px;
 }
 
@@ -32,4 +33,41 @@
   font-size: 24px;
   color: #252525;
   text-align: start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #F2F2F2;
+}
+
+.icon-resize {
+  position: absolute;
+  bottom: 10px;
+  right: 1px;
+  z-index: 10;
+  background-color: #F2F2F2;
+  padding: 2px;
+}
+.icon-resize svg {
+  height: 28px;
+  cursor: pointer;
+  stroke-width: 8px;
+}
+.icon-resize svg polygon {
+  fill: #383838;
+}
+.icon-resize svg:hover polygon {
+  fill: #000;
+}
+
+.photo-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+.photo-text .photo-text-left {
+  width: 85%;
+}
+.photo-text .photo-text-right {
+  width: 25%;
 }
