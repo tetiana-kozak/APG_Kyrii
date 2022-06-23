@@ -56,6 +56,18 @@ html::selection, body::selection, div::selection, span::selection, object::selec
   cursor: pointer;
 }
 
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content:hover .project__img .project__photo {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content:hover .project__img .project__photo-hover, .project__img .project__photo-hover:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -287,16 +299,6 @@ body._lock {
   max-width: 100%;
   cursor: pointer;
   opacity: 0;
-}
-.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img:hover .project__photo {
-  opacity: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img:hover .project__photo-hover, .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img .project__photo-hover:hover {
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper {
   display: -webkit-box;

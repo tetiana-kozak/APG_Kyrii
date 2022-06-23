@@ -181,6 +181,23 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
                           
 }
 
+
+
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content:hover .project__img .project__photo { 
+
+    opacity:0;
+    transition: all .2s ease;                              
+  
+}
+
+.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content:hover .project__img .project__photo-hover, .project__img .project__photo-hover:hover {
+
+    opacity:1;
+    transition: all .2s ease;
+}
+
+
+
 // button{
 //     -webkit-appearance: none;
 //     border-radius: none;
@@ -432,18 +449,18 @@ body._lock{
                                 }                              
                             }
 
-                            .project__img:hover .project__photo { 
+                            // .project__img:hover .project__photo { 
 
-                                opacity:0;
-                                transition: all .2s ease;                              
+                            //     opacity:0;
+                            //     transition: all .2s ease;                              
                               
-                            }
+                            // }
                             
-                            .project__img:hover .project__photo-hover, .project__img .project__photo-hover:hover {
+                            // .project__img:hover .project__photo-hover, .project__img .project__photo-hover:hover {
 
-                                opacity:1;
-                                transition: all .2s ease;
-                            }
+                            //     opacity:1;
+                            //     transition: all .2s ease;
+                            // }
 
                             .project__content-wrapper{
                                 display: flex;
