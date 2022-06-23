@@ -307,17 +307,18 @@ body._lock{
                     height: 100%;
                     // top: calc(50vh - 112px);
                     // max-width: 1640px;
-                    .title-gif{
-                        position: absolute;
-                        // top: 50%;
-                        left: 0;
-                        margin: 0;
-                        top: calc(50% - 112px / 2);
-                        // top: 50%;
-                        -ms-transform: translateY(-50%);
-                        transform: translateY(-50%);
-                    }
-                    .title-text{
+                    // .title-gif{
+                    //     position: absolute;
+                    //     // top: 50%;
+                    //     left: 0;
+                    //     margin: 0;
+                    //     top: calc(50% - 112px / 2);
+                    //     // top: 50%;
+                    //     -ms-transform: translateY(-50%);
+                    //     transform: translateY(-50%);
+                    // }
+                    
+                    .title-anim{
                         position: absolute;
                         // top: 50%;
                         left: 0;
@@ -328,9 +329,47 @@ body._lock{
                         transform: translateY(-50%);
                         
                     }
+
                     img{
                         width: 100%;
                     }
+                    
+                    .img{
+                        animation-name: fade;
+                        animation-iteration-count: infinite;
+                        animation-duration: 9s;
+
+                    }            
+
+                    
+                    .img-2{
+                        animation-delay: -6s;
+                    }
+                    .img-3{
+                        animation-delay: -3s;
+                    }
+
+                    
+                    
+                    @keyframes fade {
+                        0% {opacity: 0;}
+                        20% {opacity: 1;}
+                        33% {opacity: 1;}
+                        53% {opacity: 0;}
+                        100% {opacity: 0;}
+                    }
+
+                    .title-text{
+                        position: absolute;
+                        // top: 50%;
+                        left: 0;
+                        margin: 0;
+                        top: calc(50% - 112px / 2);
+                        // top: 50%;
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);                        
+                    }
+
                 }
             }
 
