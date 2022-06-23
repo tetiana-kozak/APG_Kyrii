@@ -80,20 +80,32 @@
   font-size: 24px;
   margin-bottom: 60px;
 }
+.awards__content .awards__wrapper .awards__title-year {
+  font-size: 24px;
+  padding-bottom: 28px;
+}
+.awards__content .awards__wrapper .years-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 32px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+  margin-bottom: 48px;
+}
 .awards__content .awards__wrapper .awards__block {
   border-bottom: 1px solid rgb(131, 131, 131);
-  max-width: 800px;
   padding: 20px 0 20px 0;
 }
-.awards__content .awards__wrapper .awards__block p {
-  padding-bottom: 5px;
+.awards__content .awards__wrapper .awards__block p:not(:last-child) {
+  padding-bottom: 8px;
 }
 .awards__content .awards__wrapper .awards__block .awards__name {
   font-weight: 700;
-  font-size: 18px;
 }
-.awards__content .awards__wrapper .__first {
-  padding-top: 0;
+.awards__content .awards__wrapper .awards__block .award {
+  font-size: 14px;
 }
 
 .footer__icons {

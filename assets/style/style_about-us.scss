@@ -64,22 +64,35 @@
     }
     .awards__wrapper{
         
+        .awards__title-year{
+            font-size: 24px;
+            padding-bottom: 28px;
+        }
+        .years-wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 32px;
+            margin-bottom: 48px;
+
+        }
         .awards__block{
             border-bottom: 1px solid rgb(131, 131, 131);
-            max-width: 800px;
+            // max-width: 800px;
             padding: 20px 0 20px 0;
-            p{
-                padding-bottom: 5px;
+            p:not(:last-child){
+                padding-bottom: 8px;
             }
             .awards__name{
                 font-weight: 700;
-                font-size: 18px;
                 
             }
+            .award{
+                font-size: 14px;
+            }
         }
-        .__first{
-            padding-top: 0;
-        }
+        // .__first{
+        //     padding-top: 0;
+        // }
     }
 }
 

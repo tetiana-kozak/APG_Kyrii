@@ -402,6 +402,11 @@
         padding-bottom: 1.125rem;
     }
 
+    .awards__content .awards__wrapper .years-wrapper{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
     /* .page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block-hiden-992-1199{
         display: none;
     } */
