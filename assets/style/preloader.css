@@ -3,7 +3,6 @@
     top:0;
     z-index:100;
     background: #F2F2F2;
-    /* background: #333333; */
     display:flex;
     min-height:100vh;
     width:100%;
@@ -107,11 +106,18 @@
 }
 
 #preloader__content .content-logo-pic{
+    height: 80px;
+    margin: 0 24px 0 0 ;
     transition: all 400ms ease-in-out;
 }
 
 #preloader__content .content-text{
     transition: all 400ms ease-in-out;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.15em;
 }
 
 
