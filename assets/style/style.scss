@@ -219,7 +219,7 @@ body._lock{
 
 .page__main{
     .page__header{
-        height: 112px;
+        height: 72px;
         width: 100%;
         background-color: $bg-color;
         position: fixed;
@@ -232,7 +232,7 @@ body._lock{
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
-                padding: 32px 0;
+                padding: 12px 0 12px 0;
                 .header__logo{
                     display: flex;
                     z-index: 20;
@@ -310,14 +310,14 @@ body._lock{
     // main content styles
 
     .page__content{
-        padding-top: 112px;
+        padding-top: 72px;
         .page__container{
             @include container;
 
             
             .page__title{
                 // height: calc(100vh);
-                height: calc(100vh - 112px);
+                height: calc(100vh - 72px);
 
                 .title-container{
                     position: relative;
@@ -340,7 +340,7 @@ body._lock{
                         // top: 50%;
                         left: 0;
                         margin: 0;
-                        top: calc(50% - 112px / 2);
+                        top: calc(50% - 72px / 2);
                         // top: 50%;
                         -ms-transform: translateY(-50%);
                         transform: translateY(-50%);
@@ -381,7 +381,7 @@ body._lock{
                         // top: 50%;
                         left: 0;
                         margin: 0;
-                        top: calc(50% - 112px / 2);
+                        top: calc(50% - 72px / 2);
                         // top: 50%;
                         -ms-transform: translateY(-50%);
                         transform: translateY(-50%);                        

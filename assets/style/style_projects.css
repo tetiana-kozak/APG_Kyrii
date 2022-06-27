@@ -17,7 +17,7 @@
 }
 
 .filter__navigation {
-  padding: 0 0 24px 0;
+  padding: 24px 0 24px 0;
 }
 .filter__navigation .filter__navigation-list {
   display: -webkit-box;
