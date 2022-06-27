@@ -684,3 +684,52 @@ body._lock {
   fill: #727272;
   cursor: pointer;
 }
+
+.warning-page {
+  height: calc(100vh - 72px);
+  text-align: center;
+  color: #292929;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.warning-page .warning-page-content h3 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.warning-page .warning-page-content p {
+  font-size: 21px;
+  padding-bottom: 5px;
+}
+.warning-page .warning-page-content .prev-btn {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto 0 auto;
+  padding: 5px 30px 5px 30px;
+  text-decoration: none;
+  color: #292929;
+  border: #474747 1px solid;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.warning-page .warning-page-content .prev-btn:visited {
+  background-color: transparent;
+}
+.warning-page .warning-page-content .prev-btn:hover {
+  background-color: #1a1a1a;
+  color: #F2F2F2;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.warning-page .warning-page-content .prev-btn:active {
+  background-color: transparent;
+}
