@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 if(!isNameCorrect(input)) {
                     
                     // formAddError(input);
-                    ifNameError.innerHTML = "Name error"
+                    ifNameError.innerHTML = "Only letters allowed"
                     
                     error ++;
                 }
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 if(input.value.length < 14) {
 
                     // formAddError(input);
-                    ifPhoneError.innerHTML = "Phone error"
+                    ifPhoneError.innerHTML = "Invalid phone number"
 
                     error ++;            
                 } 
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 if (!isEmailCorrect(input)) {
 
                     // formAddError(input);
-                    ifEmailError.innerHTML = "Email error"
+                    ifEmailError.innerHTML = "Enter an email in the correct format"
 
                     error ++;
                 }
