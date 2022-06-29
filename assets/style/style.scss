@@ -1,134 +1,9 @@
-@use 'sass:math';
+@import 'variables';
 
-            // New style__functions
-
-
-// to %
-// @function prc($pxOne, $pxTwo){
-    //     $result: math.div($pxOne, $pxTwo) * 100%;
-    //     @return $result;
-    // }
-    // to REM
-@function rem($num){
-    $result: #{($num/ 16) + rem};
-    // $result: #{math.div($num, 16) + rem};
-    @return $result;
-}
-
-
-
-
-// to EM
-// @function em($px){
-    //     $result: math.div($px, 16) + em;
-    //     @return $result;
-    // }
-    
-
-    
-
-
-            // New style__variables
-    
-$fz12: rem(12);
-$fz14: rem(14);
-$fz18: rem(18);
-$fz20: rem(20);
-
-$bg-color: #F2F2F2;
-$text-color: #000;
-    
-
-           // New style
-            // New style__mixins
-
-@mixin container {
-    // width: 1640px;
-    padding: 0 rem(15);
-    margin: 0 auto;
-    max-width: 1670px;
-}
-@mixin section {
-    padding:  0 0 112px 0;
-}
-
-
-// @mixin btn_container {
-//     // cursor: pointer;
-//     width: 352px;
-//     padding: rem(4) rem(8);
-//     border: 1px solid #292929;
-    
-    
-//     &:visited{
-//         background-color: transparent;
-//     }
-//     &:hover{
-//         background-color: #c2c2c2;
-//         transition: all .5s ease;
-//     }
-//     &:active{
-//         background-color: transparent;
-//     }
-// }
-
-@mixin btn_text{
-    color: $text-color;
-    font-size: $fz14;
-    font-weight: 700;
-    letter-spacing: 0.5em;
-    
-    text-transform: uppercase;
-
-    width: 352px;
-    padding: rem(4) rem(8);
-    border: 1px solid #292929;
-    
-    
-    &:visited{
-        background-color: transparent;
-    }
-    &:hover{
-        background-color: #1a1a1a;
-        color: #F2F2F2;
-        transition: all .5s ease;
-    }
-    &:active{
-        background-color: transparent;
-    }
-}
-
-@mixin text_hover {
-    border-bottom: transparent solid 1px;
-
-    
-    &:hover{
-        border-bottom: #727272 solid 1px;
-        transition: all .5s ease;
-        cursor: pointer;       
-    }
-    &:active{
-        border: transparent;
-    }
-   
-}
-
-@mixin text_selection{
-    &::selection {
-        color: $text-color;
-        background: rgb(201, 201, 201);
-    }
-} 
-
-
-            // General reset settings
 * {
     box-sizing: border-box;
-    // font-size: 16px;
     font-weight: 400; 
 }
-
-
 
 body{
     padding: 0;
@@ -136,7 +11,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: $text-color;
     background-color: $bg-color;
-    
 }
 
 ul, li{
@@ -157,57 +31,31 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-size: $fz14;
     font-weight: 300;
     width: fit-content;
-    // text-transform: uppercase;
-    // cursor: pointer;
-    // @include text_hover; 
-    
 }
 
 .project__content{
     transition: all 0.5s;
-    
 }
+
 .project__text{
     border-bottom: transparent solid 1px;
-
 }
 
 .project__content:hover .project__text{ 
-
     border-bottom: #727272 solid 1px;
     transition: all .5s ease;
     cursor: pointer; 
-                                                          
-                          
 }
 
-
-
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content:hover .project__img .project__photo { 
-
     opacity:0;
     transition: all .2s ease;                              
-  
 }
 
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content:hover .project__img .project__photo-hover, .project__img .project__photo-hover:hover {
-
     opacity:1;
     transition: all .2s ease;
 }
-
-
-
-// button{
-//     -webkit-appearance: none;
-//     border-radius: none;
-// }
-
-
-
-
-
-            // New style code
 
 html{
     scroll-behavior: smooth;
@@ -248,7 +96,6 @@ body._lock{
                         .header_name-text{
                             text-transform: uppercase;
                             font-weight: 700;
-                            // font-size: 12px;
                             font-size: $fz12;
                             line-height: 16px;
                             letter-spacing: 0.2em;
@@ -257,14 +104,10 @@ body._lock{
                     }
                 }
                 .menu{
-                        
-                    
                     .menu__icon{
                         display: none;
                     }                    
-                    
                     .menu__list{                        
-                        
                         li{
                             a{
                                 text-decoration: none;
@@ -295,79 +138,45 @@ body._lock{
                         .projects-link{
                             border-bottom: #727272 solid 1px;        
                         }
-                        
                         .menu__active{
                             border-bottom: #727272 solid 1px;
                         }                    
                     }
-                    
                 }
             }
         }
     }
-
-
-    // main content styles
-
     .page__content{
         padding-top: 72px;
         .page__container{
             @include container;
-
-            
             .page__title{
-                // height: calc(100vh);
                 height: calc(100vh - 72px);
-
                 .title-container{
                     position: relative;
                     height: 100%;
-                    // top: calc(50vh - 112px);
-                    // max-width: 1640px;
-                    // .title-gif{
-                    //     position: absolute;
-                    //     // top: 50%;
-                    //     left: 0;
-                    //     margin: 0;
-                    //     top: calc(50% - 112px / 2);
-                    //     // top: 50%;
-                    //     -ms-transform: translateY(-50%);
-                    //     transform: translateY(-50%);
-                    // }
-                    
                     .title-anim{
                         position: absolute;
-                        // top: 50%;
                         left: 0;
                         margin: 0;
                         top: calc(50% - 72px / 2);
-                        // top: 50%;
                         -ms-transform: translateY(-50%);
                         transform: translateY(-50%);
-                        
                     }
-
                     img{
                         width: 100%;
                     }
-                    
                     .img{
                         animation-name: fade;
                         animation-iteration-count: infinite;
                         animation-duration: 9s;
-
                     }            
-
-                    
                     .img-2{
                         animation-delay: -6s;
                     }
                     .img-3{
                         animation-delay: -3s;
                     }
-
-                    
-                    
                     @keyframes fade {
                         0% {opacity: 0;}
                         20% {opacity: 1;}
@@ -375,158 +184,83 @@ body._lock{
                         53% {opacity: 0;}
                         100% {opacity: 0;}
                     }
-
                     .title-text{
                         position: absolute;
-                        // top: 50%;
                         left: 0;
                         margin: 0;
                         top: calc(50% - 72px / 2);
-                        // top: 50%;
                         -ms-transform: translateY(-50%);
                         transform: translateY(-50%);                        
                     }
-
                 }
             }
-
-
             .page__projects{
                 .section-wrapper{
-                    
-                    // @include section;
                     .project__wrapper{
                         display: flex;
                         flex-wrap: wrap;
-                        // display: grid;
-                        // grid-template-columns: repeat(3, 1fr);
-                        // grid-template-columns: repeat(auto-fit, minmax(528px, 1fr));
-                        // gap: 28px;
                         margin: 0 -14px;                        
-                        // margin-bottom: 28px;                        
                         padding-top: 5px;
                         .project__content{
                             display: flex;
                             flex-direction: column;
                             position: relative;
                             min-width: 100px;
-                            // flex-grow: 1; 
                             width: calc(((100% - 56px) / 3 ) + 18px); 
-                            // width: 100%;
                             padding: 0 14px rem(28) 14px;  
                             .project__img{
                                 position: relative;
                                 max-width: 528px;
-                                // min-height: 145px;
-                                // max-height: 352px;
-
                                 img{
                                     position: absolute;
                                     left: 0;
                                     top: 0;
-                                    // width: 100%;
                                     width: 528px;
-                                    // height: 100%;
-                                    // object-fit: cover;
                                 }
-
                                 .project__photo{
-                                    // padding: 0 0 prc(352, 528) 0;
                                     width: 528px;
                                     max-width: 100%;
                                     cursor: pointer;
-
                                     opacity:1;
-                                        
                                 }  
-    
                                 .project__photo-hover{
                                     max-width: 100%;
                                     cursor: pointer;
-
                                     opacity:0;
-    
                                 }                              
                             }
-
-                            // .project__img:hover .project__photo { 
-
-                            //     opacity:0;
-                            //     transition: all .2s ease;                              
-                              
-                            // }
-                            
-                            // .project__img:hover .project__photo-hover, .project__img .project__photo-hover:hover {
-
-                            //     opacity:1;
-                            //     transition: all .2s ease;
-                            // }
-
                             .project__content-wrapper{
                                 display: flex;
                                 flex-direction: column;
-                                
                                 .project__photo-hiden{
                                     max-width: 100%;
                                     visibility: hidden;
                                 }
-    
                                 .project__text{
                                     margin-top: rem(14);
                                 }
-
-                                
-                                // .project__text{
-                                //     font-size: $fz14;
-                                //     font-weight: 300;
-                                //     width: fit-content;
-                                //     // text-transform: uppercase;
-                                //     cursor: pointer;
-                                //     margin-top: rem(14);
-                                //     @include text_hover;                                
-                                // }
                             }
-
                         }               
-                                              
-                        
                     }
-                    
-                    
                 }
             }
-
             .page__about-us{
                 .about-us{
                     .about-us__container{
                         display: grid;
                         grid-template-columns: repeat(4, 1fr);
                         gap: 22px;
-                        // display: flex; !
-                        // flex-wrap: wrap; !
-                        // margin: 0 -22px; !
-                        // margin: 0 -14px;
                         padding-top: 5px;
                         margin-bottom: 28px;
                         .emp-block{
-                            // display: flex;
-                            // flex-direction: column;
                             position: relative;
-                            // flex-grow: 1;!
                             min-width: 100px;                            
                             width: 100%;
-                            // width: calc((100% - 56px) / 3);
-                            // padding: 0 22px 36px 22px;
-
                             .emp-block__photo{
                                 width: 528px;
                                 max-width: 100%;
-                                // position: absolute;
-                                // left: 0;
-                                // top: 0;
                                 object-fit: cover;
                             }
-                            
                             .emp-block__name{
                                 padding: rem(8) 0 rem(4) 0;
                             }
@@ -542,11 +276,8 @@ body._lock{
                             visibility: hidden;
                         }
                     }
-                    .about-us__more-btn{
-                    }
                 }
             }
-
             .page__contacts{
                 .contacts{
                     .contacts__container{
@@ -562,33 +293,28 @@ body._lock{
                             border-left: 1px #000 solid;
                             .contacts__what-we-do-text{
                                 margin-left: rem(56);
-                                
                                 .main-text{
                                     font-size: $fz20;
                                     font-weight: 700;
                                     letter-spacing: 0.135em;
-                                    // margin-bottom: rem(8);
                                 }
-                                .main-text:not(:last-of-type){                                    
+                                .main-text:not(:last-of-type){
                                     margin-bottom: rem(8);
                                 }
                                 .additional-text{
                                     font-size: $fz14;
                                     font-weight: 300;
                                     letter-spacing: 0.135em;
-                                    line-height: rem(17);                                                                       
+                                    line-height: rem(17);
                                 }
                             }
                         }
                         .contacts__place-a-meeting{
                             width: 410px;
                             border: #000 solid 1px;  
-                            
                             .contacts__place-a-meeting-container{
                                 height: 100%;
                                 position: relative;
-
-                                
                                 .contacts__form{
                                     height: 100%;
                                     width: 80%;
@@ -596,12 +322,7 @@ body._lock{
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: space-between;
-
                                     position: relative;
-
-                                   
-
-
                                     .contacts__cotact-us-title{
                                         font-size: $fz20;
                                         font-weight: 700;
@@ -610,9 +331,7 @@ body._lock{
                                         text-transform: uppercase;
                                         text-align: center;
                                         padding-top: 15px;
-                                        
                                     }
-                                    
                                     .contacts__input-block{
                                         display: flex;
                                         flex-direction: column;
@@ -630,21 +349,17 @@ body._lock{
                                             color: $text-color;
                                             background-color: transparent;
                                             border: $text-color 1px solid;
-
                                             &:focus{
                                                 border: #000 2px solid;
                                                 border-radius: 5px;
                                             }
-                                            
                                         }
                                         .input-field._error{
                                             border: #8a0202 solid 2px;
-                                            // box-shadow: red 0 0 2px;
                                         }
                                         .input-label._errorText{
                                             color: #8a0202;
                                         }
-                                        
                                         .input-error{
                                             height: 16px;
                                             padding-top: 2px;
@@ -652,14 +367,11 @@ body._lock{
                                             font-weight: 300;
                                             color: #ca0000;
                                         }
-
                                         textarea{
                                             resize: none;
                                             margin: 0;
                                         }
-
                                     }
-                                    
                                     .error-hiden{
                                         position: absolute;
                                         bottom: 82px;
@@ -686,7 +398,6 @@ body._lock{
                                         margin: 0 auto 0 auto;
                                         padding: 5px 0 12px 0;
                                     }
-
                                     &::after{
                                         content: '';
                                         position: absolute;
@@ -699,22 +410,15 @@ body._lock{
                                         visibility: hidden;
                                         transition: all 0.5s ease 0s;
                                     }
-                                    
                                 }
                                 .contacts__form * {
                                     outline: none;
                                 }
-
                                 .contacts__form._sending::after{
                                     opacity: 1;
                                     visibility: visible;
                                 }
-
-
-                                
                             }
-
-                            
                         }
                     }
                 }
@@ -724,9 +428,6 @@ body._lock{
 }
 
 .page__footer{
-    .footer__map{
-
-    }
     .page__container{
         @include container;
             .footer__contact-info{
@@ -734,7 +435,6 @@ body._lock{
             justify-content: space-between;
             padding: 72px 0 72px 0;
             .contacts{
-                
                 .contacts__details{
                     text-decoration: none;
                     color: $text-color;
@@ -742,9 +442,6 @@ body._lock{
                     line-height: rem(20);
                     letter-spacing: 0.02em;
                     @include text_hover;
-                }
-                
-                .contacts__adress{
                 }
                 .contacts__e-mail{
                     width: fit-content;
@@ -772,7 +469,6 @@ body._lock{
 
 .section-wrapper{
     @include section;
-    
 }
 
 .page__footer.section-wrapper {
@@ -783,13 +479,11 @@ body._lock{
 .more-btn{                            
     display: flex;
     justify-content: center;    
-    // @include btn_container;
     .more-btn-text{
         @include btn_text;
         text-decoration: none;
         text-align: center;
     }
-    
 }
 
 .section__title{
@@ -799,21 +493,16 @@ body._lock{
     padding-bottom: 12px;
     .title{
         font-size: 24px;
-        // font-weight: 700;
-        
     }
     .icon{
         display: flex;
         align-items: center;
         .title__more-btn{
-            // margin-left: 20px;
             font-size: 20px;
             text-decoration: none;
             color: #575757;
             border-bottom: transparent solid 1px;
             transition: all .5s ease;
-            
-    
             &:hover{
                 color: #131313;
                 font-weight: 500;
@@ -828,12 +517,9 @@ body._lock{
             transform: rotate(-90deg);
             fill: #727272;
             cursor: pointer;
-            
         }
-        
     }
 }
-
 
 .warning-page{
     height: calc(100vh - 72px);
@@ -842,9 +528,7 @@ body._lock{
     display: flex;
     align-items: center;
     justify-content: center;
-    
     .warning-page-content{        
-
         h3{
             font-size: 40px;
             font-weight: 500;
@@ -853,7 +537,6 @@ body._lock{
         p{
             font-size: 21px;
             padding-bottom: 5px;
-            
         }
         .prev-btn{
             display: block;
@@ -865,7 +548,6 @@ body._lock{
             border: #474747 1px solid;
             text-transform: uppercase;
             font-weight: 500;
-
             &:visited{
                 background-color: transparent;
             }
@@ -877,9 +559,6 @@ body._lock{
             &:active{
                 background-color: transparent;
             }
-    
         }
     }
-
 }
-

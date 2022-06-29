@@ -1,69 +1,14 @@
-            // New style__functions
+@import '../../assets/style/variables';
 
-
-// to %
-// @function prc($pxOne, $pxTwo){
-    //     $result: math.div($pxOne, $pxTwo) * 100%;
-    //     @return $result;
-    // }
-    // to REM
-    @function rem($num){
-        $result: #{($num/ 16) + rem};
-        // $result: #{math.div($num, 16) + rem};
-        @return $result;
-    }
-    
-    
-    
-    
-    // to EM
-    // @function em($px){
-        //     $result: math.div($px, 16) + em;
-        //     @return $result;
-        // }
-        
-    
-        
-    
-    
-                // New style__variables
-        
-    $fz12: rem(12);
-    $fz14: rem(14);
-    $fz18: rem(18);
-    $fz20: rem(20);
-    $fz24: rem(24);
-    
-    $bg-color: #F2F2F2;
-    $text-color: #000;
-
-
-
-
-            // New style code
 ::-webkit-scrollbar { width: 0;}
 
 body {overflow: hidden;}
 
+.section-wrapper  {padding: 0;}
 
-.section-wrapper  {
-    padding: 0;
-}
+.page__main .page__content{padding: 0;}
 
-.page__main .page__content{
-    padding: 0;
-}
-
-.image-slider{
-}
-
-.image-slider__wrapper{
-    padding-top: 72px;
-
-}
-
-.image-slider__slide{
-}
+.image-slider__wrapper{padding-top: 72px;}
 
 .image-slider__image{
     text-align: center;
@@ -72,7 +17,6 @@ body {overflow: hidden;}
 
 .image-slider__image img{
     max-width: 100%;
-    // max-height: 832px;
     max-height: calc(100vh - 72px);
     min-height: 100%;
     padding-bottom: 10px;
@@ -87,41 +31,12 @@ body {overflow: hidden;}
 }
 
 .image-slider .swiper-pagination-fraction{
-    font-size: 24px;
+    font-size: $fz24;
     color: #252525;
     text-align: start;
     width: fit-content;
     background-color: $bg-color;
 }
-
-
-// .icon-resize{
-//     position: absolute;
-//     bottom: 10px;
-//     right: 1px;
-//     z-index: 10;
-//     background-color: $bg-color;
-//     padding: 2px;
-//     svg{
-//         height: 28px;
-//         cursor: pointer;
-//         // stroke: #f51919;
-//         stroke-width: 8px;
-//         polygon{
-//             fill: #383838;
-//             // stroke-linejoin: round;
-            
-
-//         }
-
-//     }
-//     svg:hover polygon{
-//         fill: #000;
-        
-//     }
-// }
-
-
 
 .photo-text{
     display: flex;
@@ -133,186 +48,3 @@ body {overflow: hidden;}
         width: 25%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .slider{
-//     position: relative;
-//     overflow: hidden;
-    
-
-
-//     .slider__left{
-//         // height: 100%;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         height: 832px;
-//         width: 100px;
-//         cursor: pointer;
-//         .arrow-left{
-//             position: absolute;
-//             top: 0;
-//             left: 0;
-//             margin: auto 0;
-//             height: 100%;
-//             width: 100%;
-//             display: flex;
-//             align-items: center;
-//             justify-content: flex-start;
-//         }
-//         .icon-photo-count{
-//             position: absolute;
-//             bottom: 0;
-//             left: 0;
-//             font-size: $fz24;
-//             width: 100px;
-//             color: #424242;
-//             // text-align: center;
-
-//             &:hover{
-//                 cursor: auto;
-//             }
-//         }
-
-//     }
-
-
-//     .slider__right{
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         height: 832px;
-//         width: 100px;
-//         // transition: all .2s ease;
-//         cursor: pointer;        
-//         .arrow-right{
-//             position: absolute;
-//             top: 0;
-//             right: 0;
-//             height: 100%;
-//             width: 100%;
-//             display: flex;
-//             align-items: center;
-//             justify-content: flex-end;
-            
-//             // position: absolute;
-//             // top: 50%;
-    
-//         }
-
-//         .icon-resize{
-//             position: absolute;
-//             bottom: 0;
-//             right: 0;
-//             svg{
-//                 height: 30px;
-//                 cursor: pointer;
-//                 // stroke: #f51919;
-//                 polygon{
-//                     fill: #5f5f5f;
-//                     stroke-width:4px;
-//                     // stroke-linejoin: round;
-                    
-
-//                 }
-
-//             }
-//             svg:hover polygon{
-//                 fill: #000;
-                
-//             }
-//         }
-        
-
-//     }
-      
-       
- 
-//     svg{
-//         fill: white;
-//         height: 70px;
-//         width: 70px;
-//         // width: 100%;
-        
-//         filter: drop-shadow(3px 5px 3px rgb(0 0 0 / 0.2));
-//         // filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-//         path{
-//             height: 100%;
-//         }
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

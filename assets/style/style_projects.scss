@@ -1,17 +1,4 @@
-@mixin text_hover {
-    border-bottom: transparent solid 1px;
-
-    
-    &:hover{
-        border-bottom: #727272 solid 1px;
-        transition: all .5s ease;
-        cursor: pointer;       
-    }
-    
-   
-}
-
-
+@import 'variables';
 
 ._underscore{
     border-bottom: #727272 solid 1px;
@@ -20,13 +7,12 @@
 
 .section-wrapper{
     padding-bottom: 80px;
-
 }
-
 
 .page__filter > .section-wrapper{
     padding: 0 0 0 0;
 }
+
 .project__wrapper{
     margin-bottom: 0 !important;
 }
@@ -46,47 +32,16 @@
         }
     }
 }
-// .project__content{
-//     transition: all 0.5s;
-    
-// }
-// .project__text{
-//     border-bottom: transparent solid 1px;
-
-// }
-
-// .project__content:hover .project__text{ 
-
-//     border-bottom: #727272 solid 1px;
-//     // transition: all .5s ease;
-//     cursor: pointer; 
-                                                          
-                          
-// }
 
 .animation{
     transform: scale(0);
     opacity: 0;
 }
 
-// .filter_hidden{
-//     // display: none;
-
-
-
-
-// }
-
 .filter_hidden{
-    // display: none;
-
     animation-name: hide;
     animation-duration: .5s;
     animation-fill-mode: forwards;
-}
-
-.card-hide{
-    // display: none;
 }
 
 @keyframes hide{
@@ -94,7 +49,6 @@
         visibility: visible;
         height: 400px;
     }
-  
     100%{              
         // display: none;
         visibility: hidden;
@@ -107,4 +61,3 @@
         font-size: 0;  
     }
 }
-

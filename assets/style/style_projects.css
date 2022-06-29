@@ -17,7 +17,7 @@
 }
 
 .filter__navigation {
-  padding: 24px 0 24px 0;
+  padding: 0 0 24px 0;
 }
 .filter__navigation .filter__navigation-list {
   display: -webkit-box;
@@ -37,6 +37,9 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: pointer;
+}
+.filter__navigation .filter__navigation-list li:active {
+  border: transparent;
 }
 .filter__navigation .filter__navigation-list span {
   border-left: 1px solid #cfcfcf;

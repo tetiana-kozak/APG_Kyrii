@@ -1,7 +1,5 @@
 "use strict"
 
-            // Burger menu
-
 const menuIcon = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
 
@@ -11,5 +9,4 @@ if (menuIcon) {
         menuIcon.classList.toggle('_active');
         menuBody.classList.toggle('_active');
     });
-    
 };

@@ -69,7 +69,7 @@
 .info__paragraphs .par-group .par {
   width: 48%;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .info__paragraphs .par-group .par span {
   font-weight: 700;
@@ -77,11 +77,11 @@
 
 .awards__content .awards__title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 60px;
 }
 .awards__content .awards__wrapper .awards__title-year {
-  font-size: 24px;
+  font-size: 1.5rem;
   padding-bottom: 28px;
 }
 .awards__content .awards__wrapper .years-wrapper {
@@ -105,7 +105,7 @@
   font-weight: 700;
 }
 .awards__content .awards__wrapper .awards__block .award {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .footer__icons {

@@ -1,8 +1,5 @@
 "use strict"
 
-            // filter menu
-
-
 const filterNav = document.querySelector('.filter__navigation');
 const projects = document.querySelector('.project__wrapper');
 const footer = document.querySelector('footer');
@@ -20,16 +17,13 @@ if (arrow) {
 
 const filterLinks = document.querySelectorAll('.filter__btn');
 
-
 if (filterLinks.length > 0) {
     filterLinks.forEach(item => {
         item.addEventListener("click", onFilterLinksClick);
     });
-
     function onFilterLinksClick(e){
         const filterLink = e.target;
         if (filterLink) {
-            
             if (filterNav.classList.contains('_filter-active')) {
                 document.body.classList.remove('_lock');
                 projects.classList.remove('_filter-active')
@@ -38,7 +32,5 @@ if (filterLinks.length > 0) {
                 arrow.classList.remove('_filter-active')    
             }            
         }                         
-
-        // e.preventDefault();
     }
 }
