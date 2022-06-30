@@ -27,7 +27,7 @@
     if (!$mail->send()) {
     $message = "Error!";
     } else {
-    $message = "Sent sucssesfully";
+    $message = "Sent sucssesfully!";
     }
     $response = ['message' => $message];
     header('Content-type: application/json');
