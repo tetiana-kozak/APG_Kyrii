@@ -1,6 +1,6 @@
 "use strict"
 
-const formReq = document.querySelectorAll('._req');
+
 const ifNameError = document.querySelector('.name-error');
 const ifPhoneError = document.querySelector('.phone-error');
 const ifEmailError = document.querySelector('.email-error');    
@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
     async function formSend(e){
         e.preventDefault();
         let error = formValidate(form);
+        let formData = new FormData(form);
         if (error === 0) {
             form.classList.add('_sending')
             document.querySelector('.error-hiden').style.visibility = "hidden"
@@ -35,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function(){
     };
     function formValidate(form){
         let error = 0;
+        const formReq = document.querySelectorAll('._req');
         formRemoveError()
         for (let index = 0; index < formReq.length; index++) {            
             const input = formReq[index];
@@ -62,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function(){
         return error;
     };
     function formAddError(input){
-        const ifEmptyError = document.querySelectorAll('.input-error');
+        // const ifEmptyError = document.querySelectorAll('.input-error');
         input.parentElement.classList.add('_error');
         input.classList.add('_error')
     }
