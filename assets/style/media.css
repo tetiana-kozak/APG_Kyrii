@@ -82,7 +82,7 @@
         z-index: 0;
     }
     .project__wrapper._filter-active{
-        transform: translateY(160px);
+        transform: translateY(200px);
     }
     footer{
         transition: all .5s ease 0s;
