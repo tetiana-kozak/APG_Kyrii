@@ -23,11 +23,13 @@ document.addEventListener('DOMContentLoaded', function(){
             })
             if (response.ok) {
                 let result = await response.json()
-                alert(result.message)
+                // alert(result.message)
+                document.querySelector('.form-response').classList.add('_visible')
+                document.querySelector('.response').innerHTML = result.message
                 form.reset()
                 form.classList.remove('_sending')
             } else {
-                alert("Mistake")
+                alert("Something went wrong! Please, try again later!")
                 form.classList.remove('_sending')
             }
         }else{

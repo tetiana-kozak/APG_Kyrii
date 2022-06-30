@@ -562,3 +562,47 @@ body._lock{
         }
     }
 }
+
+.form-response{
+visibility: hidden;
+}
+
+.form-response._visible{
+    visibility: visible;
+    background-color: rgb(34, 34, 34, .9);
+    color: #F2F2F2;
+    animation: fadeOut ease 3s forwards;
+    animation-delay: 2s;
+    .response{
+        font-size: $fz18;
+        padding: 12px 0;
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+// .form-response{
+// visibility: hidden;
+// }
+
+// .form-response._visible{
+//     visibility: visible;
+//     background-color: rgb(34, 34, 34, .9);
+//     color: #F2F2F2;
+//     // height: 50px;
+//     .response{
+//         font-size: $fz18;
+//         padding: 12px 0;
+//         width: fit-content;
+//         margin: auto;
+//     }
+// }
