@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if (error === 0) {
             form.classList.add('_sending')
             document.querySelector('.error-hiden').style.visibility = "hidden"
-            let response = await fetch('send-mail.php', {
+            let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
             })
@@ -86,8 +86,4 @@ document.addEventListener('DOMContentLoaded', function(){
         const isAnyLet = /^[0-9]*[.,]?[0-9]+$/.test(input.value)
         return isAnyLet;
     }
-    // function isNameCorrect(input){
-    //     const isAnyLet = /^[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’`\s- ]+$/.test(input.value)
-    //     return isAnyLet;
-    // }
 })

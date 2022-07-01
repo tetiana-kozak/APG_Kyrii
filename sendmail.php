@@ -7,10 +7,10 @@
     $mail->CharSet = 'UTF-8';
     $mail->setLanguage('ru', 'phpmailer/language/');
     $mail->IsHTML(true);
-    $mail->SetFrom('kozaktanya077@gmail.com', 'Форма з сайту');
-    $mail->addAddress('kozaktanya077@gmail.com');
+    $mail->SetFrom('in@kyrii-group.com.ua', 'Форма з сайту');
+    $mail->addAddress('in@kyrii-group.com.ua');
     $mail->Subject = 'Форма зворотнього зв\'язку з сайту';
-    $body = '<h3>Лист з форми зворотнього зв\язку на сайті!</h3>';
+    $body = '<h3>Лист з форми зворотнього зв\'язку на сайті!</h3>';
     if (trim(!empty($_POST['name']))) {
         $body.='<p><strong>Ім\'я:</strong> '.$_POST['name'].'</strong>';
     }
