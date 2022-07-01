@@ -10,7 +10,6 @@
     $mail->setLanguage('ru', 'phpmailer/language/');
     $mail->IsHTML(true);
     $mail->SetFrom('kozaktanya077@gmail.com', 'Форма з сайту');
->>>>>>> .merge_file_a16188
     $mail->addAddress('kozaktanya077@gmail.com');
     $mail->Subject = 'Форма зворотнього зв\'язку з сайту';
     $body = '<h3>Лист з форми зворотнього зв\язку на сайті!</h3>';
@@ -31,7 +30,6 @@
     $message = "Something went wrong! Please, try again later!";
     } else {
     $message = "Thank you! Your message has been sent!";
->>>>>>> .merge_file_a16188
     }
     $response = ['message' => $message];
     header('Content-type: application/json');
