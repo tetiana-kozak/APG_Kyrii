@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if (error === 0) {
             form.classList.add('_sending')
             document.querySelector('.error-hiden').style.visibility = "hidden"
-            let response = await fetch('send-mail.php', {
+            let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
             })
