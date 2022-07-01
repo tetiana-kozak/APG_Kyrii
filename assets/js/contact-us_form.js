@@ -1,9 +1,5 @@
 "use strict"
 
-<<<<<<< HEAD
-
-=======
->>>>>>> tk/fixing-contact-form
 const ifNameError = document.querySelector('.name-error');
 const ifPhoneError = document.querySelector('.phone-error');
 const ifEmailError = document.querySelector('.email-error');    
