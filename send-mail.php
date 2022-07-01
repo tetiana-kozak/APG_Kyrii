@@ -9,8 +9,8 @@
     $mail->IsHTML(true);
     $mail->SetFrom('kozaktanya077@gmail.com', 'Форма з сайту');
     $mail->addAddress('kozaktanya077@gmail.com');
-    $mail->Subject = 'Форма з сайту';
-    $body = '<h3>Letter from online form in website!</h3>';
+    $mail->Subject = 'Форма зворотнього зв\'язку з сайту';
+    $body = '<h3>Лист з форми зворотнього зв\язку на сайті!</h3>';
     if (trim(!empty($_POST['name']))) {
         $body.='<p><strong>Ім\'я:</strong> '.$_POST['name'].'</strong>';
     }
@@ -27,7 +27,7 @@
     if (!$mail->send()) {
     $message = "Something went wrong! Please, try again later!";
     } else {
-    $message = "Form has been sent!";
+    $message = "Thank you! Your message has been sent!";
     }
     $response = ['message' => $message];
     header('Content-type: application/json');
