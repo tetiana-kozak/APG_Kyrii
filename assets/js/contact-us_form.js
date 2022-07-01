@@ -1,6 +1,9 @@
 "use strict"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> tk/fixing-contact-form
 const ifNameError = document.querySelector('.name-error');
 const ifPhoneError = document.querySelector('.phone-error');
 const ifEmailError = document.querySelector('.email-error');    
@@ -23,11 +26,12 @@ document.addEventListener('DOMContentLoaded', function(){
             })
             if (response.ok) {
                 let result = await response.json()
-                alert(result.message)
+                document.querySelector('.form-response').classList.add('_visible')
+                document.querySelector('.response').innerHTML = result.message
                 form.reset()
                 form.classList.remove('_sending')
             } else {
-                alert("Mistake")
+                alert("Something went wrong! Please, try again later!")
                 form.classList.remove('_sending')
             }
         }else{
@@ -45,18 +49,20 @@ document.addEventListener('DOMContentLoaded', function(){
                 formAddError(input);
                 error ++;
             } else if (input.classList.contains('_name')){
-                if(!isNameCorrect(input)) {
+                if(isNameCorrect(input)) {
                     ifNameError.innerHTML = "Only letters allowed"
                     error ++;
                 }
             } else if (input.classList.contains('_phone')){
                 if(input.value.length < 14) {
+                    formAddError(input);
                     ifPhoneError.innerHTML = "Invalid phone number"
                     error ++;            
                 } 
             } else if (input.classList.contains('_email')) {
                 if (!isEmailCorrect(input)) {
-                    ifEmailError.innerHTML = "Enter an email in the correct format"
+                    formAddError(input);
+                    ifEmailError.innerHTML = "Enter a valid email (name@email.com)"
                     error ++;
                 }
             }
@@ -64,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function(){
         return error;
     };
     function formAddError(input){
-        // const ifEmptyError = document.querySelectorAll('.input-error');
         input.parentElement.classList.add('_error');
         input.classList.add('_error')
     }
@@ -82,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function(){
         return result;
     }
     function isNameCorrect(input){
-        const isAnyLet = /^[a-zA-Zа-яА-Я ]+$/.test(input.value)
+        const isAnyLet = /^[0-9]*[.,]?[0-9]+$/.test(input.value)
         return isAnyLet;
     }
 })

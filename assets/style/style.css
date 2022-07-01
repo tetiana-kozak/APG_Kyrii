@@ -733,3 +733,43 @@ body._lock {
 .warning-page .warning-page-content .prev-btn:active {
   background-color: transparent;
 }
+
+.form-response {
+  visibility: hidden;
+}
+
+.form-response._visible {
+  visibility: visible;
+  background-color: rgba(34, 34, 34, 0.9);
+  color: #F2F2F2;
+  -webkit-animation: fadeOut ease 3s forwards;
+          animation: fadeOut ease 3s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.form-response._visible .response {
+  font-size: 1.125rem;
+  padding: 12px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
