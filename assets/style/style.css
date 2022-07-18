@@ -493,6 +493,7 @@ body._lock {
   padding: 0.125rem 0;
   margin: 0 auto;
   cursor: pointer;
+  letter-spacing: 0.2em !important;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__submit:visited {
   background-color: transparent;
