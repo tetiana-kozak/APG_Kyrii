@@ -2,7 +2,7 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-Redirect 301 /komanda_ua/ https://www.kyrii-group.com.ua/about-us
-Redirect 301 /проекти/ https://www.kyrii-group.com.ua/all-projects
-Redirect 301 /ru/proekti/ https://www.kyrii-group.com.ua/all-projects
-Redirect 301 /en/team/ https://www.kyrii-group.com.ua/about-us
+Redirect 301 /komanda_ua/ https://www.kyrii-group.com.ua/pro-nas
+Redirect 301 /проекти/ https://www.kyrii-group.com.ua/vsi-proekty
+Redirect 301 /ru/proekti/ https://www.kyrii-group.com.ua/vsi-proekty
+Redirect 301 /en/team/ https://www.kyrii-group.com.ua/pro-nas
