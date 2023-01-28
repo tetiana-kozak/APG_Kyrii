@@ -1,3 +1,3 @@
-# APG_Kyrii
+# Web-site of Anna Kyrii Architectural Projecting Group
 
-github-pages: https://tetiana-kozak.github.io/APG_Kyrii/
+# https://www.kyrii-group.com.ua/
