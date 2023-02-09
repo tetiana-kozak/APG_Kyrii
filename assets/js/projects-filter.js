@@ -20,7 +20,7 @@
 
         items.forEach(item => {
             const isItemFiltered = !item.classList.contains(category)
-            const isShowAll = category.toLowerCase() === 'all projects'
+            const isShowAll = category === 'all projects'
             if (isItemFiltered && !isShowAll) {
                 item.classList.add('animation')
                 // setUrlParams(currentCategory)
