@@ -9,7 +9,10 @@
     console.log('urlSearchParams :>> ', urlSearchParams);
     const params = Object.fromEntries(urlSearchParams.entries());
     console.log('params :>> ', params);
-    filter(params.filter, allProjects)
+    if (params.filter) {
+        filter(params.filter, allProjects)
+        
+    }
 
     function firstLetterToUppercase(category){
         return category.charAt(0).toUpperCase() + category.slice(1);
@@ -20,7 +23,7 @@
 
         items.forEach(item => {
             const isItemFiltered = !item.classList.contains(category)
-            const isShowAll = category === 'all projects'
+            const isShowAll = category.toLowerCase() === 'all projects'
             if (isItemFiltered && !isShowAll) {
                 item.classList.add('animation')
                 // setUrlParams(currentCategory)
