@@ -62,13 +62,11 @@
 
 @-webkit-keyframes hide {
   0% {
-    /* visibility: visible; */
-    display: block;
+    visibility: visible;
     height: 400px;
   }
   100% {
-    /* visibility: hidden; */
-    display: none;
+    visibility: hidden;
     width: 0;
     height: 0;
     min-width: 0;
