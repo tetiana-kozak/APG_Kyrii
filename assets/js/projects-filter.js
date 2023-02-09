@@ -8,8 +8,9 @@
     const urlSearchParams = new URLSearchParams(window.location.search);
     console.log('urlSearchParams :>> ', urlSearchParams);
     const params = Object.fromEntries(urlSearchParams.entries());
-    console.log('params :>> ', params);
-    if (params.filter) {
+    // console.log('params :>> ', params);
+    console.log('params?.filter :>> ', params?.filter);
+    if (params?.filter) {
         filter(params.filter, allProjects)
         
     }
