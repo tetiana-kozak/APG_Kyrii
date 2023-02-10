@@ -7,7 +7,9 @@ const changeCategoryName = document.querySelector('.arrow-text')
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 
+
 if (params?.filter) {
+    
     filter(params.filter, allProjects)
 }
 
@@ -19,13 +21,15 @@ filterList.forEach((button) => {
         changeUrl(currentCategory)
     })
 
-    allProjects.forEach(card => {
-        card.ontransitionend = function () {
-            if (card.classList.contains('animation')) {
-                card.classList.add('filter_hidden')
-            }
+        
+});
+
+allProjects.forEach(card => {
+    card.ontransitionend = function () {
+        if (card.classList.contains('animation')) {
+            card.classList.add('filter_hidden')
         }
-    });
+    }
 });
 
 function filter (category, items) {
