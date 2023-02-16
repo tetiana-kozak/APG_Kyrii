@@ -40,9 +40,12 @@
 }
 
 .animation {
-  transform: scale(0) !important;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
   transition: all 0.8s;
-  opacity: 0 !important;
+  opacity: 0;
 }
 
 .filter_hidden {
