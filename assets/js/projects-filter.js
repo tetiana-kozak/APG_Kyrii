@@ -17,7 +17,8 @@ function app() {
 
     filterList.forEach((button) => {
 
-        button.addEventListener('click', () => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault()
             const currentCategory = button.dataset.filter
             changeUrl(currentCategory)
             // filter(currentCategory, allProjects)
