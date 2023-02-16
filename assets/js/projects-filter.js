@@ -69,4 +69,10 @@ function app() {
     }
 }
 
-app()
+try {
+
+    app()
+    
+} catch (error) {
+    console.log('error :>> ', error);
+}
