@@ -51,6 +51,10 @@ function app() {
                 setTimeout(() => {
                     item.classList.add('filter_hidden')
                 }, 500);
+                setTimeout(() => {
+                    item.classList.add('hide')
+                }, 1050);
+                
             } else{
                 // item.classList.remove('filter_hidden')
                 // item.classList.remove('animation')
