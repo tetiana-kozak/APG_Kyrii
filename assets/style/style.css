@@ -38,10 +38,6 @@ html::selection, body::selection, div::selection, span::selection, object::selec
   width: fit-content;
 }
 
-.project__content {
-  transition: all 0.5s;
-}
-
 .project__text {
   border-bottom: transparent solid 1px;
 }

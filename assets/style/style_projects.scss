@@ -34,7 +34,8 @@
 }
 
 .animation{
-    transform: scale(0.1) !important;
+    transform: scale(0) !important;
+    transition: all 0.5s;
     opacity: 0 !important;
 }
 
