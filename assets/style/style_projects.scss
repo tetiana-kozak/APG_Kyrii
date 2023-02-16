@@ -35,13 +35,13 @@
 
 .animation{
     transform: scale(0) !important;
-    transition: all 0.5s;
+    transition: all .8s;
     opacity: 0 !important;
 }
 
 .filter_hidden{
     animation-name: hide;
-    animation-duration: .5s;
+    animation-duration: .8s;
     animation-fill-mode: forwards;
     // display: none !important;
 }

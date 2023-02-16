@@ -50,10 +50,10 @@ function app() {
                 item.classList.add('animation')
                 setTimeout(() => {
                     item.classList.add('filter_hidden')
-                }, 500);
+                }, 800);
                 setTimeout(() => {
                     item.classList.add('hide')
-                }, 1050);
+                }, 1850);
                 
             } else{
                 // item.classList.remove('filter_hidden')
@@ -76,10 +76,6 @@ function app() {
     }
 }
 
-try {
-
+// setTimeout(() => {
     app()
-    
-} catch (error) {
-    console.log('error :>> ', error);
-}
+// }, 200);
