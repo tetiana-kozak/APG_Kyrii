@@ -11,22 +11,25 @@ function app() {
 
     if (params?.filter) {
     
+        console.log('in if - check params ==> before filter()');
         filter(params.filter, allProjects)
+        console.log('in if - check params ==> after filter()');
     }
 
 
     filterList.forEach((button) => {
 
-        button.addEventListener('click', (e) => {
-            e.preventDefault()
+        console.log('in filterList.forEach() ==> before EventListener()');
+
+        button.addEventListener('click', () => {
             const currentCategory = button.dataset.filter
+            console.log('in EventListener() ==> before changeUrl()');
             changeUrl(currentCategory)
+            console.log('in EventListener() ==> after changeUrl()');
             // filter(currentCategory, allProjects)
-            // if (params?.filter) {
-    
-            //     filter(params.filter, allProjects)
-            // }
         })
+
+        console.log('in filterList.forEach() ==> before allProjects.forEach()');
 
         allProjects.forEach(card => {
             card.ontransitionend = function () {
@@ -36,6 +39,8 @@ function app() {
             }
         });
     });
+
+     console.log('END ====== END');
 
     function firstLetterToUppercase(category){
         return category.charAt(0).toUpperCase() + category.slice(1);
