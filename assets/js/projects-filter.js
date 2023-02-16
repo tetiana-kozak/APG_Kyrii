@@ -47,6 +47,7 @@ function app() {
             const isItemFiltered = !item.classList.contains(category)
             const isShowAll = category.toLowerCase() === 'all projects'
             if (isItemFiltered && !isShowAll) {
+                // item.classList.add('filter_hidden')
                 item.classList.add('animation')
             } else{
                 // item.classList.remove('filter_hidden')
