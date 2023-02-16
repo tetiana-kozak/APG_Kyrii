@@ -24,16 +24,16 @@ function app() {
         })
 
         
-        allProjects.forEach(card => {
-            card.ontransitionend = function () {
-                setTimeout(() => {
-                    console.log("Delayed for 1 second.");
-                    if (card.classList.contains('animation')) {
-                        card.classList.add('filter_hidden')
-                    }
-                }, 400);
-            }
-        });
+        // allProjects.forEach(card => {
+        //     card.ontransitionend = function () {
+        //         setTimeout(() => {
+        //             console.log("Delayed for 1 second.");
+        //             if (card.classList.contains('animation')) {
+        //                 card.classList.add('filter_hidden')
+        //             }
+        //         }, 400);
+        //     }
+        // });
 
     })
 
@@ -47,8 +47,10 @@ function app() {
             const isItemFiltered = !item.classList.contains(category)
             const isShowAll = category.toLowerCase() === 'all projects'
             if (isItemFiltered && !isShowAll) {
-                // item.classList.add('filter_hidden')
                 item.classList.add('animation')
+                setTimeout(() => {
+                    item.classList.add('filter_hidden')
+                }, 500);
             } else{
                 // item.classList.remove('filter_hidden')
                 // item.classList.remove('animation')
