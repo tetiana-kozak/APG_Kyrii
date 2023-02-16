@@ -11,36 +11,32 @@ function app() {
 
     if (params?.filter) {
     
-        console.log('in if - check params ==> before filter()');
         filter(params.filter, allProjects)
-        console.log('in if - check params ==> after filter()');
     }
 
 
     filterList.forEach((button) => {
 
-        console.log('in filterList.forEach() ==> before EventListener()');
-
         button.addEventListener('click', () => {
             const currentCategory = button.dataset.filter
-            console.log('in EventListener() ==> before changeUrl()');
             changeUrl(currentCategory)
-            console.log('in EventListener() ==> after changeUrl()');
             // filter(currentCategory, allProjects)
         })
 
-        console.log('in filterList.forEach() ==> before allProjects.forEach()');
-
+        
         allProjects.forEach(card => {
             card.ontransitionend = function () {
-                if (card.classList.contains('animation')) {
-                    card.classList.add('filter_hidden')
-                }
+                setTimeout(() => {
+                    console.log("Delayed for 1 second.");
+                    if (card.classList.contains('animation')) {
+                        card.classList.add('filter_hidden')
+                    }
+                }, 400);
             }
         });
-    });
 
-     console.log('END ====== END');
+    })
+
 
     function firstLetterToUppercase(category){
         return category.charAt(0).toUpperCase() + category.slice(1);
