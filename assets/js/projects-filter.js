@@ -49,8 +49,8 @@ function app() {
             if (isItemFiltered && !isShowAll) {
                 item.classList.add('animation')
             } else{
-                item.classList.remove('filter_hidden')
-                item.classList.remove('animation')
+                // item.classList.remove('filter_hidden')
+                // item.classList.remove('animation')
             }
             changeCategoryName.innerHTML = firstLetterToUppercase(category);
         });
