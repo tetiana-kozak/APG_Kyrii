@@ -8,35 +8,17 @@ function app() {
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
 
-
     if (params?.filter) {
-    
         filter(params.filter, allProjects)
     }
-
 
     filterList.forEach((button) => {
 
         button.addEventListener('click', () => {
             const currentCategory = button.dataset.filter
             changeUrl(currentCategory)
-            // filter(currentCategory, allProjects)
         })
-
-        
-        // allProjects.forEach(card => {
-        //     card.ontransitionend = function () {
-        //         setTimeout(() => {
-        //             console.log("Delayed for 1 second.");
-        //             if (card.classList.contains('animation')) {
-        //                 card.classList.add('filter_hidden')
-        //             }
-        //         }, 400);
-        //     }
-        // });
-
     })
-
 
     function firstLetterToUppercase(category){
         return category.charAt(0).toUpperCase() + category.slice(1);
@@ -50,15 +32,11 @@ function app() {
                 item.classList.add('animation')
                 setTimeout(() => {
                     item.classList.add('filter_hidden')
-                }, 800);
+                }, 700);
                 setTimeout(() => {
                     item.classList.add('hide')
-                }, 1850);
-                
-            } else{
-                // item.classList.remove('filter_hidden')
-                // item.classList.remove('animation')
-            }
+                }, 1450);
+            } 
             changeCategoryName.innerHTML = firstLetterToUppercase(category);
         });
     }
@@ -76,6 +54,4 @@ function app() {
     }
 }
 
-// setTimeout(() => {
-    app()
-// }, 200);
+app()
