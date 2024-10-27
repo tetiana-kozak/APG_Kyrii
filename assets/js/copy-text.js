@@ -6,7 +6,7 @@
     // Використовуємо API буфера обміну
     navigator.clipboard.writeText(textToCopy).then(() => {
       document.querySelector('.form-response').classList.add('_visible')
-      document.querySelector('.response').innerHTML = 'Текст скопійовано в буфер обміну!'
+      document.querySelector('.response').innerHTML = 'E-mail скопійовано в буфер обміну!'
       setTimeout(()=> {
         document.querySelector('.form-response').classList.remove('_visible')
       }, 5000)
@@ -23,7 +23,7 @@
     // Використовуємо API буфера обміну
     navigator.clipboard.writeText(textToCopy).then(() => {
       document.querySelector('.form-response').classList.add('_visible')
-      document.querySelector('.response').innerHTML = 'The text is copied to the clipboard!'
+      document.querySelector('.response').innerHTML = 'E-mail is copied to the clipboard!'
       console.log('textToCopy', textToCopy)
       setTimeout(()=> {
         document.querySelector('.form-response').classList.remove('_visible')
