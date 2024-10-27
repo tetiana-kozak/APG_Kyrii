@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function(){
                 document.querySelector('.response').innerHTML = result.message
                 form.reset()
                 form.classList.remove('_sending')
+                setTimeout(()=> {
+                    document.querySelector('.form-response').classList.remove('_visible')
+                }, 5000)
             } else {
                 alert("Something went wrong! Please, try again later!")
                 form.classList.remove('_sending')
