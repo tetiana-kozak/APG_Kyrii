@@ -387,7 +387,6 @@ body._lock {
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting {
   width: 500px;
-  border: #000 solid 1px;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container {
   height: 100%;
