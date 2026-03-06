@@ -67,7 +67,6 @@ body._lock{
 
 .page__main{
     .page__header{
-        height: 72px;
         width: 100%;
         background-color: $bg-color;
         position: fixed;
@@ -79,13 +78,14 @@ body._lock{
             .page__nav-bar{
                 display: flex;
                 justify-content: space-between;
-                align-items: flex-end;
+                align-items: center;
                 padding: 12px 0 12px 0;
                 .header__logo{
                     display: flex;
+                    align-items: center;
                     z-index: 20;
                     .header_logo-pic{
-                        height: 48px;                        
+                        height: 40px;                        
                         img{                            
                             height: 100%;
                         }
@@ -96,8 +96,8 @@ body._lock{
                         .header_name-text{
                             text-transform: uppercase;
                             font-weight: 700;
-                            font-size: $fz12;
-                            line-height: 16px;
+                            font-size: $fz11;
+                            line-height: 11px;
                             letter-spacing: 0.2em;
                             color: $text-color;
                         }
@@ -107,7 +107,8 @@ body._lock{
                     .menu__icon{
                         display: none;
                     }                    
-                    .menu__list{                        
+                    .menu__list{ 
+                        font-size: $fz13;                       
                         li{
                             a{
                                 text-decoration: none;
@@ -119,10 +120,10 @@ body._lock{
                             .menu__icons{
                                 display: flex;
                                 align-items: flex-end;
-                                height: 25px;
+                                height: 20px;
                                 .icon{
                                     height: 20px;
-                                    margin-left: 20px;
+                                    margin-left: 25px;
                                     &:first-child{
                                         margin-left: 0;
                                     }
@@ -406,7 +407,7 @@ body._lock{
                                         left: 0;
                                         width: 100%;
                                         height: 100%;
-                                        background: rgb(242, 242, 242, .8) url(../pic/00_general/loading-lines.gif) center / 50px no-repeat;
+                                        background: rgba(255, 255, 255, 0.8) url(../pic/00_general/loading-lines.gif) center / 50px no-repeat;
                                         opacity: 0;
                                         visibility: hidden;
                                         transition: all 0.5s ease 0s;
