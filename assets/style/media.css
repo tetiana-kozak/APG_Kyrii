@@ -140,15 +140,11 @@
 }
 
 @media (max-width: 1670px) {
-    .page__main .page__header .page__container, .page__main .page__content .page__container, .page__footer .page__container{
-      max-width: 1200px;
-    }    
+  
 }
 
 @media (max-width: 1200px) { 
-    .page__main .page__header .page__container, .page__main .page__content .page__container, .page__footer .page__container{
-        max-width: 970px;
-    }
+
     .header__menu{
         height: 48px;
         display: flex;
@@ -219,13 +215,13 @@
         align-items: center;
         justify-content: center;
         height: 100%;
-        gap: 45px;
+        gap: 55px;
     }
     .menu__body .menu__list li{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 28px;           
+        font-size: 30px;           
     } 
     .page__main .page__header .page__container .page__nav-bar .menu .menu__list li .menu__icons{
         position: fixed;

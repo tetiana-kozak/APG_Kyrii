@@ -75,11 +75,12 @@ body._lock{
         z-index: 9;
         .page__container{
             @include container;
+
             .page__nav-bar{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 12px 0 12px 0;
+                padding: 20px 0 20px 0;
                 .header__logo{
                     display: flex;
                     align-items: center;
@@ -96,7 +97,7 @@ body._lock{
                         .header_name-text{
                             text-transform: uppercase;
                             font-weight: 700;
-                            font-size: $fz11;
+                            font-size: $fz12;
                             line-height: 11px;
                             letter-spacing: 0.2em;
                             color: $text-color;
@@ -108,7 +109,7 @@ body._lock{
                         display: none;
                     }                    
                     .menu__list{ 
-                        font-size: $fz13;                       
+                        font-size: $fz16;                       
                         li{
                             a{
                                 text-decoration: none;
@@ -148,7 +149,7 @@ body._lock{
         }
     }
     .page__content{
-        padding-top: 72px;
+        padding-top: 80px;
         .page__container{
             @include container;
             .page__title{

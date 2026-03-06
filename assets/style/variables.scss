@@ -5,8 +5,9 @@
 
 $fz11: rem(11);
 $fz12: rem(12);
-$fz13: rem(13);
 $fz14: rem(14);
+$fz15: rem(15);
+$fz16: rem(16);
 $fz18: rem(18);
 $fz20: rem(20);
 $fz24: rem(24);
@@ -15,9 +16,9 @@ $bg-color: #ffffff;
 $text-color: #000;
 
 @mixin container {
-    padding: 0 rem(15);
+    padding: 0 20px 0 20px;
     margin: 0 auto;
-    max-width: 1670px;
+    // max-width: 1670px;
 }
 
 @mixin section {
