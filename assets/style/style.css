@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   color: #000;
-  background-color: #F2F2F2;
+  background-color: #ffffff;
 }
 
 ul, li {
@@ -69,7 +69,7 @@ body._lock {
 .page__main .page__header {
   height: 72px;
   width: 100%;
-  background-color: #F2F2F2;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -407,7 +407,7 @@ body._lock {
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__submit:hover {
   background-color: #1a1a1a;
-  color: #F2F2F2;
+  color: #ffffff;
   transition: all 0.5s ease;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__submit:active {
@@ -525,7 +525,7 @@ body._lock {
 }
 .more-btn .more-btn-text:hover {
   background-color: #1a1a1a;
-  color: #F2F2F2;
+  color: #ffffff;
   transition: all 0.5s ease;
 }
 .more-btn .more-btn-text:active {
@@ -605,7 +605,7 @@ body._lock {
 }
 .warning-page .warning-page-content .prev-btn:hover {
   background-color: #1a1a1a;
-  color: #F2F2F2;
+  color: #ffffff;
   transition: all 0.5s ease;
 }
 .warning-page .warning-page-content .prev-btn:active {
@@ -619,7 +619,7 @@ body._lock {
 .form-response._visible {
   visibility: visible;
   background-color: rgba(34, 34, 34, 0.9);
-  color: #F2F2F2;
+  color: #ffffff;
   animation: fadeOut ease 3s forwards;
   animation-delay: 2s;
 }

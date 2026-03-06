@@ -32,7 +32,7 @@ body {
 
 .image-slider .swiper-button-prev::after,
 .image-slider .swiper-button-next::after {
-  color: #fff;
+  color: #ffffff;
   font-size: 50px;
   text-shadow: 1px -1px 10px rgba(0, 0, 0, 0.3);
   font-weight: 900;
@@ -44,7 +44,7 @@ body {
   text-align: start;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: #F2F2F2;
+  background-color: #ffffff;
 }
 
 .photo-text {

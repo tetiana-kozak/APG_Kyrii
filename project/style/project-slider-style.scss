@@ -24,7 +24,7 @@ body {overflow: hidden;}
 
 .image-slider .swiper-button-prev::after,
 .image-slider .swiper-button-next::after{
-    color: #fff;
+    color: $bg-color;
     font-size: 50px;
     text-shadow: 1px -1px 10px rgb(0, 0, 0, .3);
     font-weight: 900;
