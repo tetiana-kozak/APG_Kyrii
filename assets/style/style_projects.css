@@ -1,6 +1,5 @@
 ._underscore {
   border-bottom: #727272 solid 1px;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -20,71 +19,45 @@
   padding: 0 0 24px 0;
 }
 .filter__navigation .filter__navigation-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .filter__navigation .filter__navigation-list li {
   border-bottom: transparent solid 1px;
   border-bottom: transparent solid 1px;
-  cursor: pointer;
 }
 .filter__navigation .filter__navigation-list li:hover {
   border-bottom: #727272 solid 1px;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: pointer;
 }
 .filter__navigation .filter__navigation-list li:active {
   border: transparent;
 }
+.filter__navigation .filter__navigation-list li {
+  cursor: pointer;
+}
 .filter__navigation .filter__navigation-list span {
   border-left: 1px solid #cfcfcf;
 }
 
 .animation {
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  -ms-transition: all 0.7s;
-          transition: all 0.7s;
+  transform: scale(0);
+  -webkit-transform: scale 0;
+  -moz-transform: scale 0;
+  -ms-transform: scale 0;
+  transition: all 0.7s;
   opacity: 0;
 }
 
 .filter_hidden {
-  -webkit-animation-name: hide;
-          animation-name: hide;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hide;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
 }
 
 .hide {
   display: none !important;
-}
-
-@-webkit-keyframes hide {
-  0% {
-    visibility: visible;
-    height: 400px;
-  }
-  100% {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-    min-width: 0;
-    min-height: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-  }
 }
 
 @keyframes hide {
@@ -102,4 +75,4 @@
     padding: 0;
     font-size: 0;
   }
-}
+}/*# sourceMappingURL=style_projects.css.map */
