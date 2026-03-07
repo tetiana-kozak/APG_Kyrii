@@ -223,21 +223,19 @@ body._lock {
   position: relative;
   min-width: 100px;
   width: calc((100% - 56px) / 3 + 18px);
-  padding: 0 14px 1.75rem 14px;
+  padding: 0 11px 1.25rem 11px;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img {
   position: relative;
-  max-width: 528px;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img img {
   position: absolute;
   left: 0;
   top: 0;
-  width: 528px;
+  width: 100%;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img .project__photo {
-  width: 528px;
-  max-width: 100%;
+  width: 100%;
   cursor: pointer;
   opacity: 1;
 }
@@ -259,8 +257,8 @@ body._lock {
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
   padding-top: 5px;
   margin-bottom: 28px;
 }
@@ -270,7 +268,7 @@ body._lock {
   width: 100%;
 }
 .page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block .emp-block__photo {
-  width: 528px;
+  width: 100%;
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

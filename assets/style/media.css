@@ -24,10 +24,7 @@
         width: 70%;
         margin: 0 auto;
     }
-    .page__main .page__content .page__container .page__about-us .about-us .about-us__container{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px; 
-    }
+
     .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content{
         width: calc(((100% - 28px) / 2 ) + 13px);
     }
@@ -127,6 +124,13 @@
     }
     .page__main .page__content .page__container .page__title {
         height: 400px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .page__main .page__content .page__container .page__about-us .about-us .about-us__container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px; 
     }
 }
 
