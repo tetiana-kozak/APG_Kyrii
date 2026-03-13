@@ -118,7 +118,6 @@ body._lock {
   color: #000;
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
-  letter-spacing: 0.2em;
 }
 .page__main .page__header .page__container .page__nav-bar .menu .menu__list li .menu__icons {
   display: flex;
