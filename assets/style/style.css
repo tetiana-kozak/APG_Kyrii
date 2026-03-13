@@ -159,7 +159,7 @@ body._lock {
   margin: 0 auto;
 }
 .page__main .page__content .page__container .page__title {
-  height: calc(100vh - 72px);
+  height: calc(100vh - 88px);
 }
 .page__main .page__content .page__container .page__title .title-container {
   position: relative;
@@ -169,7 +169,7 @@ body._lock {
   position: absolute;
   left: 0;
   margin: 0;
-  top: calc(50% - 36px);
+  top: calc(50% - 44px);
   transform: translateY(-50%);
 }
 .page__main .page__content .page__container .page__title .title-container img {
@@ -218,7 +218,7 @@ body._lock {
   position: absolute;
   left: 0;
   margin: 0;
-  top: calc(50% - 36px);
+  top: calc(50% - 44px);
   transform: translateY(-50%);
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper {
@@ -581,7 +581,7 @@ body._lock {
 }
 
 .warning-page {
-  height: calc(100vh - 72px);
+  height: calc(100vh - 88px);
   text-align: center;
   color: #292929;
   display: flex;

@@ -152,7 +152,7 @@ body._lock{
         .page__container{
             @include container;
             .page__title{
-                height: calc(100vh - 72px);
+                height: calc(100vh - 88px);
                 .title-container{
                     position: relative;
                     height: 100%;
@@ -160,7 +160,7 @@ body._lock{
                         position: absolute;
                         left: 0;
                         margin: 0;
-                        top: calc(50% - 72px / 2);
+                        top: calc(50% - 88px / 2);
                         -ms-transform: translateY(-50%);
                         transform: translateY(-50%);
                     }
@@ -200,7 +200,7 @@ body._lock{
                         position: absolute;
                         left: 0;
                         margin: 0;
-                        top: calc(50% - 72px / 2);
+                        top: calc(50% - 88px / 2);
                         -ms-transform: translateY(-50%);
                         transform: translateY(-50%);                        
                     }
@@ -534,7 +534,7 @@ body._lock{
 }
 
 .warning-page{
-    height: calc(100vh - 72px);
+    height: calc(100vh - 88px);
     text-align: center;
     color: #292929;
     display: flex;
