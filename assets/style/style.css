@@ -179,26 +179,36 @@ body._lock {
 .page__main .page__content .page__container .page__title .title-container .img {
   animation-name: fade;
   animation-iteration-count: infinite;
-  animation-duration: 9s;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
   padding: 3px;
 }
+.page__main .page__content .page__container .page__title .title-container .img-1 {
+  animation-delay: 0s;
+}
 .page__main .page__content .page__container .page__title .title-container .img-2 {
-  animation-delay: -6s;
+  animation-delay: -12s;
 }
 .page__main .page__content .page__container .page__title .title-container .img-3 {
+  animation-delay: -9s;
+}
+.page__main .page__content .page__container .page__title .title-container .img-4 {
+  animation-delay: -6s;
+}
+.page__main .page__content .page__container .page__title .title-container .img-5 {
   animation-delay: -3s;
 }
 @keyframes fade {
   0% {
     opacity: 0;
   }
-  20% {
+  8% {
     opacity: 1;
   }
-  33% {
+  28% {
     opacity: 1;
   }
-  53% {
+  36% {
     opacity: 0;
   }
   100% {

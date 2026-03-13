@@ -171,21 +171,31 @@ body._lock{
                     .img{
                         animation-name: fade;
                         animation-iteration-count: infinite;
-                        animation-duration: 9s;
+                        animation-duration: 15s;
+                        animation-timing-function: ease-in-out;
                         padding: 3px;
                     }            
+                    .img-1{
+                        animation-delay: 0s;
+                    }
                     .img-2{
-                        animation-delay: -6s;
+                        animation-delay: -12s;
                     }
                     .img-3{
+                        animation-delay: -9s;
+                    }
+                    .img-4{
+                        animation-delay: -6s;
+                    }
+                    .img-5{
                         animation-delay: -3s;
                     }
                     @keyframes fade {
-                        0% {opacity: 0;}
-                        20% {opacity: 1;}
-                        33% {opacity: 1;}
-                        53% {opacity: 0;}
-                        100% {opacity: 0;}
+                        0% { opacity: 0; }
+                        8% { opacity: 1; }
+                        28% { opacity: 1; }
+                        36% { opacity: 0; }
+                        100% { opacity: 0; }
                     }
                     .title-text{
                         position: absolute;
