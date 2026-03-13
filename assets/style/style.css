@@ -180,6 +180,7 @@ body._lock {
   animation-name: fade;
   animation-iteration-count: infinite;
   animation-duration: 9s;
+  padding: 3px;
 }
 .page__main .page__content .page__container .page__title .title-container .img-2 {
   animation-delay: -6s;
