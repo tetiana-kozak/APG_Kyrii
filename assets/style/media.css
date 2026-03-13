@@ -1,4 +1,4 @@
-@media (orientation: landscape) and (max-height: 500px) {
+@media (orientation: landscape) and (max-height: 530px) {
     .page__main .page__content .page__container .page__title .title-container .title-anim{
         top: 10px;
         -ms-transform: translateY(0);
@@ -10,6 +10,7 @@
         transform: translateY(0);
     }
 }
+
 
 @media (min-width: 991px) {
     .contacts__place-a-meeting{margin-left: 50px;}
@@ -274,3 +275,34 @@
 
 
 }
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .menu__body .menu__list{ 
+        gap: 30px;
+    }
+    .page__main .page__header .page__container .page__nav-bar .menu .menu__body{
+        padding: 0 0 40px 0;
+    }
+    .page__main .page__header .page__container .page__nav-bar .menu .menu__list li .menu__icons{
+        bottom: 10px;
+    }
+    .page__main .page__header .page__container .page__nav-bar{
+        padding: 10px 0 10px 0;
+    }
+    .menu .menu__body::before{
+        height: 68px;
+    }
+    .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper{
+        padding-top: 50px;
+    }
+
+   
+}
+
+/* @media (orientation: landscape) and (max-height: 500px) and (max-width: 500px) {
+
+    .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper{
+        padding-top: 40px;
+    }
+   
+} */
