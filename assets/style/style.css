@@ -50,12 +50,12 @@ html::selection, body::selection, div::selection, span::selection, object::selec
 
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content:hover .project__img .project__photo {
   opacity: 0;
-  transition: all 0.2s ease;
+  transition: opacity 0.6s ease-in-out;
 }
 
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content:hover .project__img .project__photo-hover, .project__img .project__photo-hover:hover {
   opacity: 1;
-  transition: all 0.2s ease;
+  transition: opacity 0.6s ease-in-out;
 }
 
 html {
@@ -249,11 +249,13 @@ body._lock {
   width: 100%;
   cursor: pointer;
   opacity: 1;
+  transition: opacity 0.6s ease-in-out;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img .project__photo-hover {
   max-width: 100%;
   cursor: pointer;
   opacity: 0;
+  transition: opacity 0.6s ease-in-out;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper {
   display: flex;
