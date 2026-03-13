@@ -198,9 +198,11 @@
         width: 100%;
         height: 100%;
         background-color: rgba(255, 255, 255);
-        padding: 72px 48px 68px 48px;
+        padding: 0 0 72px 0;
         transition: all .3s ease 0s;
-        overflow: auto;                     
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
     .page__main .page__header .page__container .page__nav-bar .menu__body._active{
         right: 0;
@@ -208,18 +210,27 @@
     .menu .menu__body::before{
         content: "";
         width: 100%;
-        top: 0;
-        left: 0;
-        height: 112px;
+        height: 88px;
         background-color: #ffffff;
+        flex-shrink: 0;
     }
     .menu__body .menu__list{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 100%;
+        justify-content: flex-start;
+        flex: 1;
+        min-height: 0;
         gap: 55px;
+        overflow-y: auto;
+        padding: 0 48px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .menu__body .menu__list::before,
+    .menu__body .menu__list::after{
+        content: "";
+        flex: 1;
     }
     .menu__body .menu__list li{
         display: flex;
