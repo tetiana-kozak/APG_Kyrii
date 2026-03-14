@@ -39,10 +39,24 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(step);
     }
 
+    function getColumnDelay(el) {
+        var rect = el.getBoundingClientRect();
+        var allEls = document.querySelectorAll('[data-animate]');
+        var rowEls = Array.from(allEls).filter(function (other) {
+            return Math.abs(other.getBoundingClientRect().top - rect.top) < 10;
+        });
+        rowEls.sort(function (a, b) {
+            return a.getBoundingClientRect().left - b.getBoundingClientRect().left;
+        });
+        var colIndex = rowEls.indexOf(el);
+        return colIndex >= 0 ? colIndex * 0.1 : 0;
+    }
+
     var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {
                 entry.target.classList.remove('no-transition');
+                entry.target.style.transitionDelay = getColumnDelay(entry.target) + 's';
                 requestAnimationFrame(function () {
                     entry.target.classList.add('is-visible');
                 });
