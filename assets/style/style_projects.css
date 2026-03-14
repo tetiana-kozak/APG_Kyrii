@@ -21,6 +21,8 @@
 .filter__navigation .filter__navigation-list {
   display: flex;
   justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .filter__navigation .filter__navigation-list li {
   border-bottom: transparent solid 1px;
@@ -36,9 +38,6 @@
 }
 .filter__navigation .filter__navigation-list li {
   cursor: pointer;
-}
-.filter__navigation .filter__navigation-list span {
-  border-left: 1px solid #cfcfcf;
 }
 
 .project__content {

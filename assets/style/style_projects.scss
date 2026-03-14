@@ -22,13 +22,12 @@
     .filter__navigation-list{
         display: flex;
         justify-content: space-between;
+        max-width: 1100px;
+        margin: 0 auto;
         li{
             border-bottom: transparent solid 1px;
             @include text_hover;
             cursor: pointer;
-        }
-        span{
-            border-left: 1px solid #cfcfcf;
         }
     }
 }
