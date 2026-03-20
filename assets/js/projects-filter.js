@@ -5,11 +5,20 @@ function app() {
     const allProjects = document.querySelectorAll('.project__content');
     const changeCategoryName = document.querySelector('.arrow-text');
 
+    function setActiveButton(category) {
+        filterList.forEach(btn => {
+            btn.classList.toggle('filter__btn--active', btn.dataset.filter === category);
+        });
+    }
+
     // Застосувати фільтр з URL при завантаженні (без анімації)
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
     if (params?.filter && params.filter.toLowerCase() !== 'all projects') {
         applyFilterInstant(params.filter);
+        setActiveButton(params.filter);
+    } else {
+        setActiveButton('all projects');
     }
 
     filterList.forEach((button) => {
@@ -21,6 +30,7 @@ function app() {
             }
             updateUrl(currentCategory);
             updateLabel(button.textContent.trim());
+            setActiveButton(currentCategory);
             filterAnimated(currentCategory);
         });
     });

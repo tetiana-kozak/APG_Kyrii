@@ -39,6 +39,9 @@
 .filter__navigation .filter__navigation-list li {
   cursor: pointer;
 }
+.filter__navigation .filter__navigation-list li.filter__btn--active {
+  font-weight: 700;
+}
 
 .project__content {
   transition: opacity 0.35s ease, transform 0.35s ease;
