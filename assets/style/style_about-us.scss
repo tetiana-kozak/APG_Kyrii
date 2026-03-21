@@ -1,8 +1,27 @@
 @import 'variables';
 
-.page__main .page__content .page__container .page__about-us .about-us .about-us__container{    
+.page__main .page__content .page__container .page__our-team .about-us .about-us__container{    
     padding-top: 0;
     margin-bottom: 0;
+}
+
+.about-us-page{
+    .page__container-medium{
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .page__container-small{
+        margin: 0 auto;
+        max-width: 870px;
+    }
+
+    .section__about-us_title{
+        font-weight: 500;
+        font-size: $fz50;
+        margin-bottom: 60px;
+    }
+
 }
 
 .achievements{
@@ -14,7 +33,7 @@
     justify-content: center;
     flex-wrap: wrap;
     .achievements__block{
-        padding: 20px 52px 20px 52px;
+        padding: 20px 70px 20px 70px;
         display: flex;
         flex-direction: column;
         .number{
@@ -41,12 +60,8 @@
         margin-bottom: 30px;
         display: flex;
         flex-direction: column;
-        // width: 50%;
-        &:nth-child(even){
-            align-items: flex-end;
-        }
         .par{
-            width: 48%;
+            width: 55%;
             line-height: 28px;
             font-size: $fz18;
             span{
@@ -57,11 +72,6 @@
 }
 
 .awards__content{
-    .awards__title{
-        font-weight: 700;
-        font-size: $fz24;
-        margin-bottom: 60px;
-    }
     .awards__wrapper{
         .awards__title-year{
             font-size: $fz24;

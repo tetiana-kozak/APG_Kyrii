@@ -267,35 +267,35 @@ body._lock {
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__text {
   margin-top: 0.875rem;
 }
-.page__main .page__content .page__container .page__about-us .about-us .about-us__container {
+.page__main .page__content .page__container .page__our-team .about-us .about-us__container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   padding-top: 5px;
   margin-bottom: 28px;
 }
-.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block {
+.page__main .page__content .page__container .page__our-team .about-us .about-us__container .emp-block {
   position: relative;
   min-width: 100px;
   width: 100%;
 }
-.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block .emp-block__photo {
+.page__main .page__content .page__container .page__our-team .about-us .about-us__container .emp-block .emp-block__photo {
   width: 100%;
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block .emp-block__name {
+.page__main .page__content .page__container .page__our-team .about-us .about-us__container .emp-block .emp-block__name {
   padding: 0.5rem 0 0.25rem 0;
 }
-.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block .emp-block__position {
+.page__main .page__content .page__container .page__our-team .about-us .about-us__container .emp-block .emp-block__position {
   font-size: 0.875rem;
   color: #474747;
 }
-.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block-hiden481 {
+.page__main .page__content .page__container .page__our-team .about-us .about-us__container .emp-block-hiden481 {
   visibility: hidden;
 }
-.page__main .page__content .page__container .page__about-us .about-us .about-us__container .emp-block-hiden-992-1199 {
+.page__main .page__content .page__container .page__our-team .about-us .about-us__container .emp-block-hiden-992-1199 {
   visibility: hidden;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container {

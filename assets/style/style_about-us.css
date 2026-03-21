@@ -1,6 +1,20 @@
-.page__main .page__content .page__container .page__about-us .about-us .about-us__container {
+.page__main .page__content .page__container .page__our-team .about-us .about-us__container {
   padding-top: 0;
   margin-bottom: 0;
+}
+
+.about-us-page .page__container-medium {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.about-us-page .page__container-small {
+  margin: 0 auto;
+  max-width: 870px;
+}
+.about-us-page .section__about-us_title {
+  font-weight: 500;
+  font-size: 3.125rem;
+  margin-bottom: 60px;
 }
 
 .achievements {
@@ -13,7 +27,7 @@
   flex-wrap: wrap;
 }
 .achievements__wrapper .achievements__block {
-  padding: 20px 52px 20px 52px;
+  padding: 20px 70px 20px 70px;
   display: flex;
   flex-direction: column;
 }
@@ -41,11 +55,8 @@
   display: flex;
   flex-direction: column;
 }
-.info__paragraphs .par-group:nth-child(even) {
-  align-items: flex-end;
-}
 .info__paragraphs .par-group .par {
-  width: 48%;
+  width: 55%;
   line-height: 28px;
   font-size: 1.125rem;
 }
@@ -53,11 +64,6 @@
   font-weight: 700;
 }
 
-.awards__content .awards__title {
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 60px;
-}
 .awards__content .awards__wrapper .awards__title-year {
   font-size: 1.5rem;
   padding-bottom: 28px;
