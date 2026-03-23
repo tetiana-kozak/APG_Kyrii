@@ -74,6 +74,25 @@
     }
 }
 
+.page__not-to-do{
+    .not-to-do_grid{   
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        row-gap: 80px;
+        text-align: center;
+        align-items: center;
+
+        margin: 120px 0;
+
+        .not-to-do_grid-item{
+            font-weight: 600;
+        }
+    }
+    .not-to-do_notes{
+        // margin-top: 90px;
+    }
+}
+
 .awards__content{
     .awards__wrapper{
         .awards__title-year{
