@@ -60,6 +60,9 @@
     .filter__navigation .filter__navigation-list span{
         display: none;
     }
+    .about-us-page .page__container-small{
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 730px) {

@@ -5,11 +5,10 @@
 
 .about-us-page .page__container-medium {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1160px;
 }
 .about-us-page .page__container-small {
-  margin: 0 auto;
-  max-width: 870px;
+  margin-left: 160px;
 }
 .about-us-page .section__about-us_title {
   font-weight: 500;
@@ -68,7 +67,7 @@
 }
 .awards__content .awards__wrapper .years-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   -moz-column-gap: 32px;
        column-gap: 32px;
   margin-bottom: 48px;
