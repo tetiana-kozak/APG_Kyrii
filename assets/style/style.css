@@ -309,7 +309,6 @@ body._lock {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-left: 1px #000 solid;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text {
   margin-left: 3.5rem;
@@ -317,7 +316,6 @@ body._lock {
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .main-text {
   font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: 0.135em;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .main-text:not(:last-of-type) {
   margin-bottom: 0.5rem;
@@ -325,7 +323,6 @@ body._lock {
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .additional-text {
   font-size: 0.875rem;
   font-weight: 300;
-  letter-spacing: 0.135em;
   line-height: 1.0625rem;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting {
@@ -347,7 +344,6 @@ body._lock {
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form .contacts__cotact-us-title {
   font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
   width: 100%;
   text-transform: uppercase;
   text-align: center;

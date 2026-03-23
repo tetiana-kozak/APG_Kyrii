@@ -302,13 +302,11 @@ body._lock{
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
-                            border-left: 1px #000 solid;
                             .contacts__what-we-do-text{
                                 margin-left: rem(56);
                                 .main-text{
                                     font-size: $fz20;
                                     font-weight: 700;
-                                    letter-spacing: 0.135em;
                                 }
                                 .main-text:not(:last-of-type){
                                     margin-bottom: rem(8);
@@ -316,7 +314,6 @@ body._lock{
                                 .additional-text{
                                     font-size: $fz14;
                                     font-weight: 300;
-                                    letter-spacing: 0.135em;
                                     line-height: rem(17);
                                 }
                             }
@@ -337,7 +334,6 @@ body._lock{
                                     .contacts__cotact-us-title{
                                         font-size: $fz20;
                                         font-weight: 700;
-                                        letter-spacing: 0.2em;
                                         width: 100%;
                                         text-transform: uppercase;
                                         text-align: center;
