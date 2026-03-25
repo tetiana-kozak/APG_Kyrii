@@ -74,6 +74,36 @@
     }
 }
 
+.page__why-us{
+    .why-us__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+    .why-us__icon{
+        display: block;
+        height: 80px;
+        margin: 0 auto 24px;
+    }
+    .why-us__item{
+        margin-bottom: 50px;
+    }
+    .why-us__item-title{
+        font-weight: 700;
+        font-size: $fz16;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        &::before{
+            content: '•';
+            margin-right: 4px;
+        }
+    }
+    .why-us__item-desc{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
 .page__not-to-do{
     position: relative;
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .page__main .page__content .page__container .page__our-team .about-us .about-us__container {
   padding-top: 0;
   margin-bottom: 0;
@@ -63,6 +64,34 @@
 
 .page__our-clients img {
   width: 100%;
+}
+
+.page__why-us .why-us__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+.page__why-us .why-us__icon {
+  display: block;
+  height: 80px;
+  margin: 0 auto 24px;
+}
+.page__why-us .why-us__item {
+  margin-bottom: 50px;
+}
+.page__why-us .why-us__item-title {
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.page__why-us .why-us__item-title::before {
+  content: "•";
+  margin-right: 4px;
+}
+.page__why-us .why-us__item-desc {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .page__not-to-do {

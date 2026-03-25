@@ -79,6 +79,9 @@
     .about-us-page .page__container-small{
         margin-left: 0;
     }
+    .page__why-us .why-us__grid{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 730px) {
@@ -88,7 +91,8 @@
     .filter__navigation .filter__navigation-list{
         grid-template-columns: repeat(2, 1fr);
     }
-    .page__not-to-do .not-to-do_grid{   
+
+    .page__not-to-do .not-to-do_grid{
         grid-template-columns: 1fr;
     }
     .info__paragraphs .par-group .par{
