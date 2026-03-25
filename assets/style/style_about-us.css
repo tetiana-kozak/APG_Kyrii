@@ -76,18 +76,21 @@
           user-select: none;
 }
 .page__not-to-do .not-to-do__cross--sm {
+  --cx-rot: 0deg;
   width: 60px;
   left: -180px;
   top: 40%;
   transform: translateY(-50%);
 }
 .page__not-to-do .not-to-do__cross--md {
+  --cx-rot: -15deg;
   width: 100px;
   left: 80px;
   top: 28%;
   transform: translateY(-50%) rotate(-15deg);
 }
 .page__not-to-do .not-to-do__cross--lg {
+  --cx-rot: 15deg;
   width: 250px;
   left: -100px;
   top: 75%;
@@ -104,6 +107,43 @@
 .page__not-to-do .not-to-do_grid .not-to-do_grid-item {
   font-weight: 600;
   font-size: 18px;
+}
+.not-to-do__cross[data-animate] {
+  opacity: 0;
+  transform: translateY(calc(-50% + 20px)) rotate(calc(var(--cx-rot, 0deg) + 45deg)) scale(0.4);
+  transition: none !important;
+}
+
+.not-to-do__cross[data-animate].is-visible {
+  opacity: 1;
+  animation: crossDynamic 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.not-to-do__cross--sm[data-animate].is-visible {
+  animation-delay: 0s;
+}
+
+.not-to-do__cross--md[data-animate].is-visible {
+  animation-delay: 0.2s;
+}
+
+.not-to-do__cross--lg[data-animate].is-visible {
+  animation-delay: 0.4s;
+}
+
+@keyframes crossDynamic {
+  from {
+    opacity: 0;
+    transform: translateY(calc(-50% + 20px)) rotate(calc(var(--cx-rot, 0deg) + 45deg)) scale(0.4);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-50%) rotate(calc(var(--cx-rot, 0deg) - 15deg)) scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) rotate(var(--cx-rot, 0deg)) scale(1);
+  }
 }
 .awards__content .awards__wrapper .awards__title-year {
   font-size: 1.5rem;
