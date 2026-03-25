@@ -11,6 +11,15 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .page__main .page__content .page__container .page__our-team .about-us .about-us__container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px; 
+    }
+    .page__not-to-do .not-to-do_grid{   
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media (min-width: 991px) {
     .contacts__place-a-meeting{margin-left: 50px;}
@@ -65,12 +74,17 @@
     }
 }
 
+
+
 @media (max-width: 730px) {
     .page__main .page__content .page__container .page__title{
         height: 600px;
     }
     .filter__navigation .filter__navigation-list{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .page__not-to-do .not-to-do_grid{   
+        grid-template-columns: 1fr;
     }
 }
 
@@ -83,13 +97,6 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .page__main .page__content .page__container .page__our-team .about-us .about-us__container{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px; 
-    }
-}
-
 @media (max-width: 575px) {
     .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content{
         width: 100% ;
@@ -97,10 +104,6 @@
     .page__main .page__content .page__container .page__our-team .about-us .about-us__container{
         grid-template-columns: repeat(1, 1fr);
     }    
-}
-
-@media (max-width: 1670px) {
-  
 }
 
 @media (max-width: 1200px) { 
