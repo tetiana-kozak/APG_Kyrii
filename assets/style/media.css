@@ -81,8 +81,6 @@
     }
 }
 
-
-
 @media (max-width: 730px) {
     .page__main .page__content .page__container .page__title{
         height: 600px;
@@ -93,6 +91,13 @@
     .page__not-to-do .not-to-do_grid{   
         grid-template-columns: 1fr;
     }
+    .info__paragraphs .par-group .par{
+        font-size: 16px;
+    }
+    .about-us-page .section__about-us_title{
+        font-size: 2.5rem;
+    }
+
 }
 
 @media (max-width: 481px) {
