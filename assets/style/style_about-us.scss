@@ -75,7 +75,33 @@
 }
 
 .page__not-to-do{
-    .not-to-do_grid{   
+    position: relative;
+
+    .not-to-do__cross{
+        position: absolute;
+        pointer-events: none;
+        user-select: none;
+    }
+    .not-to-do__cross--sm{
+        width: 60px;
+        left: -180px;
+        top: 40%;
+        transform: translateY(-50%);
+    }
+    .not-to-do__cross--md{
+        width: 100px;
+        left: 80px;
+        top: 28%;
+        transform: translateY(-50%) rotate(-15deg);
+    }
+    .not-to-do__cross--lg{
+        width: 250px;
+        left: -100px;
+        top: 75%;
+        transform: translateY(-50%) rotate(15deg);
+    }
+
+    .not-to-do_grid{
         display: grid;
         grid-template-columns: 1fr 2.5fr 1fr;
         row-gap: 80px;
@@ -90,7 +116,7 @@
         }
     }
     .not-to-do_notes{
-        
+
     }
 }
 

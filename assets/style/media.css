@@ -11,6 +11,12 @@
     }
 }
 
+@media (max-width: 1300px) {
+
+    .page__not-to-do .not-to-do__cross{
+        display: none;
+    }
+}
 @media (max-width: 1200px) {
     .page__main .page__content .page__container .page__our-team .about-us .about-us__container{
         grid-template-columns: repeat(2, 1fr);
@@ -19,6 +25,7 @@
     .page__not-to-do .not-to-do_grid{   
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
 @media (min-width: 991px) {

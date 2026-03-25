@@ -65,6 +65,34 @@
   width: 100%;
 }
 
+.page__not-to-do {
+  position: relative;
+}
+.page__not-to-do .not-to-do__cross {
+  position: absolute;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.page__not-to-do .not-to-do__cross--sm {
+  width: 60px;
+  left: -180px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.page__not-to-do .not-to-do__cross--md {
+  width: 100px;
+  left: 80px;
+  top: 28%;
+  transform: translateY(-50%) rotate(-15deg);
+}
+.page__not-to-do .not-to-do__cross--lg {
+  width: 250px;
+  left: -100px;
+  top: 75%;
+  transform: translateY(-50%) rotate(15deg);
+}
 .page__not-to-do .not-to-do_grid {
   display: grid;
   grid-template-columns: 1fr 2.5fr 1fr;
