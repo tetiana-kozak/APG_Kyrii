@@ -305,13 +305,10 @@ body._lock {
   padding-top: 5px;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do {
-  width: 768px;
+  width: 680px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text {
-  margin-left: 3.5rem;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .main-text {
   font-size: 1.25rem;

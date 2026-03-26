@@ -34,12 +34,17 @@
 }
 
 @media (max-width: 991px) {
+    .page__main .page__content .page__container .page__contacts .contacts .contacts__container{
+        flex-direction: column;
+        height: auto;
+    }
     .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do{
-        display: none;
+        width: 100%;
+        row-gap: 32px;
     }
     .contacts__place-a-meeting{
         width: 70%;
-        margin: 0 auto;
+        margin: 80px auto 0;
     }
 
     .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content{

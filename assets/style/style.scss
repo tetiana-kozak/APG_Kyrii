@@ -298,12 +298,11 @@ body._lock{
                         height: 544px;
                         padding-top: 5px;
                         .contacts__what-we-do{
-                            width: 768px;
+                            width: 680px;
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
                             .contacts__what-we-do-text{
-                                margin-left: rem(56);
                                 .main-text{
                                     font-size: $fz20;
                                     font-weight: 700;
