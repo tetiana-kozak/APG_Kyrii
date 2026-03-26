@@ -237,6 +237,7 @@ body._lock {
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img {
   position: relative;
+  aspect-ratio: 3/2;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img img {
   position: absolute;
@@ -260,12 +261,8 @@ body._lock {
   display: flex;
   flex-direction: column;
 }
-.page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__photo-hiden {
-  max-width: 100%;
-  visibility: hidden;
-}
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__content-wrapper .project__text {
-  margin-top: 0.875rem;
+  padding-top: 0.875rem;
 }
 .page__main .page__content .page__container .page__our-team .about-us .about-us__container {
   display: grid;

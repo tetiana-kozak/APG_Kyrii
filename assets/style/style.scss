@@ -222,6 +222,7 @@ body._lock{
                             padding: 0 11px rem(20) 11px;  
                             .project__img{
                                 position: relative;
+                                aspect-ratio: 3 / 2;
                                 img{
                                     position: absolute;
                                     left: 0;
@@ -244,12 +245,8 @@ body._lock{
                             .project__content-wrapper{
                                 display: flex;
                                 flex-direction: column;
-                                .project__photo-hiden{
-                                    max-width: 100%;
-                                    visibility: hidden;
-                                }
                                 .project__text{
-                                    margin-top: rem(14);
+                                    padding-top: rem(14);
                                 }
                             }
                         }               
