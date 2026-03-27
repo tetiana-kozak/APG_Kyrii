@@ -72,6 +72,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }, { threshold: 0.12 });
 
+    // При завантаженні: одразу показати елементи, що вже у viewport або вище нього
+    document.querySelectorAll('[data-animate]').forEach(function (el) {
+        var rect = el.getBoundingClientRect();
+        if (rect.bottom <= window.innerHeight) {
+            el.classList.add('no-transition', 'is-visible');
+            requestAnimationFrame(function () {
+                el.classList.remove('no-transition');
+            });
+        }
+    });
+
     document.querySelectorAll('[data-animate]').forEach(function (el) {
         observer.observe(el);
     });
