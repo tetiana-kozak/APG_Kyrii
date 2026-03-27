@@ -77,10 +77,8 @@
         position: relative;
         z-index: 1;
         margin: 0;
+        text-align: left;
     }   
-    .filter__navigation .filter__navigation-list span{
-        display: none;
-    }
     .about-us-page .page__container-small{
         margin-left: 0;
     }
@@ -95,6 +93,9 @@
     }
     .filter__navigation .filter__navigation-list{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .filter__navigation .filter__navigation-list .filter__btn{
+        text-align: left;
     }
 
     .page__not-to-do .not-to-do_grid{
