@@ -48,7 +48,7 @@
     }
 
     .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content{
-        width: calc(((100% - 28px) / 2 ) + 13px);
+        width: calc((100% - 20px) / 2);
     }
     .filter__navigation{padding: 0;}
     .filter{
@@ -234,8 +234,8 @@
     .info__paragraphs .par-group .par{
         width: 100%;
     } 
-    .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content{
-        padding-bottom: 1.125rem;
+    .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper{
+        gap: 1.125rem 1.25rem;
     }
     .awards__content .awards__wrapper .years-wrapper{
         grid-template-columns: 1fr;

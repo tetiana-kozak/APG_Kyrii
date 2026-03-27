@@ -224,7 +224,7 @@ body._lock {
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -14px;
+  gap: 1.25rem;
   padding-top: 5px;
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content {
@@ -232,8 +232,7 @@ body._lock {
   flex-direction: column;
   position: relative;
   min-width: 100px;
-  width: calc((100% - 56px) / 3 + 18px);
-  padding: 0 11px 1.25rem 11px;
+  width: calc((100% - 40px) / 3);
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper .project__content .project__img {
   position: relative;
@@ -269,7 +268,6 @@ body._lock {
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   padding-top: 5px;
-  margin-bottom: 28px;
 }
 .page__main .page__content .page__container .page__our-team .about-us .about-us__container .emp-block {
   position: relative;
@@ -508,6 +506,7 @@ body._lock {
 .more-btn {
   display: flex;
   justify-content: center;
+  margin-top: 28px;
 }
 .more-btn .more-btn-text {
   color: #000;

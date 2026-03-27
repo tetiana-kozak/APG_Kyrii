@@ -211,15 +211,14 @@ body._lock{
                     .project__wrapper{
                         display: flex;
                         flex-wrap: wrap;
-                        margin: 0 -14px;                        
+                        gap: rem(20);
                         padding-top: 5px;
                         .project__content{
                             display: flex;
                             flex-direction: column;
                             position: relative;
                             min-width: 100px;
-                            width: calc(((100% - 56px) / 3 ) + 18px); 
-                            padding: 0 11px rem(20) 11px;  
+                            width: calc((100% - 40px) / 3);  
                             .project__img{
                                 position: relative;
                                 aspect-ratio: 3 / 2;
@@ -260,7 +259,6 @@ body._lock{
                         grid-template-columns: repeat(6, 1fr);
                         gap: 20px;
                         padding-top: 5px;
-                        margin-bottom: 28px;
                         .emp-block{
                             position: relative;
                             min-width: 100px;                            
@@ -482,7 +480,8 @@ body._lock{
 
 .more-btn{                            
     display: flex;
-    justify-content: center;    
+    justify-content: center;  
+    margin-top: 28px;  
     .more-btn-text{
         @include btn_text;
         text-decoration: none;
