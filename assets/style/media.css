@@ -98,9 +98,6 @@
         text-align: left;
     }
 
-    .page__not-to-do .not-to-do_grid{
-        grid-template-columns: 1fr;
-    }
     .info__paragraphs .par-group .par{
         font-size: 16px;
     }
@@ -108,15 +105,8 @@
         font-size: 2.5rem;
     }
     .page__not-to-do .not-to-do_grid{   
-        grid-template-columns: 1fr ;
-        row-gap: 50px;
-        
-    }
-    .page__not-to-do .not-to-do_grid .not-to-do_grid-item:first-child{
-        text-align: center;
-    }
-    .page__not-to-do .not-to-do_grid .not-to-do_grid-item:last-child{
-        text-align: center;
+        flex-direction: column;
+        row-gap: 60px;
     }
 
 }
