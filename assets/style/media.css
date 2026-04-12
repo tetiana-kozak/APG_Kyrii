@@ -26,6 +26,9 @@
     .page__what-we-do .what-we-do .what-we-do__container {
         grid-template-columns: repeat(3, 1fr);
     }
+    .your-way__arrow {
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 991px) {
@@ -128,9 +131,7 @@
         width: 100vw;
     }
 
-    .your-way__arrow {
-        margin-right: 0;
-    }
+
     .your-way__swiper .swiper-slide.your-way__step .your-way__step-number, .your-way__step .your-way__step-number{
         padding-left: 40px;
     }

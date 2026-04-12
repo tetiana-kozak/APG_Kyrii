@@ -322,8 +322,9 @@
 .your-way__arrow {
   position: static;
   align-self: flex-end;
-  margin-top: 32px;
+  margin-top: 50px;
   margin-right: 100px;
+  padding: 0;
   width: -moz-fit-content;
   width: fit-content;
   height: 55px;
