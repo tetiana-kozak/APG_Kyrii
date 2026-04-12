@@ -34,18 +34,6 @@
 }
 
 @media (max-width: 991px) {
-    .your-way__swiper .swiper-slide.your-way__step,
-    .your-way__step { width: 260px; }
-}
-
-@media (max-width: 575px) {
-    .your-way__swiper .swiper-slide.your-way__step,
-    .your-way__step { width: 220px; }
-    .your-way__step .your-way__step-number { font-size: 18px; }
-    .your-way__step .your-way__step-text { font-size: 14px; }
-}
-
-@media (max-width: 991px) {
     .contacts-page .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do{
         display: none;
     }
@@ -134,7 +122,24 @@
     .page__what-we-do .what-we-do .what-we-do__container {
         grid-template-columns: repeat(2, 1fr);
     }
+        
+    .your-way__swiper .swiper-slide.your-way__step,
+    .your-way__step {
+        width: 100vw;
+    }
 
+    .your-way__arrow {
+        margin-right: 0;
+    }
+    .your-way__swiper .swiper-slide.your-way__step .your-way__step-number, .your-way__step .your-way__step-number{
+        padding-left: 40px;
+    }
+    .your-way__step-dot{
+        margin-left: 28px;
+    }
+    .your-way__swiper .swiper-slide.your-way__step .your-way__step-text, .your-way__step .your-way__step-text{
+        margin-left: 60px;
+    }
 }
 
 @media (max-width: 481px) {

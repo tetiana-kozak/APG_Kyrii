@@ -10,6 +10,6 @@ new Swiper('.your-way__swiper', {
     navigation: {
         nextEl: '.your-way__arrow',
     },
-    speed: 800,
+    speed: 1200,
     keyboard: { enabled: true },
 });
