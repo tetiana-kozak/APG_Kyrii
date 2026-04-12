@@ -318,7 +318,7 @@
                                         <p class="your-way__step-text">Нам важливо реалізувати свої та ваші ідеї, тому ми регулярно здійснюємо авторський нагляд, вирішуємо всі поточні питання та контролюємо відповідність реалізованого об’єкту загальному задуму</p>
                                     </div>
                                 </div>
-                                <button class="your-way__arrow swiper-button-next" aria-label="Далі"><img src="assets/pic/00_general/about-us/arrow.svg" alt=""></button>
+                                <button class="your-way__arrow swiper-button-next" aria-label="Next"><img src="assets/pic/00_general/about-us/arrow.svg" alt=""></button>
                             </div>
                         </div>
                     </div>
@@ -479,22 +479,6 @@
     <script src="assets/js/burger.js" ></script>
     <script src="assets/js/scroll-animations.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        new Swiper('.your-way__swiper', {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            centeredSlides: true,
-            mousewheel: {
-                enabled: true,
-                eventsTarget: '.your-way__swiper',
-                sensitivity: 1,
-            },
-            navigation: {
-                nextEl: '.your-way__arrow',
-            },
-            speed: 800,
-            keyboard: { enabled: true },
-        });
-    </script>
+    <script src="assets/js/your-way-slider.js"></script>
 </body>
 </html>
