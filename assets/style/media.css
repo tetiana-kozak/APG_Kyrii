@@ -11,7 +11,8 @@
     }
 }
 
-@media (max-width: 1300px) {
+
+@media (max-width: 1450px) {
 
     .page__not-to-do .not-to-do__cross{
         display: none;
@@ -22,10 +23,6 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 16px; 
     }
-    .page__not-to-do .not-to-do_grid{   
-        grid-template-columns: 1fr 1fr;
-    }
-
 }
 
 @media (min-width: 991px) {
@@ -109,6 +106,17 @@
     }
     .about-us-page .section__about-us_title{
         font-size: 2.5rem;
+    }
+    .page__not-to-do .not-to-do_grid{   
+        grid-template-columns: 1fr ;
+        row-gap: 50px;
+        
+    }
+    .page__not-to-do .not-to-do_grid .not-to-do_grid-item:first-child{
+        text-align: center;
+    }
+    .page__not-to-do .not-to-do_grid .not-to-do_grid-item:last-child{
+        text-align: center;
     }
 
 }
