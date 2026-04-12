@@ -34,6 +34,18 @@
 }
 
 @media (max-width: 991px) {
+    .your-way__swiper .swiper-slide.your-way__step,
+    .your-way__step { width: 260px; }
+}
+
+@media (max-width: 575px) {
+    .your-way__swiper .swiper-slide.your-way__step,
+    .your-way__step { width: 220px; }
+    .your-way__step .your-way__step-number { font-size: 18px; }
+    .your-way__step .your-way__step-text { font-size: 14px; }
+}
+
+@media (max-width: 991px) {
     .contacts-page .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do{
         display: none;
     }
