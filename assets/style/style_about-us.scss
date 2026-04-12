@@ -58,7 +58,7 @@
         display: flex;
         flex-direction: column;
         .par{
-            width: 55%;
+            width: 80%;
             line-height: 28px;
             font-size: $fz18;
             span{
@@ -78,21 +78,31 @@
     .why-us__grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 60px;
+        column-gap: 60px;
+        row-gap: 0;
     }
+
+    .why-us__card{
+        display: grid;
+        grid-row: span 7;
+        grid-template-rows: subgrid;
+    }
+
     .why-us__icon{
         display: block;
         height: 80px;
         margin: 0 auto 24px;
+        align-self: start;
     }
     .why-us__item{
-        margin-bottom: 50px;
+        display: contents;
     }
     .why-us__item-title{
         font-weight: 700;
         font-size: $fz16;
         text-transform: uppercase;
         margin-bottom: 10px;
+        align-self: start;
         &::before{
             content: '•';
             margin-right: 4px;
@@ -101,6 +111,14 @@
     .why-us__item-desc{
         font-size: 14px;
         line-height: 1.5;
+        margin-bottom: 50px;
+        align-self: start;
+    }
+    .why-us__item:last-child .why-us__item-desc{
+        margin-bottom: 0;
+    }
+    .why-us__card:nth-child(-n+2) .why-us__item:last-child .why-us__item-desc{
+        margin-bottom: 60px;
     }
 }
 

@@ -85,6 +85,9 @@
     .page__why-us .why-us__grid{
         grid-template-columns: 1fr;
     }
+    .page__why-us .why-us__card:not(:last-child) .why-us__item:last-child .why-us__item-desc{
+        margin-bottom: 60px;
+    }
 }
 
 @media (max-width: 730px) {
