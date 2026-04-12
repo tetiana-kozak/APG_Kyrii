@@ -274,18 +274,13 @@
   content: "";
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   left: 0;
-  right: 50%;
-  border-top: 2px dotted #000;
-}
-.your-way__swiper .swiper-slide.your-way__step .your-way__step-line::after,
-.your-way__step .your-way__step-line::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
   right: 0;
-  border-top: 2px dotted #000;
+  height: 4px;
+  background-image: radial-gradient(circle, #000 1.5px, transparent 2px);
+  background-size: 8px 4px;
+  background-repeat: repeat-x;
 }
 .your-way__swiper .swiper-slide.your-way__step .your-way__step-dot,
 .your-way__step .your-way__step-dot {
