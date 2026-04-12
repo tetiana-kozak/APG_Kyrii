@@ -254,11 +254,16 @@
     .swiper-wrapper {
         align-items: flex-start;
     }
+
+    &.swiper {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .your-way__swiper .swiper-slide.your-way__step,
 .your-way__step {
-    width: 450px;
+    width: 480px;
     display: flex;
     flex-direction: column;
 
@@ -321,31 +326,35 @@
 
 .your-way__swiper .swiper-slide-active.your-way__step {
     .your-way__step-number {
-        transform: scale(1.3);
-    }
-    .your-way__step-dot {
         transform: scale(1.5);
     }
+    .your-way__step-dot {
+        transform: scale(1.7);
+    }
     .your-way__step-text {
-        transform: scale(1.3);
+        transform: scale(1.4);
     }
 }
 
 .your-way__arrow {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 48px;
-    height: 48px;
+    position: static;
+    align-self: flex-end;
+    margin-top: 32px;
+    margin-right: 100px;
+    width: fit-content;
+    height: 55px;
     background: none;
     border: none;
     cursor: pointer;
 
     &::after {
-        content: '→';
-        font-family: inherit;
-        font-size: 32px;
-        color: #000;
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
