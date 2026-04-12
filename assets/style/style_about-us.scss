@@ -249,6 +249,8 @@
 
             .project-block{
                 cursor: pointer;
+                text-decoration: none;
+                color: inherit;
 
                 .project-block__photo{
                     width: 100%;
@@ -262,7 +264,6 @@
             .project-block:hover .project-block__name{ 
                 border-bottom: #727272 solid 1px;
                 transition: all .5s ease-in-out;
-                cursor: pointer; 
             }
         }
     }

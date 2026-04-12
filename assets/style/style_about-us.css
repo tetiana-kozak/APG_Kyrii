@@ -233,6 +233,8 @@
 }
 .page__what-we-do .what-we-do .what-we-do__container .project-block {
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 .page__what-we-do .what-we-do .what-we-do__container .project-block .project-block__photo {
   width: 100%;
@@ -246,5 +248,4 @@
 .page__what-we-do .what-we-do .what-we-do__container .project-block:hover .project-block__name {
   border-bottom: #727272 solid 1px;
   transition: all 0.5s ease-in-out;
-  cursor: pointer;
 }/*# sourceMappingURL=style_about-us.css.map */
