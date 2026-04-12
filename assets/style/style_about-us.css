@@ -114,6 +114,10 @@
 .page__not-to-do {
   position: relative;
 }
+.page__not-to-do .not-to-do-block {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
 .page__not-to-do .not-to-do__cross {
   position: absolute;
   pointer-events: none;
@@ -125,14 +129,14 @@
   --cx-rot: -15deg;
   width: 80px;
   left: 30px;
-  top: 80%;
+  top: 62%;
   transform: translateY(-50%) rotate(var(--cx-rot));
 }
 .page__not-to-do .not-to-do__cross--lg {
   --cx-rot: 15deg;
   width: 170px;
   left: -180px;
-  top: 45%;
+  top: 40%;
   transform: translateY(-50%) rotate(var(--cx-rot));
 }
 .page__not-to-do .not-to-do_grid {
@@ -140,7 +144,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 120px 0 80px 0;
+  margin-bottom: 80px;
 }
 .page__not-to-do .not-to-do_grid .not-to-do_grid-item {
   font-weight: 600;
