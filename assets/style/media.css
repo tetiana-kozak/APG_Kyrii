@@ -31,6 +31,10 @@
 }
 
 @media (max-width: 991px) {
+    .contacts-page .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do{
+        display: none;
+    }
+
     .page__main .page__content .page__container .page__contacts .contacts .contacts__container{
         flex-direction: column;
         height: auto;
