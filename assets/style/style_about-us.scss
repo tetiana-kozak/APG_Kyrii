@@ -246,6 +246,7 @@
 
 .your-way {
     overflow-x: hidden;
+    padding-bottom: 70px;
 }
 
 .your-way__swiper {
@@ -335,11 +336,16 @@
     }
 }
 
+        
+.about-us-page .your-way__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 70px;
+}
+
 .your-way__arrow {
     position: static;
-    align-self: flex-end;
-    margin-top: 50px;
-    margin-right: 100px;
     padding: 0;
     width: fit-content;
     height: 55px;
@@ -349,6 +355,10 @@
 
     &::after {
         display: none;
+    }
+
+    &--prev img {
+        transform: scaleX(-1);
     }
 
     img {

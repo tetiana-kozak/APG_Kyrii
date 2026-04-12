@@ -8,7 +8,8 @@ new Swiper('.your-way__swiper', {
         sensitivity: 1,
     },
     navigation: {
-        nextEl: '.your-way__arrow',
+        nextEl: '.your-way__arrow--next',
+        prevEl: '.your-way__arrow--prev',
     },
     speed: 1200,
     keyboard: { enabled: true },

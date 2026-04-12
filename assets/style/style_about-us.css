@@ -232,6 +232,7 @@
 
 .your-way {
   overflow-x: hidden;
+  padding-bottom: 70px;
 }
 
 .your-way__swiper {
@@ -319,11 +320,15 @@
   transform: scale(1.4);
 }
 
+.about-us-page .your-way__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 70px;
+}
+
 .your-way__arrow {
   position: static;
-  align-self: flex-end;
-  margin-top: 50px;
-  margin-right: 100px;
   padding: 0;
   width: -moz-fit-content;
   width: fit-content;
@@ -334,6 +339,9 @@
 }
 .your-way__arrow::after {
   display: none;
+}
+.your-way__arrow--prev img {
+  transform: scaleX(-1);
 }
 .your-way__arrow img {
   width: 100%;
