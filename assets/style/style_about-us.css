@@ -203,6 +203,9 @@
 .awards__content .awards__wrapper .awards__block .award {
   font-size: 0.875rem;
 }
+.awards__content .awards__wrapper .awards__block-last {
+  margin-top: 250px;
+}
 
 .footer__icons {
   display: flex;

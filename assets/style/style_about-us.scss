@@ -204,18 +204,19 @@
         }
         .awards__block{
             border-bottom: 1px solid rgb(131, 131, 131);
-            // max-width: 800px;
             padding: 20px 0 20px 0;
             p:not(:last-child){
                 padding-bottom: 8px;
             }
             .awards__name{
                 font-weight: 700;
-                
             }
             .award{
                 font-size: $fz14;
             }
+        }
+        .awards__block-last{
+            margin-top: 250px;
         }
     }
 }
