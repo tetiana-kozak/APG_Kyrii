@@ -20,7 +20,7 @@
 }
 @media (max-width: 1200px) {
     .page__main .page__content .page__container .page__our-team .about-us .about-us__container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 16px; 
     }
 }
@@ -107,6 +107,9 @@
     .page__not-to-do .not-to-do_grid{   
         flex-direction: column;
         row-gap: 60px;
+    }
+    .page__main .page__content .page__container .page__our-team .about-us .about-us__container{
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
