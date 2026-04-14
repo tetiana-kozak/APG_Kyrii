@@ -244,9 +244,13 @@
     font-size: 12px;
 }
 
+.page__your-way {
+    overflow-x: hidden;
+}
+
 .your-way {
     overflow-x: hidden;
-    padding-bottom: 70px;
+    padding-bottom: 75px;
 }
 
 .your-way__swiper {
@@ -279,6 +283,7 @@
         transition: transform 1.2s ease;
         transform-origin: left bottom;
         display: inline-block;
+        will-change: transform;
     }
 
     .your-way__step-line {
@@ -310,6 +315,7 @@
         position: relative;
         z-index: 1;
         transition: transform 1.2s ease;
+        will-change: transform;
     }
 
     .your-way__step-text {
@@ -321,6 +327,7 @@
         max-width: 300px;
         transition: transform 1.2s ease;
         transform-origin: left top;
+        will-change: transform;
     }
 }
 
