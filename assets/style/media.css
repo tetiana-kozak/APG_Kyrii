@@ -160,10 +160,10 @@
     }
     .page__main .page__content .page__container .page__our-team .about-us .about-us__container{
         grid-template-columns: repeat(1, 1fr);
-    }    
-    .page__what-we-do .what-we-do .what-we-do__container {
-        grid-template-columns: repeat(1, 1fr);
-    }
+    } 
+    .page__why-us .why-us__icon{
+        height: 60px;
+    }   
 }
 
 @media (max-width: 1200px) { 
