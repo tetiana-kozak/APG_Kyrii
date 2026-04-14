@@ -503,6 +503,10 @@ body._lock {
   padding: 0;
 }
 
+footer.section-wrapper {
+  padding-bottom: 40px;
+}
+
 .more-btn {
   display: flex;
   justify-content: center;
