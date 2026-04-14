@@ -14,11 +14,11 @@
 .about-us-page .section__about-us_title {
   font-weight: 500;
   font-size: 3.125rem;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .achievements {
-  padding: 40px 0 40px 0;
+  padding: 80px 0 80px 0;
 }
 
 .achievements__wrapper {
@@ -27,7 +27,7 @@
   flex-wrap: wrap;
 }
 .achievements__wrapper .achievements__block {
-  padding: 20px 90px 20px 90px;
+  padding: 0 90px 0 90px;
   display: flex;
   flex-direction: column;
 }
@@ -115,8 +115,7 @@
   position: relative;
 }
 .page__not-to-do .not-to-do-block {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
 }
 .page__not-to-do .not-to-do__cross {
   position: absolute;
@@ -129,14 +128,14 @@
   --cx-rot: -15deg;
   width: 80px;
   left: 30px;
-  top: 62%;
+  top: 72%;
   transform: translateY(-50%) rotate(var(--cx-rot));
 }
 .page__not-to-do .not-to-do__cross--lg {
   --cx-rot: 15deg;
   width: 170px;
   left: -180px;
-  top: 40%;
+  top: 42%;
   transform: translateY(-50%) rotate(var(--cx-rot));
 }
 .page__not-to-do .not-to-do_grid {
@@ -208,7 +207,7 @@
   font-size: 0.875rem;
 }
 .awards__content .awards__wrapper .awards__block-last {
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 .footer__icons {
@@ -331,7 +330,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .your-way__arrow {
