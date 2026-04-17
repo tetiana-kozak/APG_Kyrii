@@ -37,7 +37,7 @@
 }
 
 @media (min-width: 991px) {
-    .contacts__place-a-meeting{margin-left: 50px;}
+    /* .contacts__place-a-meeting{margin-left: 50px;} */
     .menu__filter{display: none;}
 }
 
@@ -154,9 +154,6 @@
 }
 
 @media (max-width: 481px) {
-    .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting{
-        width: 100%;
-    }
     .page__main .page__content .page__container .page__title {
         height: 400px;
     }
@@ -174,6 +171,11 @@
     }
     .about-us-page .page__container-medium {
         padding: 0 ;
+    }
+    .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting{
+        max-width: 100%;
+        width: 100%;
+        margin: 80px 0 0 0;
     }
 }
 

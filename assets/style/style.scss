@@ -33,8 +33,19 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     width: fit-content;
 }
 
-.project__content{
-    // transition: all 0.5s;
+.page__container-medium{
+    margin: 0 auto;
+    max-width: 1160px;
+}
+
+.page__container-small{
+    margin-left: 160px;
+}
+
+.section__about-us_title{
+    font-weight: 500;
+    font-size: $fz50;
+    margin-bottom: 80px;
 }
 
 .project__text{
@@ -293,7 +304,7 @@ body._lock{
                         height: 544px;
                         padding-top: 5px;
                         .contacts__what-we-do{
-                            width: 680px;
+                            width: 500px;
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
@@ -313,14 +324,12 @@ body._lock{
                             }
                         }
                         .contacts__place-a-meeting{
-                            width: 500px;
+                            max-width: 400px;
                             .contacts__place-a-meeting-container{
                                 height: 100%;
                                 position: relative;
                                 .contacts__form{
                                     height: 100%;
-                                    width: 80%;
-                                    margin: 0 auto;
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: space-between;

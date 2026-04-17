@@ -38,6 +38,21 @@ html::selection, body::selection, div::selection, span::selection, object::selec
   width: fit-content;
 }
 
+.page__container-medium {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.page__container-small {
+  margin-left: 160px;
+}
+
+.section__about-us_title {
+  font-weight: 500;
+  font-size: 3.125rem;
+  margin-bottom: 80px;
+}
+
 .project__text {
   border-bottom: transparent solid 1px;
 }
@@ -300,7 +315,7 @@ body._lock {
   padding-top: 5px;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do {
-  width: 680px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -318,7 +333,7 @@ body._lock {
   line-height: 1.0625rem;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting {
-  width: 500px;
+  max-width: 400px;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container {
   height: 100%;
@@ -326,8 +341,6 @@ body._lock {
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form {
   height: 100%;
-  width: 80%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
