@@ -25,6 +25,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  row-gap: 50px;
 }
 .achievements__wrapper .achievements__block {
   padding: 0 90px 0 90px;
