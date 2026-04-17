@@ -307,7 +307,7 @@ body._lock {
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .main-text {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do .contacts__what-we-do-text .main-text:not(:last-of-type) {
   margin-bottom: 0.5rem;
