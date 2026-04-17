@@ -425,6 +425,13 @@ body._lock{
                                 .contacts__form * {
                                     outline: none;
                                 }
+                                .form__url-field {
+                                    opacity: 0;
+                                    position: absolute;
+                                    height: 0;
+                                    width: 0;
+                                    pointer-events: none;
+                                }
                                 .contacts__form._sending::after{
                                     opacity: 1;
                                     visibility: visible;

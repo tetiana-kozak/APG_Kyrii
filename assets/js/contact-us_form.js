@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 formAddError(input);
                 error ++;
             } else if (input.classList.contains('_name')){
-                if(isNameCorrect(input)) {
+                if(isNameNumericOnly(input)) {
                     ifNameError.innerHTML = "Only letters allowed"
                     error ++;
                 }
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const result = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(input.value);
         return result;
     }
-    function isNameCorrect(input){
+    function isNameNumericOnly(input){
         const isAnyLet = /^[0-9]*[.,]?[0-9]+$/.test(input.value)
         return isAnyLet;
     }

@@ -456,6 +456,13 @@ body._lock {
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form * {
   outline: none;
 }
+.form__url-field {
+  opacity: 0;
+  position: absolute;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
 .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting .contacts__place-a-meeting-container .contacts__form._sending::after {
   opacity: 1;
   visibility: visible;
