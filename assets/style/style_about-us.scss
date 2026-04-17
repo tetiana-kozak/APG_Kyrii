@@ -11,7 +11,6 @@
     justify-content: space-between;
     align-items: center;
     row-gap: 50px;
-    padding: 80px 0;
     .achievements__block{
         .number{
             font-size: 54px;
@@ -25,6 +24,12 @@
             text-align: center;
             text-transform: uppercase;
         }
+    }
+}
+
+.about-us-page{
+    .achievements__wrapper{
+        padding: 80px 0;
     }
 }
 
