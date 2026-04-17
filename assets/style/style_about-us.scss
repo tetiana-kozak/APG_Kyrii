@@ -205,6 +205,9 @@
             column-gap: 32px;
             margin-bottom: 48px;
         }
+        .years-wrapper_last{
+            margin-bottom: 0;
+        }
         .awards__block{
             border-bottom: 1px solid rgb(131, 131, 131);
             padding: 20px 0 20px 0;
@@ -217,9 +220,6 @@
             .award{
                 font-size: $fz14;
             }
-        }
-        .awards__block-last{
-            margin-top: 200px;
         }
     }
 }

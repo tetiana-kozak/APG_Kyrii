@@ -193,6 +193,9 @@
        column-gap: 32px;
   margin-bottom: 48px;
 }
+.awards__content .awards__wrapper .years-wrapper_last {
+  margin-bottom: 0;
+}
 .awards__content .awards__wrapper .awards__block {
   border-bottom: 1px solid rgb(131, 131, 131);
   padding: 20px 0 20px 0;
@@ -205,9 +208,6 @@
 }
 .awards__content .awards__wrapper .awards__block .award {
   font-size: 0.875rem;
-}
-.awards__content .awards__wrapper .awards__block-last {
-  margin-top: 200px;
 }
 
 .footer__icons {
