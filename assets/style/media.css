@@ -100,6 +100,12 @@
     .page__why-us .why-us__card:not(:last-child) .why-us__item:last-child .why-us__item-desc{
         margin-bottom: 60px;
     }
+    .achievements__wrapper .achievements__block{
+        flex: 0 0 calc(33.333% - 20px);
+    }
+    .achievements__wrapper .achievements__block:nth-child(n+4) {
+        flex: 0 0 calc(50% - 10px);
+    }
 }
 
 @media (max-width: 730px) {
@@ -151,6 +157,9 @@
         max-width: 50%;
         font-size: 14px;
     }
+    .about-us-page .page__container-medium {
+        padding: 0 ;
+    }
 }
 
 @media (max-width: 481px) {
@@ -169,13 +178,17 @@
     .page__why-us .why-us__icon{
         height: 60px;
     }
-    .about-us-page .page__container-medium {
-        padding: 0 ;
-    }
+
     .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__place-a-meeting{
         max-width: 100%;
         width: 100%;
         margin: 80px 0 0 0;
+    }
+    .achievements__wrapper .achievements__block {
+        flex: 0 0 100%;
+    }
+    .achievements__wrapper .achievements__block:nth-child(n+4) {
+        flex: 0 0 100%;
     }
 }
 
