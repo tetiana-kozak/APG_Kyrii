@@ -22,7 +22,17 @@
   display: block;
 }
 .project-page__info {
-  padding: 48px 0 40px;
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1160px) 1fr;
+  padding: 48px 0 0;
+}
+.project-page__info-body {
+  grid-column: 2;
+  padding: 0 20px 40px;
+}
+.project-page__info .project-page__map {
+  grid-column: 2;
+  padding: 0 20px 40px;
 }
 .project-page__title {
   font-size: 1.5rem;
@@ -61,21 +71,22 @@
   border: 0;
 }
 .project-page__challenge {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1160px) 1fr;
   padding-bottom: 48px;
 }
-.project-page__challenge .project-page__container {
-  position: relative;
-}
 .project-page__challenge-label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translateX(calc(-100% - 40px));
+  text-align: right;
+  padding-right: 40px;
+  padding-top: 4px;
   font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   white-space: nowrap;
+}
+.project-page__challenge-body {
+  padding: 0 20px;
 }
 .project-page__challenge-text p {
   font-size: 0.875rem;
