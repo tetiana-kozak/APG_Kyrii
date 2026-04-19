@@ -156,8 +156,26 @@
         max-width: 50%;
         font-size: 14px;
     }
+
     .about-us-page .page__container-medium {
         padding: 0 ;
+    }
+        .project-page__challenge {
+        grid-template-columns: 1fr;
+    }
+    .project-page__challenge-label {
+        text-align: left;
+        padding-right: 0;
+        padding-bottom: 16px;
+    }
+    .project-page__challenge-body {
+        padding: 0 20px;
+    }
+    .project-page__photos {
+        grid-template-columns: 1fr;
+    }
+    .project-page__gallery .swiper-slide {
+        width: 100%;
     }
 }
 
@@ -318,6 +336,7 @@
 
 
 }
+
 
 @media (orientation: landscape) and (max-height: 500px) {
     .menu__body .menu__list{ 

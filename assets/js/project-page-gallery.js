@@ -4,7 +4,7 @@ new Swiper('.project-page__gallery-swiper', {
     initialSlide: 1,
     spaceBetween: 20,
     loop: false,
-    speed: 700,
+    speed: 1200,
     mousewheel: {
         sensitivity: 1,
         eventsTarget: '.project-page__gallery',

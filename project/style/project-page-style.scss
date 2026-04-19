@@ -17,25 +17,16 @@
         width: 100%;
         img {
             width: 100%;
-            max-height: 560px;
-            object-fit: cover;
+            height: auto;
             display: block;
         }
     }
 
     &__info {
-        display: grid;
-        grid-template-columns: 1fr minmax(auto, 1160px) 1fr;
         padding: 48px 0 0;
 
         &-body {
-            grid-column: 2;
-            padding: 0 20px 40px;
-        }
-
-        .project-page__map {
-            grid-column: 2;
-            padding: 0 20px 40px;
+            padding-bottom: 40px;
         }
     }
 
@@ -91,6 +82,7 @@
             text-align: right;
             padding-right: 40px;
             padding-top: 4px;
+            padding-left: 20px;
             font-size: rem(18);
             font-weight: 700;
             text-transform: uppercase;
@@ -128,18 +120,39 @@
 
             img {
                 width: 100%;
-                height: 400px;
-                object-fit: cover;
+                height: auto;
                 display: block;
             }
         }
 
-        .swiper-button-prev,
-        .swiper-button-next {
+        &-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 32px;
+            margin-bottom: 80px;
+        }
+
+        &-arrow {
+            position: static;
+            padding: 0;
+            width: fit-content;
+            height: 55px;
+            background: none;
+            border: none;
+            cursor: pointer;
+
             &::after {
-                color: #ffffff;
-                font-size: 30px;
-                text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+                display: none;
+            }
+
+            &--prev img {
+                transform: scaleX(-1);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         }
     }
@@ -154,8 +167,7 @@
     &__photo {
         img {
             width: 100%;
-            height: 300px;
-            object-fit: cover;
+            height: auto;
             display: block;
         }
     }
