@@ -6,6 +6,7 @@
 
 .project-page {
     padding-top: 88px;
+    font-size: $fz14;
 
     .block-gap{
         margin-bottom: 60px;
@@ -27,15 +28,14 @@
     }
 
     &__info {
-        padding: 60px 0 0;
+        padding-top: 60px;
     }
 
     &__title {
-        font-size: rem(24);
-        font-weight: 700;
+        font-size: $fz30;
+        font-weight: 500;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
-        margin-bottom: 24px;
+        margin-bottom: 60px;
     }
 
     &__details {
@@ -45,15 +45,12 @@
     }
 
     &__detail {
-        margin-bottom: 12px;
 
         .detail__label {
-            font-size: rem(14);
             margin-bottom: 4px;
         }
 
         .detail__value {
-            font-size: rem(14);
             line-height: 1.5;
         }
     }
@@ -68,7 +65,7 @@
         }
     }
 
-    &__challenge {
+    &__section {
         display: grid;
         grid-template-columns: 1fr minmax(auto, 1160px) 1fr;
 
@@ -77,10 +74,9 @@
             padding-right: 40px;
             padding-top: 4px;
             padding-left: 20px;
-            font-size: rem(18);
-            font-weight: 700;
+            font-size: $fz24;
+            font-weight: 500;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
             white-space: nowrap;
         }
 
@@ -90,16 +86,38 @@
 
         &-text {
             max-width: 70%;
+            padding-bottom: 60px;
             p {
-                font-size: rem(14);
                 line-height: 1.7;
-                margin-bottom: 16px;
+                margin-bottom: 8px;
 
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
+    }
+
+
+    &__photos {
+        display: grid;
+        gap: 20px;
+    }
+
+    &__photo {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .photo-full{
+        grid-template-columns: 1fr;
+    }
+
+    .photo-double{
+        grid-template-columns: 1fr 1fr;
     }
 
     &__gallery {
@@ -150,17 +168,5 @@
         }
     }
 
-    &__photos {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
 
-    &__photo {
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-    }
 }
