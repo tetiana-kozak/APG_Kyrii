@@ -41,6 +41,16 @@
 }
 
 @media (max-width: 991px) {
+    .project-page .photo-double {
+        flex-direction: column;
+    }
+    .project-page .photo-double .project-page__photo {
+        flex: none !important;
+    }
+    .project-page .photo-double .project-page__photo img {
+        width: 100%;
+        height: auto;
+    }
     .contacts-page .page__main .page__content .page__container .page__contacts .contacts .contacts__container .contacts__what-we-do{
         display: none;
     }

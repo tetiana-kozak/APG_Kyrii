@@ -1,3 +1,24 @@
+document.querySelectorAll('.photo-double').forEach(container => {
+    const photos = [...container.querySelectorAll('.project-page__photo')];
+    const imgs = photos.map(p => p.querySelector('img'));
+
+    const applyRatios = () => {
+        imgs.forEach((img, i) => {
+            photos[i].style.flex = img.naturalWidth / img.naturalHeight;
+        });
+    };
+
+    const pending = imgs.filter(img => !img.complete);
+    if (pending.length === 0) {
+        applyRatios();
+    } else {
+        let loaded = 0;
+        pending.forEach(img => img.addEventListener('load', () => {
+            if (++loaded === pending.length) applyRatios();
+        }));
+    }
+});
+
 new Swiper('.project-page__gallery-swiper', {
     slidesPerView: 'auto',
     centeredSlides: true,
