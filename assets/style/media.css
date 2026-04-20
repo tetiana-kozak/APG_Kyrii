@@ -207,6 +207,10 @@
     .achievements__wrapper .achievements__block:nth-child(n+4) {
         flex: 0 0 100%;
     }
+    .project-page__details,
+    .project-page__challenge-text {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 1200px) { 
