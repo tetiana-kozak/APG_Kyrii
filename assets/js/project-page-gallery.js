@@ -1,9 +1,9 @@
 new Swiper('.project-page__gallery-swiper', {
     slidesPerView: 'auto',
     centeredSlides: true,
-    initialSlide: 1,
+    initialSlide: 0,
     spaceBetween: 20,
-    loop: false,
+    loop: true,
     speed: 1200,
     mousewheel: {
         sensitivity: 1,
