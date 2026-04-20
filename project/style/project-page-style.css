@@ -35,17 +35,13 @@
 .project-page__details {
   display: flex;
   flex-direction: column;
+  max-width: 800px;
 }
 .project-page__detail {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 12px;
 }
 .project-page__detail .detail__label {
-  font-size: 0.6875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #727272;
+  font-size: 0.875rem;
   margin-bottom: 4px;
 }
 .project-page__detail .detail__value {
@@ -79,6 +75,9 @@
 }
 .project-page__challenge-body {
   padding: 0 20px;
+}
+.project-page__challenge-text {
+  max-width: 800px;
 }
 .project-page__challenge-text p {
   font-size: 0.875rem;

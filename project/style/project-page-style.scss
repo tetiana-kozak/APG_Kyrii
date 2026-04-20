@@ -41,18 +41,14 @@
     &__details {
         display: flex;
         flex-direction: column;
+        max-width: 800px;
     }
 
     &__detail {
-        display: flex;
-        flex-direction: column;
         margin-bottom: 12px;
 
         .detail__label {
-            font-size: rem(11);
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #727272;
+            font-size: rem(14);
             margin-bottom: 4px;
         }
 
@@ -95,6 +91,7 @@
         }
 
         &-text {
+            max-width: 800px;
             p {
                 font-size: rem(14);
                 line-height: 1.7;
