@@ -68,7 +68,6 @@
 }
 .project-page__section-text {
   max-width: 70%;
-  padding-bottom: 60px;
 }
 .project-page__section-text p {
   line-height: 1.7;
@@ -80,6 +79,10 @@
 .project-page__photos {
   display: grid;
   gap: 20px;
+}
+.project-page__photo {
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .project-page__photo img {
   width: 100%;
