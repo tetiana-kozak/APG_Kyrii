@@ -86,7 +86,7 @@
 
         &-text {
             max-width: 70%;
-            
+            padding-bottom: 60px;
             p {
                 line-height: 1.7;
                 margin-bottom: 8px;
@@ -106,7 +106,6 @@
 
     &__photo {
         padding-bottom: 60px;
-        padding-top: 60px;
         img {
             width: 100%;
             height: auto;
@@ -126,7 +125,6 @@
             padding: 0;
             min-width: 0;
             padding-bottom: 60px;
-            padding-top: 60px;
 
             img {
                 width: 100%;
@@ -156,7 +154,7 @@
         &-nav {
             display: flex;
             justify-content: space-between;
-            margin-top: 32px;
+            margin-top: 48px;
         }
 
         &-arrow {
@@ -184,5 +182,9 @@
         }
     }
 
+    .padding-none{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
 }

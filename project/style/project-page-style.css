@@ -68,6 +68,7 @@
 }
 .project-page__section-text {
   max-width: 70%;
+  padding-bottom: 60px;
 }
 .project-page__section-text p {
   line-height: 1.7;
@@ -82,7 +83,6 @@
 }
 .project-page__photo {
   padding-bottom: 60px;
-  padding-top: 60px;
 }
 .project-page__photo img {
   width: 100%;
@@ -100,7 +100,6 @@
   padding: 0;
   min-width: 0;
   padding-bottom: 60px;
-  padding-top: 60px;
 }
 .project-page .photo-double .project-page__photo img {
   width: 100%;
@@ -124,7 +123,7 @@
 .project-page__gallery-nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 32px;
+  margin-top: 48px;
 }
 .project-page__gallery-arrow {
   position: static;
@@ -147,4 +146,8 @@
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.project-page .padding-none {
+  padding-top: 0;
+  padding-bottom: 0;
 }/*# sourceMappingURL=project-page-style.css.map */
