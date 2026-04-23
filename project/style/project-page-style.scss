@@ -9,7 +9,7 @@
     font-size: $fz14;
 
     .block-gap{
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
     }
 
     &__container {
@@ -28,14 +28,15 @@
     }
 
     &__info {
-        padding-top: 60px;
+        padding-top: 30px;
+        padding-bottom: 60px;
     }
 
     &__title {
         font-size: $fz30;
         font-weight: 500;
         text-transform: uppercase;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 
     &__details {
@@ -68,26 +69,27 @@
 
     &__section {
         display: grid;
-        grid-template-columns: 1fr minmax(auto, 1160px) 1fr;
+        grid-template-columns: 1fr minmax(0, 1160px) 1fr;
 
         &-label {
             text-align: right;
             padding-right: 40px;
-            padding-top: 4px;
+            padding-bottom: 30px;
             padding-left: 20px;
             font-size: $fz24;
             font-weight: 500;
             text-transform: uppercase;
             white-space: nowrap;
+            width: 250px;
         }
 
         &-body {
-            padding: 0 20px;
+        padding: 0 20px;
         }
 
         &-text {
             max-width: 70%;
-            padding-bottom: 60px;
+            padding-bottom: 30px;
             p {
                 line-height: 1.7;
                 margin-bottom: 8px;
@@ -102,11 +104,10 @@
 
     &__photos {
         display: grid;
-        gap: 20px;
     }
 
     &__photo {
-        padding-bottom: 60px;
+        padding-bottom: 30px;
         img {
             width: 100%;
             height: auto;
@@ -121,11 +122,12 @@
     .photo-double{
         display: flex;
         gap: 20px;
+        padding-bottom: 0;
 
         .project-page__photo {
             padding: 0;
             min-width: 0;
-            padding-bottom: 60px;
+            padding-bottom: 30px;
 
             img {
                 width: 100%;
@@ -183,9 +185,11 @@
         }
     }
 
-    .padding-none{
-        padding-top: 0;
-        padding-bottom: 0;
+    .pb-30{
+        padding-bottom: 30px;
+    }
+    .pb-60{
+        padding-bottom: 60px;
     }
 
 }
