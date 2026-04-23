@@ -23,7 +23,7 @@ new Swiper('.project-page__gallery-swiper', {
     slidesPerView: 'auto',
     centeredSlides: true,
     initialSlide: 0,
-    spaceBetween: 20,
+    spaceBetween: 30,
     loop: true,
     speed: 1200,
     mousewheel: {

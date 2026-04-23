@@ -8,10 +8,6 @@
     padding-top: 88px;
     font-size: $fz14;
 
-    .block-gap{
-        // margin-bottom: 60px;
-    }
-
     &__container {
         max-width: 1160px;
         margin: 0 auto;
@@ -121,7 +117,7 @@
 
     .photo-double{
         display: flex;
-        gap: 20px;
+        gap: 30px;
         padding-bottom: 0;
 
         .project-page__photo {
