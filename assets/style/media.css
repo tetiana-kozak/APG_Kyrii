@@ -444,3 +444,16 @@
     }
 }
 
+
+@media (max-width: 480px) {
+    .scroll-to-top {
+        width: 42px;
+        height: 42px;
+        bottom: 16px;
+        right: 16px;
+    }
+    .scroll-to-top svg {
+        width: 36px;
+        height: 36px;
+    }
+}
