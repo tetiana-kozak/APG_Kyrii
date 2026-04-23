@@ -68,7 +68,8 @@
         grid-template-columns: 1fr minmax(0, 1160px) 1fr;
 
         &-label {
-            text-align: right;
+            justify-self: end;
+            // text-align: right;
             padding-right: 40px;
             padding-bottom: 30px;
             padding-left: 20px;
@@ -76,7 +77,7 @@
             font-weight: 500;
             text-transform: uppercase;
             white-space: nowrap;
-            width: 250px;
+            min-width: 250px;
         }
 
         &-body {
