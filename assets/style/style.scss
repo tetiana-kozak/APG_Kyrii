@@ -83,7 +83,7 @@ body._lock{
         position: fixed;
         top: 0; 
         left: 0;
-        z-index: 9;
+        z-index: 100;
         .page__container{
             @include container;
 
