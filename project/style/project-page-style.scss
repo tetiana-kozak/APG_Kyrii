@@ -235,24 +235,22 @@
     margin: 0 auto;
 
     .footer-label{
-        padding-bottom: 30px;
+        margin-bottom: 30px;
         font-size: $fz20;
         font-weight: 500;
         text-transform: uppercase;
         white-space: nowrap;
-        min-width: 250px;
-
+        width: fit-content;
+        @include text_hover;
     }
-    
+
     .left {
-        padding-left: 20px;
-        text-align: left;
+        margin-left: 20px;
     }
 
     .right {
         justify-self: end;
-        padding-right: 20px;
-        text-align: right;
+        margin-right: 20px;
     }
 }
 
