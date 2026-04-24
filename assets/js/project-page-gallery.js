@@ -1,5 +1,5 @@
-document.querySelectorAll('.photo-double').forEach(container => {
-    const photos = [...container.querySelectorAll('.project-page__photo')];
+document.querySelectorAll('.photo-double, .photo-pair-full').forEach(container => {
+    const photos = [...container.querySelectorAll(':scope > div')];
     const imgs = photos.map(p => p.querySelector('img'));
 
     const applyRatios = () => {
