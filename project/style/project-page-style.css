@@ -106,6 +106,20 @@
   height: auto;
   display: block;
 }
+.project-page .photo-pair-full {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+.project-page .photo-pair-full > div {
+  flex: 1;
+  min-width: 0;
+}
+.project-page .photo-pair-full img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .project-page__gallery {
   overflow: hidden;
 }
