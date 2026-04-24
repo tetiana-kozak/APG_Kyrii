@@ -33,7 +33,7 @@
 .project-page__details {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
+  max-width: 68%;
 }
 .project-page__detail .detail__label {
   margin-bottom: 4px;
