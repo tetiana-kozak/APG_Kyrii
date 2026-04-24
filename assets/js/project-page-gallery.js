@@ -19,19 +19,37 @@ document.querySelectorAll('.photo-double').forEach(container => {
     }
 });
 
-new Swiper('.project-page__gallery-swiper', {
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    initialSlide: 0,
-    spaceBetween: 30,
-    loop: true,
-    speed: 400,
-    mousewheel: {
-        sensitivity: 1,
-        eventsTarget: '.project-page__gallery',
-    },
-    navigation: {
-        nextEl: '.project-page__gallery .swiper-button-next',
-        prevEl: '.project-page__gallery .swiper-button-prev',
-    },
+document.querySelectorAll('.project-page__gallery-swiper').forEach(el => {
+    const gallery = el.closest('.project-page__gallery');
+
+    const swiper = new Swiper(el, {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        initialSlide: 0,
+        spaceBetween: 30,
+        loop: true,
+        speed: 400,
+        mousewheel: {
+            sensitivity: 1,
+            eventsTarget: gallery,
+        },
+        navigation: {
+            nextEl: gallery.querySelector('.swiper-button-next'),
+            prevEl: gallery.querySelector('.swiper-button-prev'),
+        },
+    });
+
+    swiper.mousewheel.disable();
+
+    let hoverTimer = null;
+
+    el.addEventListener('mouseenter', () => {
+        hoverTimer = setTimeout(() => swiper.mousewheel.enable(), 500);
+    });
+
+    el.addEventListener('mouseleave', () => {
+        clearTimeout(hoverTimer);
+        swiper.mousewheel.disable();
+        hoverTimer = null;
+    });
 });
