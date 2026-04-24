@@ -141,11 +141,12 @@
         }
 
         .swiper-slide {
-            width: calc(50% - 10px);
+            width: auto;
+            height: 420px;
 
             img {
-                width: 100%;
-                height: auto;
+                width: auto;
+                height: 100%;
                 display: block;
             }
         }

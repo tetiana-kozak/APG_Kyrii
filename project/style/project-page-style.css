@@ -113,11 +113,12 @@
   overflow: visible !important;
 }
 .project-page__gallery .swiper-slide {
-  width: calc(50% - 10px);
+  width: auto;
+  height: 420px;
 }
 .project-page__gallery .swiper-slide img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   display: block;
 }
 .project-page__gallery-nav {

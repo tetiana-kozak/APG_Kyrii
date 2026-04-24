@@ -199,14 +199,22 @@
     .project-page__photos {
         grid-template-columns: 1fr;
     }
-    .project-page__gallery .swiper-slide {
-        width: 100%;
-    }
     .project-page__gallery {
         padding: 0 20px;
     }
     .project-page__section-text{
         max-width: 85%;
+    }
+}
+
+@media (max-width: 670px) {
+    .project-page__gallery .swiper-slide {
+        width: calc(100vw - 40px);
+        height: auto;
+    }
+    .project-page__gallery .swiper-slide img {
+        width: 100%;
+        height: auto;
     }
 }
 
