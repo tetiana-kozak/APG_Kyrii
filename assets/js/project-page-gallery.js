@@ -41,10 +41,19 @@ document.querySelectorAll('.project-page__gallery-swiper').forEach(el => {
 
     swiper.mousewheel.disable();
 
-    el.querySelectorAll('img').forEach(img => {
-        if (!img.complete) {
-            img.addEventListener('load', () => swiper.update());
-        }
+    const imgs = [...el.querySelectorAll('img')];
+    const waitFor = imgs.map(img =>
+        img.complete
+            ? Promise.resolve()
+            : new Promise(res => {
+                img.addEventListener('load',  res, { once: true });
+                img.addEventListener('error', res, { once: true });
+            })
+    );
+
+    Promise.all(waitFor).then(() => {
+        swiper.update();
+        swiper.slideToLoop(0, 0, false);
     });
 
     let hoverTimer = null;
