@@ -41,6 +41,12 @@ document.querySelectorAll('.project-page__gallery-swiper').forEach(el => {
 
     swiper.mousewheel.disable();
 
+    el.querySelectorAll('img').forEach(img => {
+        if (!img.complete) {
+            img.addEventListener('load', () => swiper.update());
+        }
+    });
+
     let hoverTimer = null;
 
     el.addEventListener('mouseenter', () => {
