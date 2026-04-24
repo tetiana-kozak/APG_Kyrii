@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 entry.target.classList.remove('is-visible');
             }
         });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.04 });
 
     // При завантаженні: одразу показати елементи, що вже у viewport або вище нього
     document.querySelectorAll('[data-animate]').forEach(function (el) {
