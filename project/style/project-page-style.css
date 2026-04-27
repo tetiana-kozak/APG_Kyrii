@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .page__container {
   padding: 0 20px 0 20px;
   margin: 0 auto;
@@ -76,6 +77,15 @@
 }
 .project-page__section-text p:last-child {
   margin-bottom: 0;
+}
+.project-page__section-text ul {
+  padding-left: 20px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.project-page__section-text ul li::before {
+  content: "— ";
+  padding-right: 10px;
 }
 .project-page__photos {
   display: grid;
