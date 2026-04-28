@@ -116,6 +116,39 @@
   height: auto;
   display: block;
 }
+.project-page .photo-layout-five {
+  display: grid;
+  grid-template-columns: 1.08fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+}
+.project-page .photo-layout-five img {
+  width: 100%;
+  display: block;
+}
+.project-page .photo-layout-five .top-left {
+  grid-column: 1;
+  grid-row: 1/3;
+}
+.project-page .photo-layout-five .top-right {
+  grid-column: 2;
+  grid-row: 1/3;
+}
+.project-page .photo-layout-five .middle-left {
+  grid-column: 1;
+  grid-row: 3;
+  padding-top: 30px;
+}
+.project-page .photo-layout-five .bottom-left {
+  grid-column: 1;
+  grid-row: 4;
+  align-self: end;
+  padding-bottom: 30px;
+}
+.project-page .photo-layout-five .bottom-right {
+  grid-column: 2;
+  grid-row: 3/5;
+}
 .project-page .photo-pair-full {
   display: flex;
   gap: 30px;

@@ -223,6 +223,15 @@
         width: 100%;
         height: auto;
     }
+    .project-page .photo-layout-five{
+        gap: 15px;
+    }
+    .project-page .photo-layout-five .middle-left{
+        padding-top: 10px;
+    }
+    .project-page .photo-layout-five .bottom-left{
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 481px) {
