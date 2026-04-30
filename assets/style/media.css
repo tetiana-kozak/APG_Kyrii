@@ -212,6 +212,19 @@
     .project-page__section-text{
         max-width: 85%;
     }
+    .project-page .photo-double{
+        gap: 20px;
+    }
+    .project-page .photo-layout-five{
+        gap: 20px;
+    }
+    .project-page .photo-double .project-page__photo{
+        padding-bottom: 20px;
+    }
+    .project-page__photo{
+        padding-bottom: 20px;
+    }
+
 }
 
 @media (max-width: 670px) {
