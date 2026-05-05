@@ -28,6 +28,7 @@ document.querySelectorAll('.project-page__gallery-swiper').forEach(el => {
         initialSlide: 0,
         spaceBetween: 30,
         loop: true,
+        loopedSlides: 3,
         speed: 400,
         mousewheel: {
             sensitivity: 1,
