@@ -28,7 +28,7 @@ document.querySelectorAll('.project-page__gallery-swiper').forEach(el => {
         initialSlide: 0,
         spaceBetween: 30,
         loop: true,
-        loopedSlides: 3,
+        loopedSlides: 4,
         speed: 400,
         mousewheel: {
             sensitivity: 1,
@@ -53,8 +53,10 @@ document.querySelectorAll('.project-page__gallery-swiper').forEach(el => {
     );
 
     Promise.all(waitFor).then(() => {
-        swiper.update();
-        swiper.slideToLoop(0, 0, false);
+        requestAnimationFrame(() => {
+            swiper.update();
+            swiper.slideToLoop(0, 0, false);
+        })
     });
 
     let hoverTimer = null;
