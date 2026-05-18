@@ -24,8 +24,11 @@
   text-transform: uppercase;
 }
 
-.about-us-page .achievements__wrapper {
+.about-us-page .page__achievements .achievements__wrapper {
   padding: 80px 0;
+}
+.about-us-page .page__achievements .section-wrapper {
+  padding-bottom: 0;
 }
 
 .info__paragraphs {

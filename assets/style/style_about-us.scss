@@ -28,8 +28,13 @@
 }
 
 .about-us-page{
-    .achievements__wrapper{
-        padding: 80px 0;
+    .page__achievements{
+        .achievements__wrapper{
+            padding: 80px 0;
+        }
+        .section-wrapper{
+            padding-bottom: 0;
+        }
     }
 }
 
