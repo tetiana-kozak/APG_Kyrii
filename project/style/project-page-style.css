@@ -5,11 +5,11 @@
 }
 
 .project-page {
-  padding-top: 80px;
+  padding-top: 62px;
   font-size: 0.875rem;
 }
 .project-page__container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -34,7 +34,7 @@
 .project-page__details {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 85%;
 }
 .project-page__detail .detail__label {
   margin-bottom: 4px;
@@ -51,7 +51,7 @@
 }
 .project-page__section {
   display: grid;
-  grid-template-columns: 1fr minmax(0, 900px) 1fr;
+  grid-template-columns: 1fr minmax(0, 800px) 1fr;
 }
 .project-page__section-label {
   justify-self: end;
@@ -68,7 +68,7 @@
   padding: 0 20px;
 }
 .project-page__section-text {
-  max-width: 80%;
+  max-width: 85%;
   padding-bottom: 30px;
 }
 .project-page__section-text p {

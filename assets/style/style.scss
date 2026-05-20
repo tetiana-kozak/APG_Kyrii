@@ -91,13 +91,13 @@ body._lock{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 20px 0 20px 0;
+                padding: 15px 0 15px 0;
                 .header__logo{
                     display: flex;
                     align-items: center;
                     z-index: 20;
                     .header_logo-pic{
-                        height: 40px;                        
+                        height: 32px;                        
                         img{                            
                             height: 100%;
                         }
@@ -107,9 +107,9 @@ body._lock{
                         text-decoration: none;
                         .header_name-text{
                             text-transform: uppercase;
-                            font-weight: 700;
-                            font-size: $fz12;
-                            line-height: 11px;
+                            font-weight: 600;
+                            font-size: $fz10;
+                            line-height: 10px;
                             letter-spacing: 0.2em;
                             color: $text-color;
                         }
@@ -120,7 +120,7 @@ body._lock{
                         display: none;
                     }                    
                     .menu__list{ 
-                        font-size: $fz16;                       
+                        font-size: $fz14;                       
                         li{
                             a{
                                 text-decoration: none;
@@ -131,9 +131,9 @@ body._lock{
                             .menu__icons{
                                 display: flex;
                                 align-items: flex-end;
-                                height: 20px;
+                                height: 17px;
                                 .icon{
-                                    height: 20px;
+                                    height: 17px;
                                     margin-left: 25px;
                                     &:first-child{
                                         margin-left: 0;
@@ -159,11 +159,11 @@ body._lock{
         }
     }
     .page__content{
-        padding-top: 88px;
+        padding-top: 62px;
         .page__container{
             @include container;
             .page__title{
-                height: calc(100vh - 88px);
+                height: calc(100vh - 62px);
                 .title-container{
                     position: relative;
                     height: 100%;
@@ -171,7 +171,7 @@ body._lock{
                         position: absolute;
                         left: 0;
                         margin: 0;
-                        top: calc(50% - 88px / 2);
+                        top: calc(50% - 62px / 2);
                         -ms-transform: translateY(-50%);
                         transform: translateY(-50%);
                     }
@@ -211,7 +211,7 @@ body._lock{
                         position: absolute;
                         left: 0;
                         margin: 0;
-                        top: calc(50% - 88px / 2);
+                        top: calc(50% - 62px / 2);
                         -ms-transform: translateY(-50%);
                         transform: translateY(-50%);                        
                     }
@@ -545,7 +545,7 @@ footer.section-wrapper {
 }
 
 .warning-page{
-    height: calc(100vh - 88px);
+    height: calc(100vh - 62px);
     text-align: center;
     color: #292929;
     display: flex;

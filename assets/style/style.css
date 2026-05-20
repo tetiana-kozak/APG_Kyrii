@@ -97,7 +97,7 @@ body._lock {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0 20px 0;
+  padding: 15px 0 15px 0;
 }
 .page__main .page__header .page__container .page__nav-bar .header__logo {
   display: flex;
@@ -105,7 +105,7 @@ body._lock {
   z-index: 20;
 }
 .page__main .page__header .page__container .page__nav-bar .header__logo .header_logo-pic {
-  height: 40px;
+  height: 32px;
 }
 .page__main .page__header .page__container .page__nav-bar .header__logo .header_logo-pic img {
   height: 100%;
@@ -116,9 +116,9 @@ body._lock {
 }
 .page__main .page__header .page__container .page__nav-bar .header__logo .header_name .header_name-text {
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.75rem;
-  line-height: 11px;
+  font-weight: 600;
+  font-size: 0.625rem;
+  line-height: 10px;
   letter-spacing: 0.2em;
   color: #000;
 }
@@ -126,7 +126,7 @@ body._lock {
   display: none;
 }
 .page__main .page__header .page__container .page__nav-bar .menu .menu__list {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 .page__main .page__header .page__container .page__nav-bar .menu .menu__list li a {
   text-decoration: none;
@@ -137,10 +137,10 @@ body._lock {
 .page__main .page__header .page__container .page__nav-bar .menu .menu__list li .menu__icons {
   display: flex;
   align-items: flex-end;
-  height: 20px;
+  height: 17px;
 }
 .page__main .page__header .page__container .page__nav-bar .menu .menu__list li .menu__icons .icon {
-  height: 20px;
+  height: 17px;
   margin-left: 25px;
 }
 .page__main .page__header .page__container .page__nav-bar .menu .menu__list li .menu__icons .icon:first-child {
@@ -167,14 +167,14 @@ body._lock {
   border-bottom: #727272 solid 1px;
 }
 .page__main .page__content {
-  padding-top: 88px;
+  padding-top: 62px;
 }
 .page__main .page__content .page__container {
   padding: 0 20px 0 20px;
   margin: 0 auto;
 }
 .page__main .page__content .page__container .page__title {
-  height: calc(100vh - 88px);
+  height: calc(100vh - 62px);
 }
 .page__main .page__content .page__container .page__title .title-container {
   position: relative;
@@ -184,7 +184,7 @@ body._lock {
   position: absolute;
   left: 0;
   margin: 0;
-  top: calc(50% - 44px);
+  top: calc(50% - 31px);
   transform: translateY(-50%);
 }
 .page__main .page__content .page__container .page__title .title-container img {
@@ -233,7 +233,7 @@ body._lock {
   position: absolute;
   left: 0;
   margin: 0;
-  top: calc(50% - 44px);
+  top: calc(50% - 31px);
   transform: translateY(-50%);
 }
 .page__main .page__content .page__container .page__projects .section-wrapper .project__wrapper {
@@ -594,7 +594,7 @@ footer.section-wrapper {
 }
 
 .warning-page {
-  height: calc(100vh - 88px);
+  height: calc(100vh - 62px);
   text-align: center;
   color: #292929;
   display: flex;

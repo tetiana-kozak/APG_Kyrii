@@ -5,11 +5,11 @@
 }
 
 .project-page {
-    padding-top: 80px;
+    padding-top: 62px;
     font-size: $fz14;
 
     &__container {
-        max-width: 900px;
+        max-width: 800px;
         margin: 0 auto;
         padding: 0 20px;
     }
@@ -38,7 +38,7 @@
     &__details {
         display: flex;
         flex-direction: column;
-        max-width: 80%;
+        max-width: 85%;
     }
 
     &__detail {
@@ -65,7 +65,7 @@
 
     &__section {
         display: grid;
-        grid-template-columns: 1fr minmax(0, 900px) 1fr;
+        grid-template-columns: 1fr minmax(0, 800px) 1fr;
 
         &-label {
             justify-self: end;
@@ -84,7 +84,7 @@
         }
 
         &-text {
-            max-width: 80%;
+            max-width: 85%;
             padding-bottom: 30px;
             p {
                 line-height: 1.7;

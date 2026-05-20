@@ -41,7 +41,7 @@
   flex-direction: column;
 }
 .info__paragraphs .par-group .par {
-  width: 80%;
+  width: 85%;
   line-height: 28px;
   font-size: 1.125rem;
 }
