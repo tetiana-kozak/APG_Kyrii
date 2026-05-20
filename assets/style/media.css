@@ -251,6 +251,9 @@
     .page__main .page__content .page__container .page__title {
         height: 400px;
     }
+    .footer-labels .footer-label{
+        font-size: 0.875rem;
+    }
 }
 
 @media (max-width: 575px) {
