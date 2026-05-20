@@ -291,7 +291,7 @@
 @media (max-width: 1200px) { 
 
     .header__menu{
-        height: 48px;
+        height: 32px;
         display: flex;
         align-items: center;
     }
